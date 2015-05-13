@@ -8,7 +8,8 @@ p { font-family: OpenSans-Regular; }
 .footer { background: grey; height: 175px; padding-top: 20px; }
 .footer strong { display: block; color: white; line-height: 30px; font-family: OpenSans-Light; cursor: pointer;}
 .footer strong:hover { color: #ecf0f1; }
-.footer p { margin-top: 10px; display: block; color: white; line-height: 30px; font-family: OpenSans-Light; }
+.footer p { margin-top: 10px; display: block; color: white; line-height: 30px; font-family: OpenSans-Light; 
+            border-top: 1px solid white; }
 
 * { margin: 0; }
 html, body { height: 100%; }
