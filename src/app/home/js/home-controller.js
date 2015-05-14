@@ -1,11 +1,12 @@
-(function () {
+(function() {
 
-	angular.module('ywPortal')
+	angular
+		.module('ywPortal')
 		.controller('homeController', homeController);
 
-	function homeController () {
+	function homeController() {
 		var vm = this;
-		vm.greeting = 'hello world!';
+		vm.greeting = 'hello world 123!';
 	}
 
 }());

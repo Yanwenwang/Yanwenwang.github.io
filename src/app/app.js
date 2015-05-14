@@ -1,5 +1,8 @@
 (function () {
 	
-	angular.module('ywPortal', []);
+	angular
+		.module('ywPortal', [
+			'ngRoute'
+		]);
 
 }());
