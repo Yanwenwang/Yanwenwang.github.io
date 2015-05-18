@@ -6,7 +6,7 @@
 
 	function homeController() {
 		var vm = this;
-		vm.greeting = 'hello world 123!';
+		vm.greeting = 'Hello home!';
 	}
 
 }());

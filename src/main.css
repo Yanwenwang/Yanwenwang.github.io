@@ -1,13 +1,13 @@
 .header { background: grey; height: 45px; }
-.header strong { line-height: 45px; font-family: OpenSans-SemiBold; color: white; cursor: pointer;}
-.header strong:hover { color: #ecf0f1; }
+.header a { line-height: 45px; font-family: OpenSans-SemiBold; color: white; cursor: pointer; text-decoration: none; }
+.header a:hover { color: #ecf0f1; text-decoration: none; }
 
 h1 { font-family: OpenSans-Bold; }
 p { font-family: OpenSans-Regular; }
 
 .footer { background: grey; height: 175px; padding-top: 20px; }
-.footer strong { display: block; color: white; line-height: 30px; font-family: OpenSans-Light; cursor: pointer;}
-.footer strong:hover { color: #ecf0f1; }
+.footer a { display: block; color: white; line-height: 30px; font-family: OpenSans-Light; cursor: pointer; text-decoration: none; }
+.footer a:hover { color: #ecf0f1; text-decoration: none; }
 .footer p { margin-top: 10px; display: block; color: white; line-height: 30px; font-family: OpenSans-Light; 
             border-top: 1px solid white; }
 
