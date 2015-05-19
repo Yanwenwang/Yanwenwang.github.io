@@ -1,6 +1,7 @@
 .header { background: grey; height: 45px; }
 .header a { line-height: 45px; font-family: OpenSans-SemiBold; color: white; cursor: pointer; text-decoration: none; }
 .header a:hover { color: #ecf0f1; text-decoration: none; }
+.header a.active { color: #ecf0f1; }
 
 h1 { font-family: OpenSans-Bold; }
 p { font-family: OpenSans-Regular; }
