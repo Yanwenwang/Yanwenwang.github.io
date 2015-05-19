@@ -4,5 +4,10 @@
   "description": "This is a resume project",
   "main": "index.html",
   "author": "Yanwen",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-sass": "^2.0.1"
+  }
 }
