@@ -12,10 +12,10 @@
 			console.log($location.path());
 		    if ($location.path() === path) {
 		      	return 'active';
-		    } 
+		    }
 
 		    return ''; 
-		}
+		};
 	}
 
 }());

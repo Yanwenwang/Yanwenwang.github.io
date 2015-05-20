@@ -2,12 +2,12 @@
 
 	angular
 		.module('ywPortal')
-		.controller('aboutController', aboutController)
+		.controller('aboutController', aboutController);
 
 	function aboutController () {
 
 		var vm = this;
-		vm.greeting = 'Hello about!'
+		vm.greeting = 'Hello about!';
 	}
 
 }());
