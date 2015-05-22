@@ -1,0 +1,114 @@
+.resume .technologies {
+  padding-bottom: 45px; }
+
+.resume h2 {
+  margin-top: 40px; }
+
+.resume ul {
+  padding-left: 0; }
+
+.resume ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+  font-family: OpenSans-Regular; }
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../bower_components/open-sans-fontface/fonts/bold/OpenSans-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../bower_components/open-sans-fontface/fonts/bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../bower_components/open-sans-fontface/fonts/bold/OpenSans-Bold.woff2") format("woff2"), url("../bower_components/open-sans-fontface/fonts/bold/OpenSans-Bold.woff") format("woff"), url("../bower_components/open-sans-fontface/fonts/bold/OpenSans-Bold.ttf") format("truetype"), url("../bower_components/open-sans-fontface/fonts/bold/OpenSans-Bold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url("../bower_components/open-sans-fontface/fonts/semibold/OpenSans-SemiBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../bower_components/open-sans-fontface/fonts/semibold/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../bower_components/open-sans-fontface/fonts/semibold/OpenSans-SemiBold.woff2") format("woff2"), url("../bower_components/open-sans-fontface/fonts/semibold/OpenSans-SemiBold.woff") format("woff"), url("../bower_components/open-sans-fontface/fonts/semibold/OpenSans-SemiBold.ttf") format("truetype"), url("../bower_components/open-sans-fontface/fonts/semibold/OpenSans-SemiBold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../bower_components/open-sans-fontface/fonts/regular/OpenSans-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../bower_components/open-sans-fontface/fonts/regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/open-sans-fontface/fonts/regular/OpenSans-Regular.woff2") format("woff2"), url("../bower_components/open-sans-fontface/fonts/regular/OpenSans-Regular.woff") format("woff"), url("../bower_components/open-sans-fontface/fonts/regular/OpenSans-Regular.ttf") format("truetype"), url("../bower_components/open-sans-fontface/fonts/regular/OpenSans-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../bower_components/open-sans-fontface/fonts/light/OpenSans-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../bower_components/open-sans-fontface/fonts/light/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../bower_components/open-sans-fontface/fonts/light/OpenSans-Light.woff2") format("woff2"), url("../bower_components/open-sans-fontface/fonts/light/OpenSans-Light.woff") format("woff"), url("../bower_components/open-sans-fontface/fonts/light/OpenSans-Light.ttf") format("truetype"), url("../bower_components/open-sans-fontface/fonts/light/OpenSans-Light.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+.footer {
+  background: grey;
+  padding-top: 20px; }
+
+.footer a {
+  display: block;
+  color: white;
+  line-height: 30px;
+  font-family: OpenSans-Light;
+  cursor: pointer;
+  text-decoration: none; }
+
+.footer a:hover {
+  color: #ecf0f1;
+  text-decoration: none; }
+
+.footer p {
+  margin-top: 10px;
+  display: block;
+  color: white;
+  line-height: 30px;
+  font-family: OpenSans-Light;
+  border-top: 1px solid white; }
+
+* {
+  margin: 0; }
+
+html, body {
+  height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -175px;
+  /* the bottom margin is the negative value of the footer's height */ }
+
+.footer, .push {
+  height: 175px;
+  /* .push must be the same height as .footer */ }
+
+h1 {
+  font-family: OpenSans-Bold; }
+
+p {
+  font-family: OpenSans-Regular; }
+
+.header {
+  background: grey;
+  height: 45px;
+  text-align: center; }
+
+.header a {
+  line-height: 45px;
+  font-family: OpenSans-SemiBold;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+  transition: .5s all; }
+
+.header a:hover {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: 1s all;
+  letter-spacing: .2em; }
+
+.header a.active {
+  color: #ecf0f1; }
