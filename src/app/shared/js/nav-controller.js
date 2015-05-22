@@ -9,7 +9,7 @@
 		var vm = this;
 
 		vm.getClass = function(path) {
-			console.log($location.path());
+			
 		    if ($location.path() === path) {
 		      	return 'active';
 		    }
