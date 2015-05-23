@@ -4,70 +4,12 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Resume</h1>
-					<p>
-						Welcome to my resume.
-					</p>
 				</div>
 			</div>
-		</div>
-	</section>
-
-	<section class="technologies">
-		<div class="container">
-			<div class="row">
+			<div class="row" ng-repeat="group in resumeVM.groups">
 				<div class="col-md-12">
-					<h2>HTML</h2>
-					<h2>CSS</h2>
-					<ul>
-						<li>Sass</li>
-						<li>Box model</li>
-						<li>Bootstrap</li>
-						<li>Animate.css</li>
-					</ul> 
-					</p>
-					<h2>JavaScript</h2>
-					<ul>
-						<li>IIFE</li>
-						<li>Clousure</li>
-						<li>Hoisting</li>
-						<li>Scope</li>
-						<li>JSON</li>
-						<li>Callbacks</li>
-						<li>Truthy/Falsy</li>
-					</ul>
-					<h2>Angular JS</h2>
-					<ul>
-						<li>Directives</li>
-						<li>Controllers</li>
-						<li>Controller-As</li>
-						<li>Services</li>
-						<li>Routing</li>
-						<li>ng-class</li>
-						<li>ng-bind</li>
-						<li>$http</li>
-						<li>$location</li>
-					</ul>
-					<h2>Git</h2>
-					<ul>
-						<li>Github</li>
-						<li>SourceTree</li>
-					</ul>
-					<h2>Mac</h2>
-					<ul>
-						<li>Terminal</li>
-						<li>npm</li>
-						<li>bower</li>
-						<li>gulp</li>
-						<li>jshint</li>
-					</ul>
-					<h2>IDEs</h2>
-					<ul>
-						<li>Sublime Text</li>
-					</ul>
-					<h2>Methodologies</h2>
-					<ul>
-						<li>Scrum</li>
-					</ul>
+					<h2 ng-bind="group.groupName"></h2>
+					<div class="circle" ng-repeat="skill in group.skills" ng-bind="skill.name"></div>
 				</div>
 			</div>
 		</div>

@@ -1,17 +1,30 @@
 .resume .technologies {
   padding-bottom: 45px; }
 
+.resume .hero {
+  margin-bottom: 64px; }
+
 .resume h2 {
   margin-top: 40px; }
 
-.resume ul {
-  padding-left: 0; }
-
-.resume ul li {
-  list-style-type: none;
+.circle {
   display: inline-block;
-  margin-right: 20px;
-  font-family: OpenSans-Regular; }
+  border: 2px solid orange;
+  text-align: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin-right: 32px;
+  margin-top: 32px;
+  cursor: pointer;
+  transition: .5s ease; }
+
+.circle:hover {
+  background: grey;
+  width: 125px;
+  height: 125px;
+  line-height: 125px; }
 
 @font-face {
   font-family: 'OpenSans-Bold';
