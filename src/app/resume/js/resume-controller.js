@@ -16,7 +16,7 @@
 				skills: [ 
 					{ name: 'Sass' },
 					{ name: 'Box model' },
-					{ name: 'Box model' },
+					{ name: 'Transitions' },
 		 			{ name: 'Bootstrap' },
 		 			{ name: 'Animate.css' }
 				]

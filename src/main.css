@@ -15,10 +15,18 @@
   width: 100px;
   height: 100px;
   line-height: 100px;
-  margin-right: 32px;
-  margin-top: 32px;
   cursor: pointer;
-  transition: .5s ease; }
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.circle-container {
+  width: 125px;
+  height: 125px;
+  display: inline-block;
+  position: relative; }
 
 .circle:hover {
   background: grey;

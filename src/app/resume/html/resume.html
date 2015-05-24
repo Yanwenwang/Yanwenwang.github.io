@@ -9,7 +9,9 @@
 			<div class="row" ng-repeat="group in resumeVM.groups">
 				<div class="col-md-12">
 					<h2 ng-bind="group.groupName"></h2>
-					<div class="circle" ng-repeat="skill in group.skills" ng-bind="skill.name"></div>
+					<div class="circle-container" ng-repeat="skill in group.skills" >
+						<div class="circle" ng-bind="skill.name"></div>
+					</div>
 				</div>
 			</div>
 		</div>
