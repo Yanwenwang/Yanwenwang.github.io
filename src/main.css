@@ -110,26 +110,23 @@ h1 {
 p {
   font-family: OpenSans-Regular; }
 
-.header {
+.navbar {
   background: grey;
   height: 45px;
-  text-align: center; }
+  text-align: left; }
 
-.header a {
+.navbar a {
   line-height: 45px;
   font-family: OpenSans-SemiBold;
   color: white;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: 1px 1px 1px #000;
-  transition: .5s all; }
+  text-shadow: 1px 1px 1px #000; }
 
-.header a:hover {
+.navbar a:hover {
   color: #ecf0f1;
-  text-decoration: none;
-  transition: 1s all;
-  letter-spacing: .2em; }
+  text-decoration: none; }
 
-.header a.active {
+.navbar a.active {
   color: #ecf0f1; }

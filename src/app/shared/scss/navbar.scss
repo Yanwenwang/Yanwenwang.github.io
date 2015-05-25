@@ -1,6 +1,9 @@
-.header { background: grey; height: 45px; text-align: center; }
-.header a { line-height: 45px; font-family: OpenSans-SemiBold; color: white; cursor: pointer; text-decoration: none; text-transform: uppercase; text-shadow: 1px 1px 1px #000; 
-transition: .5s all; }
-.header a:hover { color: #ecf0f1; text-decoration: none; transition: 1s all; letter-spacing: .2em; }
-.header a.active { color: #ecf0f1; }
+.navbar { background: grey; height: 45px; text-align: left; }
+.navbar a { line-height: 45px; font-family: OpenSans-SemiBold; color: white; cursor: pointer; text-decoration: none; 
+	text-transform: uppercase; text-shadow: 1px 1px 1px #000; 
+ }
+.navbar a:hover { color: #ecf0f1; text-decoration: none; }
+.navbar a.active { color: #ecf0f1; }
+
+
 
