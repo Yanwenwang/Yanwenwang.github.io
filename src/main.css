@@ -118,7 +118,7 @@ p {
 .navbar a {
   line-height: 45px;
   font-family: OpenSans-SemiBold;
-  color: white;
+  color: #CCCCCC;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
@@ -126,7 +126,13 @@ p {
 
 .navbar a:hover {
   color: #ecf0f1;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 1s all; }
 
 .navbar a.active {
-  color: #ecf0f1; }
+  color: white; }
+
+.logo {
+  display: inline-block;
+  font-size: 1.5em;
+  letter-spacing: .1em; }
