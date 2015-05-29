@@ -1,4 +1,4 @@
-.navbar { background: grey; height: 45px; text-align: left; margin-bottom: 0; }
+.navbar { height: 45px; text-align: left; position: fixed; z-index: 1; top: 0; width: 100% }
 .navbar a { line-height: 45px; font-family: OpenSans-SemiBold; color: #CCCCCC; cursor: pointer; text-decoration: none; 
 	text-transform: uppercase; text-shadow: 1px 1px 1px #000; 
  }
