@@ -1,19 +1,24 @@
-<div class="resume">
-	<section class="hero">
+<section class="resume">
+	<div class="hero">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Resume</h1>
 				</div>
 			</div>
-			<div class="row" ng-repeat="group in resumeVM.groups">
-				<div class="col-md-12">
-					<h2 ng-bind="group.groupName"></h2>
-					<div class="circle-container" ng-repeat="skill in group.skills" >
-						<div class="circle" ng-bind="skill.name"></div>
-					</div>
+		</div>
+	</div>
+</section>
+
+<section class="skill">
+	<div class="container">
+		<div class="row" ng-repeat="group in resumeVM.groups">
+			<div class="col-md-12">
+				<h2 ng-bind="group.groupName"></h2>
+				<div class="circle-container" ng-repeat="skill in group.skills">
+					<div class="circle" ng-bind="skill.name"></div>
 				</div>
 			</div>
 		</div>
-	</section>
-</div>
+	</div>
+</section>
