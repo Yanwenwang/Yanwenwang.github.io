@@ -74,25 +74,34 @@ h3 {
 .contacts .hero h1 {
   line-height: 320px; }
 
-.home-container {
-  background: url("../content/images/mac.jpg");
+.home .hero {
+  background: url("../content/images/skyline.jpg");
+  height: 790px;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  display: block;
-  top: 0;
-  left: 0;
-  position: absolute; }
+  text-align: center;
+  position: relative; }
 
-.home {
-  height: 100%;
-  background-color: black;
-  opacity: .25; }
+.content {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
-h1 {
-  margin-top: 82px; }
+.content h4 {
+  margin-top: 32px; }
+
+.content p {
+  margin-top: 32px; }
+
+.content .image {
+  margin-top: 32px;
+  display: inline-block;
+  border-radius: 50%;
+  background: white;
+  height: 100px;
+  width: 100px;
+  background-position-y: 658px; }
 
 .projects h1 {
   font-family: OpenSans-Bold;
@@ -217,6 +226,11 @@ html, body {
   height: 175px;
   /* .push must be the same height as .footer */ }
 
+.vcenter {
+  float: none;
+  display: inline-block;
+  vertical-align: middle; }
+
 html {
   overflow-y: scroll; }
 
@@ -226,7 +240,7 @@ h1 {
 p {
   font-family: OpenSans-Regular; }
 
-.navbar {
+.nav {
   height: 45px;
   text-align: left;
   position: fixed;
@@ -234,22 +248,23 @@ p {
   top: 0;
   width: 100%; }
 
-.navbar a {
-  line-height: 45px;
-  font-family: OpenSans-SemiBold;
+.nav a {
   color: #CCCCCC;
   cursor: pointer;
+  line-height: 45px;
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: 1px 1px 1px #000; }
+  text-shadow: 1px 1px 1px #000;
+  transition: .5s all; }
 
-.navbar a:hover {
-  color: #ecf0f1;
-  text-decoration: none;
-  transition: 1s all; }
+.nav a:hover {
+  color: #ecf0f1; }
 
-.navbar a.active {
+.nav a.active {
   color: white; }
+
+html {
+  overflow-y: scroll; }
 
 .logo {
   display: inline-block;

@@ -8,32 +8,32 @@
 	</head>
 
 	<body>
-		<div class="wrapper">
-			<div class="navbar navbar-inverse navbar-fixed-top" ng-controller="navController as navVM">
+
+	   <div class="wrapper">
+	    	<nav class="nav" ng-controller="navController as navVM">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-2">
-							<a class="logo" ng-class="navVM.getClass('/')"href="#/">.YW</a>
+						<div class="col-md-4">
+							<a class="logo" ng-class="navVM.getClass('/')" href="#/">.yw</a>
 						</div>
-						<div class="col-md-2"></div>
 						<div class="col-md-2">
 							<a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
 						</div>
 						<div class="col-md-2">
-							<a ng-class="navVM.getClass('/projects')"href="#/projects">Projects</a>
+							<a ng-class="navVM.getClass('/projects')" href="#/projects">Projects</a>
 						</div>
 						<div class="col-md-2">
-							<a ng-class="navVM.getClass('/about')"href="#/about">About</a>
-						</div>
+							<a ng-class="navVM.getClass('/about')" href="#/about">About</a>
+						</div>	
 						<div class="col-md-2">
-							<a ng-class="navVM.getClass('/contact')"href="#/contact">Contact</a>
+							<a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div ng-view></div>
-			<div class="push"></div>
-		</div>
+			</nav>
+		<div ng-view></div>
+		<div class="push"></div>
+	</div>
 
 		<div class="footer">
 			<div class="container">
@@ -70,6 +70,7 @@
 		<script src="./src/app/about/js/about-controller.js"></script>
 		<script src="./src/app/contact/js/contact-controller.js"></script>
 		<script src="./src/app/shared/js/nav-controller.js"></script>
+
 	</body>
 
 </html>

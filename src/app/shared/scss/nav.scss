@@ -1,0 +1,8 @@
+.nav { height: 45px; text-align: left; position: fixed; z-index: 1; top: 0; width: 100% }
+.nav a { color: #CCCCCC; cursor: pointer; line-height: 45px; text-decoration: none; text-transform: uppercase; 
+	text-shadow: 1px 1px 1px #000; transition: .5s all; }
+.nav a:hover { color: #ecf0f1; }
+.nav a.active { color: white; }	
+
+.logo { display: inline-block; font-size: 1.5em; letter-spacing: .1em; }
+
