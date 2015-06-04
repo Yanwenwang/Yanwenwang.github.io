@@ -30,7 +30,9 @@
 }
 
 
-.backgrounds { 
+.backgrounds {
+
+  background-color: #f1f1f1;
   height: 640px;
 
   .content-container {
@@ -62,10 +64,46 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid black;
   }
 }
 
+.programmings {
+
+  background-color: #f6f6f6;
+  height: 640px;
+
+  .content-container {
+
+    height: 640px;
+    position: relative;
+  }
+
+  .content-container .content {
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .content-container .content h3 { margin-top: 0; }
+
+  .image-container {
+
+    height: 640px; 
+    position: relative;
+
+  }
+  .image-container .image {
+    background-color: white;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+}
 
 
 
