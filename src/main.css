@@ -99,57 +99,74 @@ h3 {
     width: 100px;
     background-position-y: 658px; }
 
-.backgrounds {
-  background-color: #f1f1f1;
-  height: 640px; }
-  .backgrounds .content-container {
-    height: 640px;
-    position: relative; }
-  .backgrounds .content-container .content {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%); }
-  .backgrounds .content-container .content h3 {
-    margin-top: 0; }
-  .backgrounds .image-container {
-    height: 640px;
-    text-align: center;
-    position: relative; }
-  .backgrounds .image-container .image {
-    display: inline-block;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    background: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+@media screen and (max-width: 767px) {
+  .backgrounds {
+    background: blue; }
+  .programmings {
+    background: yellow; } }
 
-.programmings {
-  background-color: #f6f6f6;
-  height: 640px; }
-  .programmings .content-container {
-    height: 640px;
-    position: relative; }
-  .programmings .content-container .content {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%); }
-  .programmings .content-container .content h3 {
-    margin-top: 0; }
-  .programmings .image-container {
-    height: 640px;
-    position: relative; }
-  .programmings .image-container .image {
-    background-color: white;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%); }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .backgrounds {
+    background: yellow; }
+  .programmings {
+    background: red; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .backgrounds {
+    background: red; }
+  .programmings {
+    background: blue; } }
+
+@media screen and (min-width: 1200px) {
+  .backgrounds {
+    background: pink;
+    height: 640px; }
+    .backgrounds .content-container {
+      height: 640px;
+      position: relative; }
+    .backgrounds .content-container .content {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); }
+      .backgrounds .content-container .content h3 {
+        margin-top: 0; }
+    .backgrounds .image-container {
+      height: 640px;
+      text-align: center;
+      position: relative; }
+    .backgrounds .image-container .image {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .programmings {
+    background-color: #f6f6f6;
+    height: 640px; }
+    .programmings .content-container {
+      height: 640px;
+      position: relative; }
+    .programmings .content-container .content {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); }
+      .programmings .content-container .content h3 {
+        margin-top: 0; }
+    .programmings .image-container {
+      height: 640px;
+      position: relative; }
+    .programmings .image-container .image {
+      background-color: white;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%); } }
 
 .projects h1 {
   font-family: OpenSans-Bold;

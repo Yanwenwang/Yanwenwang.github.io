@@ -1,3 +1,19 @@
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
 .home {
   .hero {
     background: url('../content/images/skyline.jpg'); 
@@ -30,32 +46,55 @@
 }
 
 
-.backgrounds {
 
-  background-color: #f1f1f1;
-  height: 640px;
+
+@media screen and (max-width: $screen-xs-max) {
+  // phones
+  .backgrounds { background: blue; }
+  .programmings {background: yellow;}
+}
+
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  // tablets
+  .backgrounds { background: yellow; }
+  .programmings {background: red;}
+}
+
+@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  // laptops
+  .backgrounds { background: red; }
+  .programmings {background: blue;}
+}
+
+
+@media screen and (min-width: $screen-lg-min) {
+  // desktop
+
+  .backgrounds { 
+
+    background: pink; 
+    height: 640px; 
 
   .content-container {
     height: 640px;
     position: relative;
-  }
+    }
 
   .content-container .content {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-  }
+    h3 { margin-top: 0; }
+    }
 
-  .content-container .content h3 { margin-top: 0; }
-  
   .image-container {
     height: 640px;
     text-align: center;
     position: relative;
-  }
+ 
+    }
 
   .image-container .image {
-    display: inline-block;
     height: 250px;
     width: 250px;
     border-radius: 50%;
@@ -64,14 +103,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    }
+
   }
-}
 
-.programmings {
+  .programmings {
 
-  background-color: #f6f6f6;
-  height: 640px;
-
+    background-color: #f6f6f6;
+    height: 640px;
+  
   .content-container {
 
     height: 640px;
@@ -83,9 +123,8 @@
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
+    h3 { margin-top: 0; }
   }
-
-  .content-container .content h3 { margin-top: 0; }
 
   .image-container {
 
@@ -104,6 +143,11 @@
     transform: translate(-50%, -50%);
   }
 }
+
+}
+
+
+
 
 
 
