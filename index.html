@@ -6,35 +6,43 @@
 		<link rel="stylesheet" type="text/css" href="./bower_components/animate.css/animate.css">
 		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="./src/main.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
-
-	   <div class="wrapper">
-	    	<nav class="nav" ng-controller="navController as navVM">
+		<div class="wrapper">
+	    	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="navController as navVM">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-4">
-							<a class="logo" ng-class="navVM.getClass('/')" href="#/">.yw</a>
-						</div>
-						<div class="col-md-2">
-							<a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
-						</div>
-						<div class="col-md-2">
-							<a ng-class="navVM.getClass('/projects')" href="#/projects">Projects</a>
-						</div>
-						<div class="col-md-2">
-							<a ng-class="navVM.getClass('/about')" href="#/about">About</a>
-						</div>	
-						<div class="col-md-2">
-							<a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a>
-						</div>
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" date-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">.YW</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a ng-class="navVM.getClass('/')" href="#/">Home</a></li>
+							<li><a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" date-toggle="dropdown" ng-class="navVM.getClass('/projects')" href="#/projects">projects<b class="caret"></b></a>
+
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">Projects</li>
+								<li><a href="#">Project 1</a></li>
+								<li><a href="#">Project 2</a></li>
+							</ul>
+							</li>
+							<li><a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a></li>
+						</ul>
 					</div>
 				</div>
 			</nav>
-		<div ng-view></div>
-		<div class="push"></div>
-	</div>
+			<div ng-view></div>
+			<div class="push"></div>
+		</div>
 
 		<div class="footer">
 			<div class="container">
@@ -61,6 +69,7 @@
 		<!-- vendor dependencies -->
 		<script src="./bower_components/angular/angular.js"></script>
 		<script src="./bower_components/angular-route/angular-route.js"></script>
+
 
 		<!-- project dependencies -->
 		<script src="./src/app/app.js"></script>

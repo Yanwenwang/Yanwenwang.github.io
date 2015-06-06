@@ -75,21 +75,26 @@ h3 {
   line-height: 320px; }
 
 .home .hero {
-  background: url("../content/images/skyline.jpg");
-  height: 790px;
-  background-size: cover;
-  text-align: center;
-  position: relative; }
-  .home .hero .content {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+  text-align: center; }
+  @media screen and (min-width: 992px) {
+    .home .hero {
+      background: url("../content/images/skyline.jpg");
+      background-size: cover;
+      height: 790px;
+      position: relative; }
+      .home .hero .content {
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
   .home .hero .content h4 {
     margin-top: 32px; }
-  .home .hero .content p {
-    margin-top: 32px; }
+  .home .hero .content .icon {
+    position: relative;
+    margin-top: 32px;
+    display: inline-block;
+    opacity: .5; }
   .home .hero .content .image {
     margin-top: 32px;
     display: inline-block;
@@ -99,25 +104,54 @@ h3 {
     width: 100px;
     background-position-y: 658px; }
 
-@media screen and (max-width: 767px) {
+/*
+.home {
+
+  @media screen and (max-width: $screen-sm-max) {
+    // phones and tablets
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    // laptops and desktop
+  }
+
+  .hero {
+    @media screen and (max-width: $screen-sm-max) {
+      // phones and tablets
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+      // laptops and desktop
+    }
+  }
+
+  .backgrounds {
+    @media screen and (max-width: $screen-sm-max) {
+      // phones and tablets
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+      // laptops and desktop
+    }
+  }
+
+  .programmings {
+    @media screen and (max-width: $screen-sm-max) {
+      // phones and tablets
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+      // laptops and desktop
+    }
+  }
+}*/
+@media screen and (max-width: 991px) {
   .backgrounds {
     background: blue; }
   .programmings {
     background: yellow; } }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .backgrounds {
-    background: yellow; }
-  .programmings {
-    background: red; } }
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .backgrounds {
-    background: red; }
-  .programmings {
-    background: blue; } }
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .backgrounds {
     background: pink;
     height: 640px; }
@@ -305,7 +339,7 @@ h1 {
 p {
   font-family: OpenSans-Regular; }
 
-.nav {
+.navbar {
   height: 45px;
   text-align: left;
   position: fixed;
@@ -313,22 +347,20 @@ p {
   top: 0;
   width: 100%; }
 
-.nav a {
+.navbar a {
   color: #CCCCCC;
   cursor: pointer;
-  line-height: 45px;
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: 1px 1px 1px #000;
   transition: .5s all; }
 
-.nav a:hover {
+.navbar a:hover {
   color: #ecf0f1; }
 
-.nav a.active {
+.navbar a.active {
   color: white; }
 
-.logo {
+.navbar-brand {
   display: inline-block;
   font-size: 1.5em;
   letter-spacing: .1em; }

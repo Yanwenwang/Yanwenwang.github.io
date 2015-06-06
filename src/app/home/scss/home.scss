@@ -16,23 +16,34 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 
 .home {
   .hero {
-    background: url('../content/images/skyline.jpg'); 
-    height: 790px;
-    background-size: cover;
+
     text-align: center;
-    position: relative;
-  
-    .content {
-      position: absolute;
-      display: inline-block;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+
+    @media screen and (max-width: $screen-sm-max) {
+      // phones and tablets
+
     }
 
-    .content h4 { margin-top: 32px; }
-    .content p { margin-top: 32px; }
+    @media screen and (min-width: $screen-md-min) {
+      // laptops and desktop
+      background: url('../content/images/skyline.jpg'); 
+      background-size: cover;
+      height: 790px;
+      position: relative;
 
+      .content {
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    
+    .content h4 { margin-top: 32px; }
+    
+    .content .icon { position: relative; margin-top: 32px; display: inline-block; opacity: .5; }
+    
     .content .image { 
       margin-top: 32px;
       display: inline-block;
@@ -44,31 +55,57 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
     }
   }
 }
+/*
+.home {
+
+  @media screen and (max-width: $screen-sm-max) {
+    // phones and tablets
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    // laptops and desktop
+  }
+
+  .hero {
+    @media screen and (max-width: $screen-sm-max) {
+      // phones and tablets
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+      // laptops and desktop
+    }
+  }
+
+  .backgrounds {
+    @media screen and (max-width: $screen-sm-max) {
+      // phones and tablets
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+      // laptops and desktop
+    }
+  }
+
+  .programmings {
+    @media screen and (max-width: $screen-sm-max) {
+      // phones and tablets
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+      // laptops and desktop
+    }
+  }
+}*/
 
 
-
-
-@media screen and (max-width: $screen-xs-max) {
-  // phones
+@media screen and (max-width: $screen-sm-max){
+  // phones and tablets
   .backgrounds { background: blue; }
   .programmings {background: yellow;}
 }
 
-@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  // tablets
-  .backgrounds { background: yellow; }
-  .programmings {background: red;}
-}
-
-@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  // laptops
-  .backgrounds { background: red; }
-  .programmings {background: blue;}
-}
-
-
-@media screen and (min-width: $screen-lg-min) {
-  // desktop
+@media screen and (min-width: $screen-md-min) {
+  // laptops and desktop
 
   .backgrounds { 
 
