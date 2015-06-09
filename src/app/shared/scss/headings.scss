@@ -1,6 +1,47 @@
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
 
-h1 { font-family: OpenSans-Bold; }
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+h1 { font-family: OpenSans-Bold; font-size: 48px; }
 p { font-family: OpenSans-Regular; }
 
+@media screen and (min-width: $screen-lg-min) {
 
+	h1 { font-size: 48px; line-height: 52px; }
+	h2 { font-size: 36px; line-height: 40px; }
+	h3 { font-size: 28px; line-height: 32px; }
+	h4 { font-size: 18px; line-height: 24px; }
+	.body1 { font-size: 16px; line-height: 22px; }
+}
+
+@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+
+	h1 { font-size: 40px; line-height: 44px; }
+	h2 { font-size: 32px; line-height: 36px; }
+	h3 { font-size: 24px; line-height: 28px; }
+	h4 { font-size: 18px; line-height: 22px; }
+	.body1 { font-size: 16px; line-height: 22px; }
+}
+
+@media screen and (max-width: $screen-sm-min) {
+
+	h1 { font-size: 32px; line-height: 36px; }
+	h2 { font-size: 26px; line-height: 30px; }
+	h3 { font-size: 22px; line-height: 26px; }
+	h4 { font-size: 18px; line-height: 22px; }
+	.body1 { font-size: 16px; line-height: 20px; }
+}
 
