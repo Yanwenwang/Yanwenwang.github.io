@@ -14,10 +14,26 @@
 	<div class="container">
 		<div class="row" ng-repeat="group in resumeVM.groups">
 			<div class="col-md-12">
-				<h2 ng-bind="group.groupName"></h2>
+
+
+				<div class="main-skill-container" style="border: 1px solid black; margin: 20px; text-align: center;">
+					<h2 class="main-skill" ng-bind="group.groupName"></h2>
+
+					<div class="sub-skill-container" style="text-align: center;">
+						<div class="sub-skill" ng-repeat="skill in group.skills" ng-bind="skill.name"
+							style="display: inline-block; line-height: 100px; background: lime; width: 100px; height: 100px; margin: 25px;"></div>
+					</div>
+
+				</div>
+
+
+
+		<!-- 		<h2 class="mainSkill" ng-bind="group.groupName"></h2>
 				<div class="circle-container" ng-repeat="skill in group.skills">
+				<div>
 					<div class="circle" ng-bind="skill.name"></div>
 				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
