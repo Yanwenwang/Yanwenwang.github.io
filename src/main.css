@@ -78,7 +78,7 @@ h3 {
   text-align: center; }
   @media screen and (max-width: 991px) {
     .home .hero {
-      background: url("../content/images/skyline.jpg");
+      background: url("../content/images/home-phone.jpg");
       background-size: cover;
       height: 640px;
       position: relative; }
@@ -111,10 +111,11 @@ h3 {
         margin-left: 29px; } }
   @media screen and (min-width: 992px) {
     .home .hero {
-      background: url("../content/images/skyline.jpg");
+      background: url("../content/images/home-desktop.jpg");
       background-size: cover;
       height: 640px;
-      position: relative; }
+      position: relative;
+      background-position-y: -227px; }
       .home .hero .content {
         border: 2px solid #f2f2f2;
         padding: 30px 115px 30px 115px;

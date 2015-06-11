@@ -20,10 +20,10 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
     text-align: center;
 
     @media screen and (max-width: $screen-sm-max) {
-      // phones and tablets
+      // phones and tablets below 991px
 
       
-      background: url('../content/images/skyline.jpg'); 
+      background: url('../content/images/home-phone.jpg'); 
       background-size: cover;
       height: 640px;
       position: relative;
@@ -52,12 +52,13 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
     }
 
     @media screen and (min-width: $screen-md-min) {
-      // laptops and desktop
+      // laptops and desktop over 992px
 
-      background: url('../content/images/skyline.jpg'); 
+      background: url('../content/images/home-desktop.jpg'); 
       background-size: cover;
       height: 640px;
       position: relative;
+      background-position-y: -227px;
 
       .content { 
         border: 2px solid #f2f2f2;
