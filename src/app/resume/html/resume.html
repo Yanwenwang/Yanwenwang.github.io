@@ -16,12 +16,11 @@
 			<div class="col-md-12">
 
 
-				<div class="main-skill-container" style="border: 1px solid black; margin: 20px; text-align: center;">
+				<div class="main-skill-container">
 					<h2 class="main-skill" ng-bind="group.groupName"></h2>
 
-					<div class="sub-skill-container" style="text-align: center;">
-						<div class="sub-skill" ng-repeat="skill in group.skills" ng-bind="skill.name"
-							style="display: inline-block; line-height: 100px; background: lime; width: 100px; height: 100px; margin: 25px;"></div>
+					<div class="sub-skill-container">
+						<div class="sub-skill" ng-repeat="skill in group.skills" ng-bind="skill.name"></div>
 					</div>
 
 				</div>

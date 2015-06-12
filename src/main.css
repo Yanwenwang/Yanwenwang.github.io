@@ -326,6 +326,23 @@ h3 {
 .resume .hero h1 {
   line-height: 320px; }
 
+.main-skill-container {
+  background: #f1f1f1;
+  margin: 60px;
+  padding: 32px;
+  text-align: center; }
+
+.sub-skill-container {
+  text-align: center; }
+
+.sub-skill {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  color: #777; }
+
 .circle {
   display: inline-block;
   border: 2px solid orange;
