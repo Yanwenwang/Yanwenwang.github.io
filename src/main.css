@@ -90,11 +90,11 @@ h3 {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
-      .home .hero .content h1 {
+      .home .hero .content h2 {
         margin: 0; }
       .home .hero .content h4 {
         margin-top: 32px; }
-      .home .hero .content h1,
+      .home .hero .content h2,
       .home .hero .content h4 {
         letter-spacing: .1em;
         color: #f2f2f2; }
@@ -124,11 +124,11 @@ h3 {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
-      .home .hero .content h1 {
+      .home .hero .content h2 {
         margin: 0; }
       .home .hero .content h4 {
         margin-top: 32px; }
-      .home .hero .content h1,
+      .home .hero .content h2,
       .home .hero .content h4 {
         letter-spacing: .1em;
         color: #f2f2f2; }
@@ -146,6 +146,115 @@ h3 {
       .home .hero .content .icon .fa-envelope-o {
         margin-left: 29px;
         color: #f2f2f2; } }
+
+@media screen and (max-width: 991px) {
+  .backgrounds {
+    background: blue;
+    height: 640px; }
+    .backgrounds .content-container {
+      height: 640px;
+      position: relative; }
+    .backgrounds .content-container .content {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); }
+      .backgrounds .content-container .content h3 {
+        margin-top: 0; }
+    .backgrounds .image-container {
+      height: 640px;
+      text-align: center;
+      position: relative; }
+    .backgrounds .image-container .image {
+      background: url("../content/images/home-background.jpg");
+      background-size: cover;
+      display: inline-block;
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .programmings {
+    background-color: #f6f6f6;
+    height: 640px; }
+    .programmings .content-container {
+      height: 640px;
+      position: relative; }
+    .programmings .content-container .content {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); }
+      .programmings .content-container .content h3 {
+        margin-top: 0; }
+    .programmings .image-container {
+      height: 640px;
+      position: relative; }
+    .programmings .image-container .image {
+      background: url("../content/images/home-programming.jpg");
+      background-size: cover;
+      background-position-y: -85px;
+      border-radius: 50%;
+      width: 350px;
+      height: 350px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%); } }
+
+@media screen and (min-width: 992px) {
+  .backgrounds {
+    background: pink;
+    height: 640px; }
+    .backgrounds .content-container {
+      height: 640px;
+      position: relative; }
+    .backgrounds .content-container .content {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); }
+      .backgrounds .content-container .content h3 {
+        margin-top: 0; }
+    .backgrounds .image-container {
+      height: 640px;
+      text-align: center;
+      position: relative; }
+    .backgrounds .image-container .image {
+      background: url("../content/images/home-background.jpg");
+      background-size: cover;
+      display: inline-block;
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .programmings {
+    background-color: #f6f6f6;
+    height: 640px; }
+    .programmings .content-container {
+      height: 640px;
+      position: relative; }
+    .programmings .content-container .content {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); }
+      .programmings .content-container .content h3 {
+        margin-top: 0; }
+    .programmings .image-container {
+      height: 640px;
+      position: relative; }
+    .programmings .image-container .image {
+      background: url("../content/images/home-programming.jpg");
+      background-size: cover;
+      border-radius: 50%;
+      width: 350px;
+      height: 350px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%); } }
 
 /*
 .home {
@@ -188,117 +297,6 @@ h3 {
     }
   }
 }*/
-@media screen and (max-width: 991px) {
-  .backgrounds {
-    background: blue;
-    height: 640px; }
-    .backgrounds .content-container {
-      height: 640px;
-      position: relative; }
-    .backgrounds .content-container .content {
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%); }
-      .backgrounds .content-container .content h3 {
-        margin-top: 0; }
-    .backgrounds .image-container {
-      height: 640px;
-      text-align: center;
-      position: relative; }
-    .backgrounds .image-container .image {
-      background: url("../content/images/profile.jpg");
-      background-size: cover;
-      display: inline-block;
-      background-position-y: -5px;
-      height: 350px;
-      width: 350px;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-  .programmings {
-    background-color: #f6f6f6;
-    height: 640px; }
-    .programmings .content-container {
-      height: 640px;
-      position: relative; }
-    .programmings .content-container .content {
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%); }
-      .programmings .content-container .content h3 {
-        margin-top: 0; }
-    .programmings .image-container {
-      height: 640px;
-      position: relative; }
-    .programmings .image-container .image {
-      background: url("../content/images/desk.jpg");
-      background-size: cover;
-      background-position-y: -85px;
-      border-radius: 50%;
-      width: 350px;
-      height: 350px;
-      top: 50%;
-      left: 50%;
-      position: absolute;
-      transform: translate(-50%, -50%); } }
-
-@media screen and (min-width: 992px) {
-  .backgrounds {
-    background: pink;
-    height: 640px; }
-    .backgrounds .content-container {
-      height: 640px;
-      position: relative; }
-    .backgrounds .content-container .content {
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%); }
-      .backgrounds .content-container .content h3 {
-        margin-top: 0; }
-    .backgrounds .image-container {
-      height: 640px;
-      text-align: center;
-      position: relative; }
-    .backgrounds .image-container .image {
-      background: url("../content/images/profile.jpg");
-      background-size: cover;
-      display: inline-block;
-      background-position-y: -5px;
-      height: 350px;
-      width: 350px;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-  .programmings {
-    background-color: #f6f6f6;
-    height: 640px; }
-    .programmings .content-container {
-      height: 640px;
-      position: relative; }
-    .programmings .content-container .content {
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%); }
-      .programmings .content-container .content h3 {
-        margin-top: 0; }
-    .programmings .image-container {
-      height: 640px;
-      position: relative; }
-    .programmings .image-container .image {
-      background: url("../content/images/desk.jpg");
-      background-size: cover;
-      background-position-y: -85px;
-      border-radius: 50%;
-      width: 350px;
-      height: 350px;
-      top: 50%;
-      left: 50%;
-      position: absolute;
-      transform: translate(-50%, -50%); } }
 
 .projects h1 {
   font-family: OpenSans-Bold;
