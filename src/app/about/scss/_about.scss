@@ -1,11 +1,17 @@
 .about {
-	h1 { font-family: OpenSans-Bold; margin: 0; }
-	.hero { height: 320px;
+	h1 { 
+		font-family: OpenSans-Bold; 
+		margin: 0; 
+	}
+	.hero { 
+		height: 320px;
 		background: url('../content/images/coffee.jpg');
 		background-size: cover;	
 		background-position-y: 723px;
 	}
-	.hero h1 { line-height: 320px; }
+	.hero h1 { 
+		line-height: 320px; 
+	}
 }
 
 .background, 
