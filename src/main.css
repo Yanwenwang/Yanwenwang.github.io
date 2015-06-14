@@ -7815,77 +7815,72 @@ html, body {
 html {
   overflow-y: scroll; }
 
-/* line 2, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
-h1 {
-  font-family: OpenSans-Bold;
-  font-size: 48px; }
-
-/* line 3, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
-p {
-  font-family: OpenSans-Regular; }
+/* line 8, /Users/David/Desktop/git/resume/src/app/shared/scss/_global.scss */
+* {
+  font-family: 'Roboto', sans-serif; }
 
 @media screen and (min-width: 1200px) {
-  /* line 7, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 4, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h1 {
     font-size: 48px;
     line-height: 52px; }
-  /* line 8, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 5, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h2 {
     font-size: 36px;
     line-height: 40px; }
-  /* line 9, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 6, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h3 {
     font-size: 28px;
     line-height: 32px; }
-  /* line 10, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 7, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h4 {
     font-size: 18px;
     line-height: 24px; }
-  /* line 11, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 8, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   .body1 {
     font-size: 16px;
     line-height: 22px; } }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 16, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 13, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h1 {
     font-size: 40px;
     line-height: 44px; }
-  /* line 17, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 14, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h2 {
     font-size: 32px;
     line-height: 36px; }
-  /* line 18, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 15, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h3 {
     font-size: 24px;
     line-height: 28px; }
-  /* line 19, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 16, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h4 {
     font-size: 18px;
     line-height: 22px; }
-  /* line 20, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 17, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   .body1 {
     font-size: 16px;
     line-height: 22px; } }
 
 @media screen and (max-width: 768px) {
-  /* line 25, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 22, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h1 {
     font-size: 32px;
     line-height: 36px; }
-  /* line 26, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 23, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h2 {
     font-size: 26px;
     line-height: 30px; }
-  /* line 27, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 24, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h3 {
     font-size: 22px;
     line-height: 26px; }
-  /* line 28, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 25, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   h4 {
     font-size: 18px;
     line-height: 22px; }
-  /* line 29, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
+  /* line 26, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
   .body1 {
     font-size: 16px;
     line-height: 20px; } }
