@@ -1,8 +1,11 @@
-.vcenter { float: none; display: inline-block; vertical-align: middle; }
 
 html {
-
     overflow-y: scroll;
+}
+
+hr { 
+	height: 0;
+	border-top: 1px solid $divider;
 }
 
 * {

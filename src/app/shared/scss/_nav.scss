@@ -1,7 +1,13 @@
-//.navbar { height: 45px; text-align: left; position: fixed; z-index: 1; top: 0; width: 100% }
-.navbar a { color: #CCCCCC; cursor: pointer; text-decoration: none; text-transform: uppercase; 
+.navbar { background: $primary; }
+
+.navbar .navbar-nav > li > a { color: $text; }
+.navbar .navbar-nav > li > a:hover { color: $accent-hover; }
+.navbar .navbar-nav > li > a.active { color: $accent-hover; }
+
+.navbar a { color: $text; cursor: pointer; text-decoration: none; text-transform: uppercase; 
 	transition: .5s all; }
-.navbar a:hover { color: #ecf0f1; }
-.navbar a.active { color: white; }
-.navbar-brand { display: inline-block; font-size: 1.5em; letter-spacing: .1em; }
+
+.navbar-default .navbar-brand { color: $text; display: inline-block; font-size: 1.5em; letter-spacing: .1em; }
+.navbar-default .navbar-brand:hover { color: $accent-hover; }
+.navbar-default .navbar-brand.active { color: $accent-hover; }
 
