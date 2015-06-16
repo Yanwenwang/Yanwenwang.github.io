@@ -1,16 +1,12 @@
-.footer { background: $primary; padding-top: 20px; }
-.footer a { display: block; color: $text; line-height: 30px; cursor: pointer; text-decoration: none; }
-.footer a:hover { color: $accent-hover; text-decoration: none; }
+.footer { background: $primary;}
 .footer p { padding-top: .6em; margin-top: 10px; display: block; color: $text-secondary; line-height: 30px; border-top: 1px solid $divider; }
 
-* { margin: 0; }
-html, body { height: 100%; }
 .wrapper {
 	min-height: 100%;
 	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
 	height: 100%;
-	margin: 0 auto -220px; /* the bottom margin is the negative value of the footer's height */
+	margin: 0 auto -75px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer, .push {
-	height: 220px; /* .push must be the same height as .footer */
+	height: 75px; /* .push must be the same height as .footer */
 }

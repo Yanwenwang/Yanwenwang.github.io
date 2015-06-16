@@ -3,11 +3,18 @@ html {
     overflow-y: scroll;
 }
 
+html, 
+body { 
+	height: 100%; 
+	background: $primary;
+}
+
 hr { 
 	height: 0;
 	border-top: 1px solid $divider;
 }
 
-* {
+* {	
 	font-family: 'Roboto', sans-serif;
+	margin: 0; 
 }

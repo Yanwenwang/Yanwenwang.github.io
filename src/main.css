@@ -7587,23 +7587,9 @@ h3 {
 
 /* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
 .footer {
-  background: #F5F5F5;
-  padding-top: 20px; }
+  background: #F5F5F5; }
 
 /* line 2, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
-.footer a {
-  display: block;
-  color: #6991AC;
-  line-height: 30px;
-  cursor: pointer;
-  text-decoration: none; }
-
-/* line 3, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
-.footer a:hover {
-  color: #D85339;
-  text-decoration: none; }
-
-/* line 4, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
 .footer p {
   padding-top: .6em;
   margin-top: 10px;
@@ -7612,40 +7598,39 @@ h3 {
   line-height: 30px;
   border-top: 1px solid #d2d2d2; }
 
-/* line 6, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
-* {
-  margin: 0; }
-
-/* line 7, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
-html, body {
-  height: 100%; }
-
-/* line 8, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
+/* line 4, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
   /* This line and the next line are not necessary unless you need IE6 support */
   height: 100%;
-  margin: 0 auto -220px;
+  margin: 0 auto -75px;
   /* the bottom margin is the negative value of the footer's height */ }
 
-/* line 14, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
+/* line 10, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
 .footer, .push {
-  height: 220px;
+  height: 75px;
   /* .push must be the same height as .footer */ }
 
 /* line 2, /Users/David/Desktop/git/resume/src/app/shared/scss/_global.scss */
 html {
   overflow-y: scroll; }
 
-/* line 6, /Users/David/Desktop/git/resume/src/app/shared/scss/_global.scss */
+/* line 7, /Users/David/Desktop/git/resume/src/app/shared/scss/_global.scss */
+html,
+body {
+  height: 100%;
+  background: #F5F5F5; }
+
+/* line 12, /Users/David/Desktop/git/resume/src/app/shared/scss/_global.scss */
 hr {
   height: 0;
   border-top: 1px solid #d2d2d2; }
 
-/* line 11, /Users/David/Desktop/git/resume/src/app/shared/scss/_global.scss */
+/* line 17, /Users/David/Desktop/git/resume/src/app/shared/scss/_global.scss */
 * {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
 
 @media screen and (min-width: 1200px) {
   /* line 4, /Users/David/Desktop/git/resume/src/app/shared/scss/_headings.scss */
