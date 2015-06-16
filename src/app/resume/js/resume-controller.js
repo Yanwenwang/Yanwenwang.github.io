@@ -8,39 +8,37 @@
 		var vm = this;
 
 		vm.groups = [
-			{
-				groupName: 'HTML'
-			},
+			
 			{ 
-				groupName: 'CSS', 
+				groupName: 'HTML/CSS', 
 				skills: [ 
-					{ name: 'Sass' },
-					{ name: 'Box model' },
-					{ name: 'Transitions' },
-		 			{ name: 'Bootstrap' },
-		 			{ name: 'Animate.css' }
+					{ name: 'sass' },
+					{ name: 'box model' },
+					{ name: 'transitions' },
+		 			{ name: 'bootstrap' },
+		 			{ name: 'animate.css' }
 				]
 			},
 			{
 				groupName: 'JavaScript',
 				skills: [
 					{ name: 'IIFE' },
-					{ name: 'Closure' },
-					{ name: 'Hoisting' },
-					{ name: 'Scope' },
+					{ name: 'closure' },
+					{ name: 'hoisting' },
+					{ name: 'scope' },
 				 	{ name: 'JSON' },
-					{ name: 'Callbacks' },
-					{ name: 'Truthy/Falsy'}
+					{ name: 'callbacks' },
+					{ name: 'truthy/falsy'}
 				]
 			},
 			{
 				groupName: 'AngularJS',
 				skills: [
-					{ name: 'Directives' },
+					{ name: 'directives' },
 					{ name: 'controllers' },
 				 	{ name: 'controllerAs' },
-				 	{ name: 'Services' },
-				 	{ name: 'Routing' },
+				 	{ name: 'services' },
+				 	{ name: 'routing' },
 				 	{ name: 'ng-class' },
 				 	{ name: 'ng-bind' },
 				 	{ name: '$http' },
@@ -48,25 +46,22 @@
 				]
 			},
 			{
-				groupName: 'Git',
+				groupName: 'Tools',
 				skills: [
+				 	{ name: 'Sublime Text' },
+					{ name: 'Terminal' },
 					{ name: 'Github' },
 				    { name: 'SourceTree' }
 				]
 			},
 			{
-				groupName: 'Mac',
+				groupName: 'Automation',
 				skills: [
-					{ name: 'Terminal' },
 				 	{ name: 'npm' },
-				 	{ name: 'Bower' },
-				 	{ name: 'Jshint' }
-				]
-			},
-			{
-				groupName: 'IDEs',
-				skills: [
-					{ name: 'Sublime Text' }
+				 	{ name: 'bower' },
+				 	{ name: 'gulp' },
+				 	{ name: 'browsersync' },
+				 	{ name: 'jshint' }
 				]
 			},
 			{
