@@ -1,5 +1,5 @@
 .resume { 
-	h1 { font-family: OpenSans-Bold; margin: 0; }
+	h1 { color: $accent; margin: 0; }
 	.hero { height: 320px;
 		background: url('../content/images/book.jpg');
 		background-size: cover;	
@@ -9,22 +9,24 @@
 }
 
 .main-skill-container {
-	background: #f1f1f1;
-	margin: 60px; 
 	padding: 32px;
-	text-align: center;
+	text-align: left;
+}
+
+.main-skill {
+	color: $accent;
+	border-bottom: 10px solid $divider;
 }
 
 
 .sub-skill-container {
-	text-align: center;
+	text-align: left;
 }
 
 .sub-skill {
-	display: inline-block; 
+	display: block; 
 	font-size: 16px;
-	line-height: 100px; 
-	width: 100px; 
-	height: 100px;
-	color: #777;
+	line-height: 28px;
+	color: $text-secondary;
+	margin-bottom: 15px; 
 }

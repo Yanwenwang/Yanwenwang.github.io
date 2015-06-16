@@ -12,12 +12,11 @@
 
 <section class="skill">
 	<div class="container">
-		<div class="row" ng-repeat="group in resumeVM.groups">
-			<div class="col-md-12">
-
+		<div class="row">
+			<div class="col-md-4" ng-repeat="group in resumeVM.groups">
 
 				<div class="main-skill-container">
-					<h2 class="main-skill" ng-bind="group.groupName"></h2>
+					<h4 class="main-skill" ng-bind="group.groupName"></h4>
 
 					<div class="sub-skill-container">
 						<div class="sub-skill" ng-repeat="skill in group.skills" ng-bind="skill.name"></div>
