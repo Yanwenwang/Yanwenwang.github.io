@@ -12,35 +12,37 @@
 			{ 
 				groupName: 'HTML/CSS', 
 				skills: [ 
-					{ name: 'sass' },
-					{ name: 'box model' },
-					{ name: 'transitions' },
-		 			{ name: 'bootstrap' },
-		 			{ name: 'animate.css' }
+					{ name: 'Animate.css' },
+					{ name: 'Box model' },
+					{ name: 'Bootstrap' },
+					{ name: 'Sass' },
+					{ name: 'Transitions' }
+		 			
+		 			
 				]
 			},
 			{
 				groupName: 'JavaScript',
 				skills: [
+					{ name: 'Closure' },
+					{ name: 'Callbacks' },
+					{ name: 'Hoisting' },
 					{ name: 'IIFE' },
-					{ name: 'closure' },
-					{ name: 'hoisting' },
-					{ name: 'scope' },
-				 	{ name: 'JSON' },
-					{ name: 'callbacks' },
-					{ name: 'truthy/falsy'}
+					{ name: 'JSON' },
+					{ name: 'Scope' },
+					{ name: 'Truthy/Falsy'}
 				]
 			},
 			{
 				groupName: 'AngularJS',
 				skills: [
-					{ name: 'directives' },
-					{ name: 'controllers' },
-				 	{ name: 'controllerAs' },
-				 	{ name: 'services' },
-				 	{ name: 'routing' },
-				 	{ name: 'ng-class' },
+					{ name: 'Controllers' },
+				 	{ name: 'ControllerAs' },
+					{ name: 'Directives' },
+					{ name: 'ng-class' },
 				 	{ name: 'ng-bind' },
+				 	{ name: 'Routing' },
+				 	{ name: 'Services' },
 				 	{ name: '$http' },
 				 	{ name: '$location' }
 				]
@@ -48,24 +50,24 @@
 			{
 				groupName: 'Tools',
 				skills: [
-				 	{ name: 'Sublime Text' },
-					{ name: 'Terminal' },
 					{ name: 'Github' },
-				    { name: 'SourceTree' }
+				    { name: 'SourceTree' },
+				 	{ name: 'Sublime Text' },
+					{ name: 'Terminal' }
 				]
 			},
 			{
 				groupName: 'Automation',
 				skills: [
-				 	{ name: 'npm' },
-				 	{ name: 'bower' },
-				 	{ name: 'gulp' },
-				 	{ name: 'browsersync' },
-				 	{ name: 'jshint' }
+					{ name: 'Browsersync' },
+					{ name: 'Bower' },
+					{ name: 'Gulp' },
+				 	{ name: 'Npm' },
+				 	{ name: 'Jshint' }
 				]
 			},
 			{
-				groupName: 'Methodologies',
+				groupName: 'Methodology',
 				skills: [
 					{ name: 'Scrum' }
 				]
