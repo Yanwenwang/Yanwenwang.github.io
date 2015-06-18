@@ -1,5 +1,5 @@
-<section class="resume">
-	<div class="hero">
+<div class="resume">
+	<section class="hero">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -7,36 +7,35 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<section class="skill">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4" ng-repeat="group in resumeVM.groups" ng-class="group.class">
-				
-				<div class="image">
-					<img ng-src="{{group.image}}">
-				</div>
-				
-				<div class="main-skill-container">
-					<h4 class="main-skill" ng-bind="group.groupName"></h4>
+	<section class="skill">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4" ng-repeat="group in resumeVM.groups" ng-class="group.class">
+					<div class="image">
+						<img ng-src="{{group.image}}">
+					</div>
+					
+					<div class="main-skill-container">
+						<h4 class="main-skill" ng-bind="group.groupName"></h4>
 
-					<div class="sub-skill-container">
-						<div class="sub-skill" ng-repeat="skill in group.skills" ng-bind="skill.name"></div>
+						<div class="sub-skill-container" ng-class="{'divider': group.showDivider}">
+							<div class="sub-skill" ng-repeat="skill in group.skills" ng-bind="skill.name"></div>
+						</div>
+
 					</div>
 
+
+
+			<!-- 		<h2 class="mainSkill" ng-bind="group.groupName"></h2>
+					<div class="circle-container" ng-repeat="skill in group.skills">
+					<div>
+						<div class="circle" ng-bind="skill.name"></div>
+					</div>
+					</div> -->
 				</div>
-
-
-
-		<!-- 		<h2 class="mainSkill" ng-bind="group.groupName"></h2>
-				<div class="circle-container" ng-repeat="skill in group.skills">
-				<div>
-					<div class="circle" ng-bind="skill.name"></div>
-				</div>
-				</div> -->
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+</div>

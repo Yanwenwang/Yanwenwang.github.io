@@ -7524,42 +7524,71 @@ h3 {
   color: #D75C37;
   margin: 0; }
 
-/* line 3, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
-.resume .hero {
-  height: 320px;
-  background: url("../content/images/book.jpg");
-  background-size: cover;
-  background-position-y: 430px; }
+@media screen and (max-width: 991px) {
+  /* line 5, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .resume .hero {
+    background: grey;
+    height: 320px; }
+  /* line 6, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .resume .hero h1 {
+    text-align: center;
+    margin-top: 167.5px; } }
 
-/* line 8, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
-.resume .hero h1 {
-  line-height: 320px; }
+@media screen and (min-width: 992px) {
+  /* line 11, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .resume .hero h1 {
+    line-height: 320px; }
+  /* line 12, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .resume .hero {
+    height: 320px;
+    background: url("../content/images/book.jpg");
+    background-size: cover;
+    background-position-y: 430px; } }
 
-/* line 11, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
-.skill {
-  padding-top: 120px;
-  padding-bottom: 120px; }
-
-/* line 16, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
-.image {
-  text-align: center;
-  margin-bottom: 15px; }
-
-/* line 21, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+/* line 20, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
 .main-skill-container {
   text-align: center; }
 
-/* line 25, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
-.main-skill {
-  color: #D75C37;
-  border-bottom: 10px solid #d2d2d2;
-  display: inline-block; }
+@media screen and (max-width: 991px) {
+  /* line 31, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .sub-skill-container {
+    text-align: center;
+    padding-bottom: 35px; }
+  /* line 36, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .sub-skill-container.divider {
+    border-bottom: 1px solid #d2d2d2; }
+  /* line 40, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .image {
+    text-align: center;
+    margin-top: 46px;
+    margin-bottom: 15px; }
+  /* line 46, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .main-skill {
+    color: #D75C37;
+    border-bottom: 10px solid #d2d2d2;
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 35px; } }
 
-/* line 32, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
-.sub-skill-container {
-  text-align: center; }
+@media screen and (min-width: 992px) {
+  /* line 56, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .skill {
+    padding-top: 120px;
+    padding-bottom: 120px; }
+  /* line 60, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .sub-skill-container {
+    text-align: center; }
+  /* line 64, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .image {
+    text-align: center;
+    margin-bottom: 15px; }
+  /* line 69, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  .main-skill {
+    color: #D75C37;
+    border-bottom: 10px solid #d2d2d2;
+    display: inline-block; } }
 
-/* line 36, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+/* line 76, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
 .sub-skill {
   display: block;
   font-size: 16px;

@@ -12,6 +12,7 @@
 			{ 
 				groupName: 'HTML/CSS', 
 				class: 'html-css',
+				showDivider: true,
 				image:'../content/images/logo-html.png',
 				skills: [ 
 					{ name: 'Animate.css' },
@@ -26,6 +27,7 @@
 			{
 				groupName: 'JavaScript',
 				class: 'js',
+				showDivider: true,
 				image:'../content/images/logo-js.png',
 				skills: [
 					{ name: 'Closure' },
@@ -40,6 +42,7 @@
 			{
 				groupName: 'AngularJS',
 				class: 'angular',
+				showDivider: true,
 				image:'../content/images/logo-angular.png',
 				skills: [
 					{ name: 'Controllers' },
@@ -56,6 +59,7 @@
 			{
 				groupName: 'Tools',
 				class: 'tools',
+				showDivider: true,
 				image:'../content/images/logo-tools.png',
 				skills: [
 					{ name: 'Github' },
@@ -67,6 +71,7 @@
 			{
 				groupName: 'Automation',
 				class: 'automation',
+				showDivider: false,
 				image:'../content/images/logo-bower.png',
 				skills: [
 					{ name: 'Browsersync' },
