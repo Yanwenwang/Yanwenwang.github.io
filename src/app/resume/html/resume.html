@@ -13,8 +13,12 @@
 <section class="skill">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4" ng-repeat="group in resumeVM.groups">
-
+			<div class="col-md-4" ng-repeat="group in resumeVM.groups" ng-class="group.class">
+				
+				<div class="image">
+					<img ng-src="{{group.image}}">
+				</div>
+				
 				<div class="main-skill-container">
 					<h4 class="main-skill" ng-bind="group.groupName"></h4>
 

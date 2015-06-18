@@ -11,6 +11,8 @@
 			
 			{ 
 				groupName: 'HTML/CSS', 
+				class: 'html-css',
+				image:'../content/images/logo-html.png',
 				skills: [ 
 					{ name: 'Animate.css' },
 					{ name: 'Box model' },
@@ -23,6 +25,8 @@
 			},
 			{
 				groupName: 'JavaScript',
+				class: 'js',
+				image:'../content/images/logo-js.png',
 				skills: [
 					{ name: 'Closure' },
 					{ name: 'Callbacks' },
@@ -35,6 +39,8 @@
 			},
 			{
 				groupName: 'AngularJS',
+				class: 'angular',
+				image:'../content/images/logo-angular.png',
 				skills: [
 					{ name: 'Controllers' },
 				 	{ name: 'ControllerAs' },
@@ -49,6 +55,8 @@
 			},
 			{
 				groupName: 'Tools',
+				class: 'tools',
+				image:'../content/images/logo-tools.png',
 				skills: [
 					{ name: 'Github' },
 				    { name: 'SourceTree' },
@@ -58,18 +66,14 @@
 			},
 			{
 				groupName: 'Automation',
+				class: 'automation',
+				image:'../content/images/logo-bower.png',
 				skills: [
 					{ name: 'Browsersync' },
 					{ name: 'Bower' },
 					{ name: 'Gulp' },
 				 	{ name: 'Npm' },
 				 	{ name: 'Jshint' }
-				]
-			},
-			{
-				groupName: 'Methodology',
-				skills: [
-					{ name: 'Scrum' }
 				]
 			}
 		];
