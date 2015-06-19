@@ -1,4 +1,5 @@
 .home {
+
 	.hero {
 		text-align: center;
 		height: 640px;
@@ -46,7 +47,7 @@
 
 		.content-container .content {
 		    color: $text-secondary;
-		    h3 { margin-top: 0; color: $text; }
+		    h3 { margin-top: 0; color: $accent; }
 		}
 
 		.image-container {
@@ -61,11 +62,28 @@
 		    border-radius: 50%;
 		}
 
-		@media screen and (max-width: $screen-sm-max) {
+		@media screen and (max-width: $screen-sm-max) {}
+
+			.content-container {
+				margin-top: 76px;
+
+			}
+			.content-container .content {
+				text-align: center; 
+				line-height: 1.45;
+			    h3 { text-align: center; margin-bottom: 36px; }
+			}
+
+			.image-container {
+				margin-top: 66px;
+				margin-bottom: 76px;
+			}
 		
 			.image-container .image {
 			    height: 280px;
 			    width: 280px;
+			    margin-top: 0;
+			    margin-bottom: 0;
 			}
 
 
@@ -99,8 +117,6 @@
 			}
 
 		}
-	}
-			
 
 	.programmings {
 		
@@ -129,14 +145,31 @@
 		}
 
 		@media screen and (max-width: $screen-sm-max) {
+			
+			text-align: center; 
+			line-height: 1.45;
+		    
+		    h3 { text-align: center; margin-bottom: 36px; }
+
+		    .content-container {
+				margin-top: 76px;
+			}
+
+		   .image-container {
+				margin-top: 66px;
+				margin-bottom: 76px;
+			}
 
 			.image-container .image {
 			    height: 280px;
 			    width: 280px;
+			    margin-top: 0;
+			    margin-bottom: 0;
 			}
 		}
 
 		@media screen and (min-width: $screen-md-min) {
+
 			height: 620px; 
 
 			.content-container { 
@@ -165,3 +198,6 @@
 		}
 	}
 }
+			
+
+
