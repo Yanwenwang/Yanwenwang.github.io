@@ -7435,73 +7435,107 @@ h3 {
 
 /* line 39, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .backgrounds {
-  height: 620px;
   background: #F5F5F5; }
   /* line 43, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .backgrounds .content-container {
-    height: 620px;
     position: relative; }
-  /* line 49, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 47, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .backgrounds .content-container .content {
-    color: #81888D;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%); }
-    /* line 54, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    color: #81888D; }
+    /* line 49, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .backgrounds .content-container .content h3 {
       margin-top: 0;
       color: #6991AC; }
-  /* line 58, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 52, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .backgrounds .image-container {
-    height: 620px;
     text-align: center;
     position: relative; }
-  /* line 64, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 57, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .backgrounds .image-container .image {
     background: url("../content/images/home-background.jpg");
     background-size: cover;
     display: inline-block;
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    border-radius: 50%; }
+  @media screen and (max-width: 991px) {
+    /* line 66, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    .home .backgrounds .image-container .image {
+      height: 280px;
+      width: 280px; } }
+  @media screen and (min-width: 992px) {
+    /* line 39, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    .home .backgrounds {
+      height: 620px; }
+      /* line 78, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .backgrounds .content-container {
+        height: 620px; }
+      /* line 82, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .backgrounds .content-container .content {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%); }
+      /* line 88, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .backgrounds .image-container {
+        height: 620px; }
+      /* line 92, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .backgrounds .image-container .image {
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
 
-/* line 78, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+/* line 105, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .programmings {
-  height: 620px;
   background: #F5F5F5; }
-  /* line 82, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 109, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .programmings .content-container {
-    height: 620px;
     position: relative; }
-  /* line 86, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 113, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .programmings .content-container .content {
-    color: #81888D;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%); }
-    /* line 91, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    color: #81888D; }
+    /* line 116, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .programmings .content-container .content h3 {
       margin-top: 0;
       color: #6991AC; }
-  /* line 94, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 119, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .programmings .image-container {
-    height: 620px;
+    text-align: center;
     position: relative; }
-  /* line 99, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 124, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .programmings .image-container .image {
     background: url("../content/images/home-programming.jpg");
     background-size: cover;
-    border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%); }
+    display: inline-block;
+    border-radius: 50%; }
+  @media screen and (max-width: 991px) {
+    /* line 133, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    .home .programmings .image-container .image {
+      height: 280px;
+      width: 280px; } }
+  @media screen and (min-width: 992px) {
+    /* line 105, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    .home .programmings {
+      height: 620px; }
+      /* line 142, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .programmings .content-container {
+        height: 620px; }
+      /* line 146, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .programmings .content-container .content {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%); }
+      /* line 152, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .programmings .image-container {
+        height: 620px; }
+      /* line 156, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .programmings .image-container .image {
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
 
 /* line 2, /Users/David/Desktop/git/resume/src/app/projects/scss/_projects.scss */
 .projects h1 {

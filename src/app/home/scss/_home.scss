@@ -37,26 +37,19 @@
 	}
 
 	.backgrounds {
-		height: 620px; 
+		
 		background: $primary;
 
 		.content-container {
-		    height: 620px;
 		    position: relative;
 		}
 
-
 		.content-container .content {
 		    color: $text-secondary;
-		    position: absolute;
-		    top: 50%;
-		    transform: translate(0, -50%);
 		    h3 { margin-top: 0; color: $text; }
 		}
 
-
 		.image-container {
-		    height: 620px;
 		    text-align: center;
 		    position: relative; 
 		}
@@ -65,47 +58,110 @@
 		    background: url('../content/images/home-background.jpg');
 		    background-size: cover;
 		    display: inline-block;
-		    height: 350px;
-		    width: 350px;
 		    border-radius: 50%;
-		    position: absolute;
-		    top: 50%;
-		    left: 50%;
-		    transform: translate(-50%, -50%);
+		}
+
+		@media screen and (max-width: $screen-sm-max) {
+		
+			.image-container .image {
+			    height: 280px;
+			    width: 280px;
+			}
+
+
+		}
+
+		@media screen and (min-width: $screen-md-min) {
+
+			height: 620px; 
+			
+			.content-container {
+				height: 620px;
+			}
+			
+			.content-container .content {
+		    	position: absolute;
+			    top: 50%;
+			    transform: translate(0, -50%);
+			}
+
+			.image-container {
+			    height: 620px;
+			}
+
+			.image-container .image {
+			    height: 350px;
+			    width: 350px;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			}
+
 		}
 	}
+			
 
 	.programmings {
-    	height: 620px;
-    	background: $primary;
+		
+		background: $primary;
 
 		.content-container {
-			height: 620px;
 		    position: relative;
 		}
+
 		.content-container .content {
 		    color: $text-secondary;
-		    position: absolute;
-		    top: 50%;
-		    transform: translate(0, -50%);
+		  
 		    h3 { margin-top: 0; color: $text; }
-  		}
+		}
 
-	  	.image-container {
-		    height: 620px; 
-		    position: relative;
+		.image-container {
+		    text-align: center;
+		    position: relative; 
 		}
 
 		.image-container .image {
 		    background: url('../content/images/home-programming.jpg');
 		    background-size: cover;
+		    display: inline-block;
 		    border-radius: 50%;
-		    width: 350px;
-		    height: 350px;
-		    top: 50%;
-		    left: 50%;
-		    position: absolute;
-		    transform: translate(-50%, -50%);
+		}
+
+		@media screen and (max-width: $screen-sm-max) {
+
+			.image-container .image {
+			    height: 280px;
+			    width: 280px;
+			}
+		}
+
+		@media screen and (min-width: $screen-md-min) {
+			height: 620px; 
+
+			.content-container { 
+				height: 620px;
+			}
+			
+			.content-container .content {
+				position: absolute;
+			    top: 50%;
+			    transform: translate(0, -50%);
+			}
+
+			.image-container {
+			    height: 620px;
+			}
+
+			.image-container .image {
+			    height: 350px;
+			    width: 350px;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			}
+
 		}
 	}
 }
