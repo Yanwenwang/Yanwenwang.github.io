@@ -62,7 +62,7 @@
 		    border-radius: 50%;
 		}
 
-		@media screen and (max-width: $screen-sm-max) {}
+		@media screen and (max-width: $screen-sm-max) {
 
 			.content-container {
 				margin-top: 76px;
@@ -117,6 +117,7 @@
 			}
 
 		}
+	}
 
 	.programmings {
 		
