@@ -10,6 +10,11 @@
 		width: 100%;
 		position: relative;
 
+		.container {
+			height: 640px;
+			position: relative;
+		}
+
 	    .content { 
 	    	border: 2px solid #f2f2f2;
 	        padding: 30px 115px 30px 115px; 
