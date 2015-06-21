@@ -6,13 +6,8 @@
 
 	.hero {
 		text-align: center;
-		height: 640px;
 		width: 100%;
 		position: relative;
-
-		.container {
-			height: 640px;
-		}
 
 	    .content {
 	    	border: 2px solid #ffffff;
@@ -20,12 +15,10 @@
 	    }
 
 	    .content h2 { margin: 0; }
-	    .content h4 { margin-top: 32px; }
-
 	    .content h2, 
 	    .content h4 { letter-spacing: .1em; color: #ffffff; }
 
-	    .content .icon { position: relative; margin-top: 32px; display: inline-block; opacity: .8; }
+	    .content .icon { position: relative; display: inline-block; opacity: .8; }
 	    .content .icon .fa-linkedin-square { margin-left: 0; color: #ffffff; }
 	    .content .icon .fa-github-square { margin-left: 29px; color: #ffffff; }
 	    .content .icon .fa-envelope-o { margin-left: 29px; color: #ffffff; }
@@ -33,12 +26,46 @@
 		@media screen and (max-width: $screen-sm-max) {
 	      background: url('../content/images/home-phone.jpg'); 
 	      background-size: cover;
+	      background-position-y: 51px;
+	      .hero {
+	      	height: 320px;
+	      }
+
+	      .container {
+			height: 320px;
+		  }
+	      .content {
+	      	margin-top: 92.5px;
+	      	padding: 22px 66px;
+	      }
+
+	       .icon {
+	       	margin-top: 12px;
+	       }
+
+	       h2 {
+	       	font-size: 24px;
+	       }
+
+	       h4 {
+	       font-size: 16px; 
+	       	margin-top: 22px; 
+	       }
+
 	    }
 
 	    @media screen and (min-width: $screen-md-min) {
-	      background: url('../content/images/blurred.jpg'); 
+	      background: url('../content/images/home-hero.jpg'); 
 	      background-size: cover;
 	      background-position-y: -40px;
+	      
+	      .hero {
+	      	height: 640px;
+	      }
+
+	      .container {
+			height: 640px;
+		  }
 
 	      .overlay {
 	      	top: 0;
@@ -54,7 +81,16 @@
 	    	border: 2px solid #f2f2f2;
 	        padding: 36px 116px; 
 	      }
-	    }
+
+	      .icon {  
+	      	margin-top: 32px; 
+	      }
+
+	      h4 { 
+	      	margin-top: 32px; 
+	      }
+	    
+		}
 	}
 
 	.backgrounds {

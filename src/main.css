@@ -7386,42 +7386,34 @@ h3 {
 /* line 7, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .hero {
   text-align: center;
-  height: 640px;
   width: 100%;
   position: relative; }
-  /* line 13, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
-  .home .hero .container {
-    height: 640px; }
-  /* line 17, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 12, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .hero .content {
     border: 2px solid #ffffff;
     display: inline-block; }
-  /* line 22, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 17, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .hero .content h2 {
     margin: 0; }
-  /* line 23, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
-  .home .hero .content h4 {
-    margin-top: 32px; }
-  /* line 26, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 19, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .hero .content h2,
   .home .hero .content h4 {
     letter-spacing: .1em;
     color: #ffffff; }
-  /* line 28, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 21, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .hero .content .icon {
     position: relative;
-    margin-top: 32px;
     display: inline-block;
     opacity: .8; }
-  /* line 29, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 22, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .hero .content .icon .fa-linkedin-square {
     margin-left: 0;
     color: #ffffff; }
-  /* line 30, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 23, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .hero .content .icon .fa-github-square {
     margin-left: 29px;
     color: #ffffff; }
-  /* line 31, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 24, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .hero .content .icon .fa-envelope-o {
     margin-left: 29px;
     color: #ffffff; }
@@ -7429,14 +7421,41 @@ h3 {
     /* line 7, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .hero {
       background: url("../content/images/home-phone.jpg");
-      background-size: cover; } }
+      background-size: cover;
+      background-position-y: 51px; }
+      /* line 30, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .hero .hero {
+        height: 320px; }
+      /* line 34, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .hero .container {
+        height: 320px; }
+      /* line 37, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .hero .content {
+        margin-top: 92.5px;
+        padding: 22px 66px; }
+      /* line 42, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .hero .icon {
+        margin-top: 12px; }
+      /* line 46, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .hero h2 {
+        font-size: 24px; }
+      /* line 50, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .hero h4 {
+        font-size: 16px;
+        margin-top: 22px; } }
   @media screen and (min-width: 992px) {
     /* line 7, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .hero {
-      background: url("../content/images/blurred.jpg");
+      background: url("../content/images/home-hero.jpg");
       background-size: cover;
       background-position-y: -40px; }
-      /* line 43, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 62, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .hero .hero {
+        height: 640px; }
+      /* line 66, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .hero .container {
+        height: 640px; }
+      /* line 70, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .hero .overlay {
         top: 0;
         left: 0;
@@ -7444,73 +7463,79 @@ h3 {
         width: 100%;
         position: absolute;
         background-color: rgba(0, 0, 0, 0.5); }
-      /* line 52, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 79, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .hero .content {
         margin-top: 223.5px;
         border: 2px solid #f2f2f2;
-        padding: 36px 116px; } }
+        padding: 36px 116px; }
+      /* line 85, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .hero .icon {
+        margin-top: 32px; }
+      /* line 89, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .hero h4 {
+        margin-top: 32px; } }
 
-/* line 60, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+/* line 96, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .backgrounds {
   background: #F5F5F5; }
-  /* line 64, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 100, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .backgrounds .content-container {
     position: relative; }
-  /* line 68, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 104, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .backgrounds .content-container .content {
     color: #81888D; }
-    /* line 70, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    /* line 106, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .backgrounds .content-container .content h3 {
       margin-top: 0;
       color: #D75C37; }
-  /* line 73, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 109, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .backgrounds .image-container {
     text-align: center;
     position: relative; }
-  /* line 78, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 114, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .backgrounds .image-container .image {
     background: url("../content/images/home-background.jpg");
     background-size: cover;
     display: inline-block;
     border-radius: 50%; }
   @media screen and (max-width: 991px) {
-    /* line 87, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    /* line 123, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .backgrounds .content-container {
       margin-top: 76px; }
-    /* line 91, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    /* line 127, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .backgrounds .content-container .content {
       text-align: center;
       line-height: 1.45; }
-      /* line 94, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 130, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .backgrounds .content-container .content h3 {
         text-align: center;
         margin-bottom: 36px; }
-    /* line 97, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    /* line 133, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .backgrounds .image-container {
       margin-top: 66px;
       margin-bottom: 76px; }
-    /* line 102, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    /* line 138, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .backgrounds .image-container .image {
       height: 280px;
       width: 280px;
       margin-top: 0;
       margin-bottom: 0; } }
   @media screen and (min-width: 992px) {
-    /* line 60, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    /* line 96, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .backgrounds {
       height: 620px; }
-      /* line 116, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 152, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .backgrounds .content-container {
         height: 620px; }
-      /* line 120, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 156, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .backgrounds .content-container .content {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%); }
-      /* line 126, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 162, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .backgrounds .image-container {
         height: 620px; }
-      /* line 130, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 166, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .backgrounds .image-container .image {
         height: 350px;
         width: 350px;
@@ -7519,67 +7544,67 @@ h3 {
         left: 50%;
         transform: translate(-50%, -50%); } }
 
-/* line 142, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+/* line 178, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .programmings {
   background: #F5F5F5; }
-  /* line 146, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 182, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .programmings .content-container {
     position: relative; }
-  /* line 150, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 186, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .programmings .content-container .content {
     color: #81888D; }
-    /* line 153, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    /* line 189, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .programmings .content-container .content h3 {
       margin-top: 0;
       color: #D75C37; }
-  /* line 156, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 192, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .programmings .image-container {
     text-align: center;
     position: relative; }
-  /* line 161, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+  /* line 197, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
   .home .programmings .image-container .image {
     background: url("../content/images/home-programming.jpg");
     background-size: cover;
     display: inline-block;
     border-radius: 50%; }
   @media screen and (max-width: 991px) {
-    /* line 142, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    /* line 178, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .programmings {
       text-align: center;
       line-height: 1.45; }
-      /* line 173, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 209, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .programmings h3 {
         text-align: center;
         margin-bottom: 36px; }
-      /* line 175, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 211, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .programmings .content-container {
         margin-top: 76px; }
-      /* line 179, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 215, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .programmings .image-container {
         margin-top: 66px;
         margin-bottom: 76px; }
-      /* line 184, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 220, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .programmings .image-container .image {
         height: 280px;
         width: 280px;
         margin-top: 0;
         margin-bottom: 0; } }
   @media screen and (min-width: 992px) {
-    /* line 142, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    /* line 178, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .programmings {
       height: 620px; }
-      /* line 196, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 232, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .programmings .content-container {
         height: 620px; }
-      /* line 200, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 236, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .programmings .content-container .content {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%); }
-      /* line 206, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 242, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .programmings .image-container {
         height: 620px; }
-      /* line 210, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 246, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .programmings .image-container .image {
         height: 350px;
         width: 350px;
