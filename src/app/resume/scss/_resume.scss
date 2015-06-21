@@ -1,86 +1,100 @@
 .resume { 
-	h1 { color: $accent; margin: 0; }
-	
-	@media screen and (max-width: $screen-sm-max) {
-		.hero { background: grey; height: 320px; }
-		.hero h1 { text-align: center; margin-top: 167.5px; }
+	.hero {
 
+		height: 320px;
+
+		.overlay {
+			background: rgba(0, 0, 0, .3);
+		}
+
+		h1 { 
+			color: #fff; 
+			margin: 0; 
+		}
+		
+		@media screen and (max-width: $screen-sm-max) {
+			background: url('../content/images/resume-phone.jpg');
+			background-size: cover;	
+			background-position-y: 43px;
+
+			.overlay {
+				height: 320px; 
+			}
+
+			h1 { 
+				text-align: center; 
+				margin-top: 167.5px; 
+			}
+
+		}
+
+		@media screen and (min-width: $screen-md-min) {
+			background: url('../content/images/resume-desktop.jpg');
+			background-size: cover;	
+			background-position-y: 43px;
+
+			h1 { 
+				line-height: 320px; 
+			}
+		}
 	}
 
-	@media screen and (min-width: $screen-md-min) {
-		.hero h1 { line-height: 320px; }
-	 	.hero { height: 320px;
-		background: url('../content/images/book.jpg');
-		background-size: cover;	
-		background-position-y: 430px;
+
+	.skill {
+
+		.main-skill-container {
+			text-align: center;
+		}	
+
+		.sub-skill-container {
+			text-align: center;
+		}
+
+		.sub-skill {
+			display: block; 
+			font-size: 16px;
+			line-height: 28px;
+			color: $text-secondary;
+			margin-bottom: 5px; 
+		}
+
+		.image {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		.main-skill {
+			color: $accent;
+			border-bottom: 10px solid $divider;
+			display: inline-block;
+		}
+
+		@media screen and (max-width: $screen-sm-max) {
+
+			.sub-skill-container {
+				padding-bottom: 50px;
+			}
+
+			.sub-skill-container.divider {
+				border-bottom: 1px solid $divider;
+			}
+
+			.image {
+				margin-top: 64px;
+			}
+
+			.main-skill {
+				margin-top: 32px;
+				margin-bottom: 32px;
+			}
+		}
+
+		@media screen and (min-width: $screen-md-min) {
+			
+			padding-top: 120px;
+			padding-bottom: 120px;
+
 		}
 	}
 }
 
-.main-skill-container {
-	text-align: center;
-}
-
-
-
-
-
-
-@media screen and (max-width: $screen-sm-max) {
-
-	.sub-skill-container {
-		text-align: center;
-		padding-bottom: 35px;
-	}
-
-	.sub-skill-container.divider {
-		border-bottom: 1px solid $divider;
-	}
-
-	.image {
-		text-align: center;
-		margin-top: 46px;
-		margin-bottom: 15px;
-	}
-
-	.main-skill {
-	color: $accent;
-	border-bottom: 10px solid $divider;
-	display: inline-block;
-	margin-top: 35px;
-	margin-bottom: 35px;
-}
-}
-
-@media screen and (min-width: $screen-md-min) {
-	.skill {
-		padding-top: 120px;
-		padding-bottom: 120px;
-	}
-	.sub-skill-container {
-	text-align: center;
-	}
-
-	.image {
-	text-align: center;
-	margin-bottom: 15px;
-	}
-
-	.main-skill {
-	color: $accent;
-	border-bottom: 10px solid $divider;
-	display: inline-block;
-	}
-}
-
-.sub-skill {
-	display: block; 
-	font-size: 16px;
-	line-height: 28px;
-	color: $text-secondary;
-	margin-bottom: 5px; 
-}
-
-.js .main-skill {
-	
-}
