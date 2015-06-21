@@ -58,6 +58,10 @@
 				margin-top: 22px; 
 			}
 
+			h2, h4 {
+				line-height: 22px;
+			}
+
 		}
 
 		@media screen and (min-width: $screen-md-min) {
@@ -115,19 +119,19 @@
 
 		@media screen and (max-width: $screen-sm-max) {
 
-			.content-container {
+			.content-container,
+			.image-container {
 				margin-top: 64px;
-
 			}
+
 			.content-container .content {
 				text-align: center; 
 				line-height: 1.45;
-				h3 { text-align: center; margin-bottom: 36px; }
+				h3 { text-align: center; margin-bottom: 26px; }
 			}
 
 			.image-container {
 				margin-top: 54px;
-				margin-bottom: 64px;
 			}
 
 			.image-container .image {
@@ -201,15 +205,15 @@
 			text-align: center; 
 			line-height: 1.45;
 
-			h3 { text-align: center; margin-bottom: 36px; }
+			h3 { text-align: center; margin-bottom: 26px; }
 
-			.content-container {
+			.content-container, 
+			.image-container {
 				margin-top: 64px;
 			}
 
 			.image-container {
 				margin-top: 54px;
-				margin-bottom: 64px;
 			}
 
 			.image-container .image {
