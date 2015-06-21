@@ -122,16 +122,14 @@
 			.content-container,
 			.image-container {
 				margin-top: 64px;
+				margin-bottom: 64px;
+				float: none;
 			}
 
 			.content-container .content {
 				text-align: center; 
 				line-height: 1.45;
 				h3 { text-align: center; margin-bottom: 26px; }
-			}
-
-			.image-container {
-				margin-top: 54px;
 			}
 
 			.image-container .image {
@@ -207,13 +205,11 @@
 
 			h3 { text-align: center; margin-bottom: 26px; }
 
-			.content-container, 
+			.content-container,
 			.image-container {
 				margin-top: 64px;
-			}
-
-			.image-container {
-				margin-top: 54px;
+				margin-bottom: 64px;
+				float: none;
 			}
 
 			.image-container .image {
