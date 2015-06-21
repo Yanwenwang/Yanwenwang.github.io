@@ -7494,7 +7494,7 @@ h3 {
   @media screen and (max-width: 991px) {
     /* line 118, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .backgrounds .content-container {
-      margin-top: 76px; }
+      margin-top: 64px; }
     /* line 122, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .backgrounds .content-container .content {
       text-align: center;
@@ -7505,8 +7505,8 @@ h3 {
         margin-bottom: 36px; }
     /* line 128, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .backgrounds .image-container {
-      margin-top: 66px;
-      margin-bottom: 76px; }
+      margin-top: 54px;
+      margin-bottom: 64px; }
     /* line 133, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
     .home .backgrounds .image-container .image {
       height: 280px;
@@ -7571,11 +7571,11 @@ h3 {
         margin-bottom: 36px; }
       /* line 206, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .programmings .content-container {
-        margin-top: 76px; }
+        margin-top: 64px; }
       /* line 210, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .programmings .image-container {
-        margin-top: 66px;
-        margin-bottom: 76px; }
+        margin-top: 54px;
+        margin-bottom: 64px; }
       /* line 215, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .programmings .image-container .image {
         height: 280px;
@@ -7735,10 +7735,9 @@ h3 {
 
 /* line 2, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
 .footer p {
-  padding-top: .6em;
   display: block;
   color: #81888D;
-  line-height: 30px;
+  line-height: 75px;
   border-top: 1px solid #d2d2d2; }
 
 /* line 4, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
