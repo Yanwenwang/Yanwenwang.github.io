@@ -12,13 +12,10 @@
 
 		.container {
 			height: 640px;
-			position: relative;
 		}
 
-	    .content { 
-	    	margin-top: 150px;
-	    	border: 2px solid #f2f2f2;
-	        padding: 30px 60px; 
+	    .content {
+	    	border: 2px solid #ffffff;
 	        display: inline-block;
 	    }
 
@@ -26,12 +23,12 @@
 	    .content h4 { margin-top: 32px; }
 
 	    .content h2, 
-	    .content h4 { letter-spacing: .1em; color: white; }
+	    .content h4 { letter-spacing: .1em; color: #ffffff; }
 
 	    .content .icon { position: relative; margin-top: 32px; display: inline-block; opacity: .8; }
-	    .content .icon .fa-linkedin-square { margin-left: 0; color: white; }
-	    .content .icon .fa-github-square { margin-left: 29px; color: white; }
-	    .content .icon .fa-envelope-o { margin-left: 29px; color: white; }
+	    .content .icon .fa-linkedin-square { margin-left: 0; color: #ffffff; }
+	    .content .icon .fa-github-square { margin-left: 29px; color: #ffffff; }
+	    .content .icon .fa-envelope-o { margin-left: 29px; color: #ffffff; }
 
 		@media screen and (max-width: $screen-sm-max) {
 	      background: url('../content/images/home-phone.jpg'); 
@@ -39,8 +36,23 @@
 	    }
 
 	    @media screen and (min-width: $screen-md-min) {
-	      background: url('../content/images/home-desktop.jpg'); 
+	      background: url('../content/images/home-hero.jpg'); 
 	      background-size: cover;
+
+	      .overlay {
+	      	top: 0;
+	      	left: 0;
+	      	height: 640px;
+	      	width: 100%;
+	      	position: absolute;
+	      	background-color: rgba(0, 0, 0, 0.3);
+	      }
+
+	      .content {
+	      	margin-top: 223.5px;
+	    	border: 2px solid #f2f2f2;
+	        padding: 36px 116px; 
+	      }
 	    }
 	}
 
