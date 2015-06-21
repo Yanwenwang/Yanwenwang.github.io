@@ -34,7 +34,7 @@
 
 
 		@media screen and (max-width: $screen-sm-max) {
-			background: url('../content/images/home-phone.jpg'); 
+			background: url('../content/images/home-hero-phone.jpg'); 
 			background-size: cover;
 			background-position-y: 51px;
 			height: 365px;
@@ -64,7 +64,7 @@
 		}
 
 		@media screen and (min-width: $screen-md-min) {
-			background: url('../content/images/home-hero.jpg'); 
+			background: url('../content/images/home-hero-desktop.jpg'); 
 			background-size: cover;
 			background-position-y: -40px;
 
