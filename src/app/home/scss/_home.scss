@@ -36,8 +36,9 @@
 	    }
 
 	    @media screen and (min-width: $screen-md-min) {
-	      background: url('../content/images/home-hero.jpg'); 
+	      background: url('../content/images/blurred.jpg'); 
 	      background-size: cover;
+	      background-position-y: -40px;
 
 	      .overlay {
 	      	top: 0;
@@ -45,7 +46,7 @@
 	      	height: 640px;
 	      	width: 100%;
 	      	position: absolute;
-	      	background-color: rgba(0, 0, 0, 0.3);
+	      	background-color: rgba(0, 0, 0, 0.5);
 	      }
 
 	      .content {
