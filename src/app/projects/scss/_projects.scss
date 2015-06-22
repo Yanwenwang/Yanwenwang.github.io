@@ -1,10 +1,41 @@
 .projects { 
-	h1 { font-family: OpenSans-Bold; margin: 0; }
-	.hero { height: 320px;
-		background: url('../content/images/code.jpg');
-		background-size: cover;	
-		background-position-y: 729px;
+	.hero { 
+
+		height: 320px;
+
+		.overlay {
+			background: rgba(0, 0, 0, .5);
+		}
+		
+		h1 { 
+			margin: 0;
+			color: #fff;
+		}
+
+		@media screen and (max-width: $screen-sm-max) { 
+			background: url('../content/images/projects-phone.jpg');
+			background-size: cover;	
+			
+			.overlay {
+				height: 320px;
+			}
+
+			h1 {
+				text-align: center;
+				margin-top: 167.5px;
+			}
+
+		}
+
+		@media screen and (min-width: $screen-md-min) {
+			background: url('../content/images/projects-desktop.jpg');
+			background-size: cover;	
+
+			h1 { 
+				line-height: 320px; 
+			}
+		}
 	}
-	.hero h1 { line-height: 320px; }
+	
 }
 
