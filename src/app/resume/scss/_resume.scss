@@ -14,8 +14,7 @@
 		
 		@media screen and (max-width: $screen-sm-max) {
 			background: url('../content/images/resume-phone.jpg');
-			background-size: cover;	
-			background-position-y: 43px;
+			background-size: cover;
 
 			.overlay {
 				height: 320px; 
@@ -31,7 +30,6 @@
 		@media screen and (min-width: $screen-md-min) {
 			background: url('../content/images/resume-desktop.jpg');
 			background-size: cover;	
-			background-position-y: 43px;
 
 			h1 { 
 				line-height: 320px; 
@@ -93,6 +91,10 @@
 			
 			padding-top: 120px;
 			padding-bottom: 120px;
+
+			.main-skill {
+				margin-bottom: 16px;
+			}
 
 		}
 	}
