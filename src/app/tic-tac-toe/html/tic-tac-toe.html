@@ -3,7 +3,7 @@
 		<div class="container"> 
 			<div class="row">
 				<div class="col-md-12">
-					<h1>Welcome to my Tic-Tac-Toe game</h1>
+					<h2>Welcome to my Tic-Tac-Toe game</h2>
 				</div>
 			</div>
 		</div>
@@ -32,6 +32,7 @@
 					<td ng-bind="ticTacToeVM.board[8]" ng-click="ticTacToeVM.playTurn(8)"></td>
 				</tr>
 			</table>
+			<button name="button" ng-click="ticTacToeVM.restart()">Restart</button>
 		</div>
 	</section>
 </div>
