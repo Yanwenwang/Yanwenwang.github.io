@@ -7913,3 +7913,34 @@ hr {
 /* line 12, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
 .navbar-default .navbar-brand.active {
   color: #D85339; }
+
+/* line 2, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+.tic-tac-toe .hero {
+  height: 320px;
+  background: grey; }
+  /* line 7, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  .tic-tac-toe .hero h1 {
+    color: #fff;
+    line-height: 320px; }
+
+/* line 15, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+.tic-tac-toe .board table {
+  margin-top: 32px;
+  margin-bottom: 32px; }
+
+/* line 19, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+.tic-tac-toe .board td {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border: 1px solid black; }
+
+/* line 27, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+.tic-tac-toe .board .board-title,
+.tic-tac-toe .board .board-value {
+  display: inline-block;
+  margin-top: 64px; }
+
+/* line 31, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+.tic-tac-toe .board button {
+  margin-bottom: 64px; }
