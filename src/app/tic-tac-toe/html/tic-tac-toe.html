@@ -1,0 +1,41 @@
+<div class="tic-tac-toe">
+	<section class="hero">
+		<div class="container"> 
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Welcome to my Tic-Tac-Toe game</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="board">
+		<div class="container">
+			
+			<div class="board-title">Current Player:</div>
+		 	<div class="board-value" ng-bind="ticTacToeVM.currentPlayer"></div>
+
+			<table>
+				<tr>
+					<td ng-bind="ticTacToeVM.board[0]" ng-click="ticTacToeVM.playTurn(0)"></td>
+					<td ng-bind="ticTacToeVM.board[1]" ng-click="ticTacToeVM.playTurn(1)"></td>
+					<td ng-bind="ticTacToeVM.board[2]" ng-click="ticTacToeVM.playTurn(2)"></td>
+				</tr>
+				<tr>
+					<td ng-bind="ticTacToeVM.board[3]" ng-click="ticTacToeVM.playTurn(3)"></td>
+					<td ng-bind="ticTacToeVM.board[4]" ng-click="ticTacToeVM.playTurn(4)"></td>
+					<td ng-bind="ticTacToeVM.board[5]" ng-click="ticTacToeVM.playTurn(5)"></td>
+				</tr>
+				<tr>
+					<td ng-bind="ticTacToeVM.board[6]" ng-click="ticTacToeVM.playTurn(6)"></td>
+					<td ng-bind="ticTacToeVM.board[7]" ng-click="ticTacToeVM.playTurn(7)"></td>
+					<td ng-bind="ticTacToeVM.board[8]" ng-click="ticTacToeVM.playTurn(8)"></td>
+				</tr>
+			</table>
+		</div>
+	</section>
+</div>
+
+
+
+
