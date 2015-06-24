@@ -34,6 +34,11 @@
 				controller: 'contactController',
 				controllerAs: 'contactVM'
 			})
+			.when('/tic-tac-toe', {
+				templateUrl: './src/app/tic-tac-toe/html/tic-tac-toe.html',
+				controller: 'ticTacToeController',
+				controllerAs: 'ticTacToeVM'
+			})
 			.otherwise({redirectTo:'/'});
 
 	}
