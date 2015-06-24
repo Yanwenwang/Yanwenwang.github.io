@@ -29,7 +29,15 @@
 				vm.board[boardPosition] = 'X';
 				vm.currentPlayer = 'X';
 			}
-		}
+		};
+
+		vm.restart = function () {
+			vm.board = [
+				' ', ' ', ' ', 
+				' ', ' ', ' ', 
+				' ', ' ', ' '
+			];
+		};
 	}
 	
 }());
