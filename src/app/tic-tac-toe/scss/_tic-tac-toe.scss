@@ -2,11 +2,26 @@
 	.hero {
 
 		height: 320px;
-		background: grey;
+
+		.overlay {
+			background: rgba(0, 0, 0, .5);
+			height: 320px;
+		}
 		
-		h3 { 
+		h1 { 
 			color: #fff; 
 			line-height: 320px; 
+			margin: 0;
+		}
+
+		@media screen and (max-width: $screen-sm-max) { 
+			background: url('../content/images/tic-tac-toe-phone.jpg');
+			background-size: cover;	
+		}
+
+		@media screen and (min-width: $screen-md-min) {
+			background: url('../content/images/tic-tac-toe-desktop.jpg');
+			background-size: cover;	
 		}
 
 	}
@@ -32,4 +47,5 @@
 			margin-bottom: 64px;
 		}
 	}
+
 }
