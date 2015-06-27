@@ -23,12 +23,16 @@
 			}
 
 			if(vm.currentPlayer === 'X') {
-				vm.board[boardPosition] = 'O';
+				vm.board[boardPosition] = 'X';
+				vm.checkWinner(vm.currentPlayer);
 				vm.currentPlayer = 'O';
 			} else {
-				vm.board[boardPosition] = 'X';
+				vm.board[boardPosition] = 'O';
+				vm.checkWinner(vm.currentPlayer);
 				vm.currentPlayer = 'X';
 			}
+
+
 		};
 
 		vm.restart = function () {
@@ -38,6 +42,36 @@
 				' ', ' ', ' '
 			];
 		};
+
+		vm.checkWinner = function (currentPlayer) {
+
+			if (vm.board[0] === currentPlayer && vm.board[1] === currentPlayer && vm.board[2] === currentPlayer) {
+				alert('Congratulations! ' + currentPlayer + ' won!');
+			}
+			if (vm.board[3] === currentPlayer && vm.board[4] === currentPlayer && vm.board[5] === currentPlayer) {
+				alert('Congratulations! ' + currentPlayer + ' won!');
+			}
+			if (vm.board[6] === currentPlayer && vm.board[7] === currentPlayer && vm.board[8] === currentPlayer) {
+				alert('Congratulations! ' + currentPlayer + ' won!');
+			}
+			
+			if (vm.board[0] === currentPlayer && vm.board[3] === currentPlayer && vm.board[6] === currentPlayer) {
+				alert('Congratulations! ' + currentPlayer + ' won!');
+			}
+			if (vm.board[1] === currentPlayer && vm.board[4] === currentPlayer && vm.board[7] === currentPlayer) {
+				alert('Congratulations! ' + currentPlayer + ' won!');
+			}
+			if (vm.board[2] === currentPlayer && vm.board[5] === currentPlayer && vm.board[8] === currentPlayer) {
+				alert('Congratulations! ' + currentPlayer + ' won!');
+			}
+
+			if (vm.board[0] === currentPlayer && vm.board[4] === currentPlayer && vm.board[8] === currentPlayer) {
+				alert('Congratulations! ' + currentPlayer + ' won!');
+			}
+			if (vm.board[2] === currentPlayer && vm.board[4] === currentPlayer && vm.board[6] === currentPlayer) {
+				alert('Congratulations! ' + currentPlayer + ' won!');
+			}
+		}
 	}
 	
 }());
