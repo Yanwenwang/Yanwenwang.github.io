@@ -7380,12 +7380,12 @@ h3 {
   @media screen and (max-width: 991px) {
     /* line 4, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
     .contacts .hero {
-      background: url("../content/images/iphone21.jpg");
+      background: url("../content/images/contact-phone.jpg");
       background-size: cover; } }
   @media screen and (min-width: 992px) {
     /* line 4, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
     .contacts .hero {
-      background: url("../content/images/iphone23.jpg");
+      background: url("../content/images/contact-desktop.jpg");
       background-size: cover; } }
 
 /* line 3, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
@@ -7936,24 +7936,44 @@ hr {
       background: url("../content/images/tic-tac-toe-desktop.jpg");
       background-size: cover; } }
 
-/* line 30, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
-.tic-tac-toe .board table {
-  margin-top: 32px;
-  margin-bottom: 32px; }
+/* line 29, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+.tic-tac-toe .content {
+  margin-top: 64px;
+  text-align: center; }
+  /* line 34, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  .tic-tac-toe .content .board-value,
+  .tic-tac-toe .content .board-title {
+    display: inline-block; }
 
-/* line 34, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
-.tic-tac-toe .board td {
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  border: 1px solid black; }
-
-/* line 42, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
-.tic-tac-toe .board .board-title,
-.tic-tac-toe .board .board-value {
-  display: inline-block;
-  margin-top: 64px; }
-
-/* line 46, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
-.tic-tac-toe .board button {
-  margin-bottom: 64px; }
+/* line 39, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+.tic-tac-toe .board {
+  margin-top: 64px;
+  text-align: center; }
+  /* line 43, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  .tic-tac-toe .board .square-container {
+    height: 150px; }
+  /* line 47, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  .tic-tac-toe .board .square {
+    height: 150px;
+    width: 150px;
+    line-height: 150px;
+    text-align: center;
+    display: inline-block; }
+    /* line 54, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+    .tic-tac-toe .board .square:after {
+      content: '.';
+      visibility: hidden; }
+  /* line 60, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  .tic-tac-toe .board .right-bottom {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; }
+  /* line 65, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  .tic-tac-toe .board .bottom {
+    border-bottom: 1px solid black; }
+  /* line 69, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  .tic-tac-toe .board .right {
+    border-right: 1px solid black; }
+  /* line 73, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  .tic-tac-toe .board button {
+    margin-top: 64px;
+    margin-bottom: 64px; }

@@ -15,14 +15,13 @@
 		}
 
 		@media screen and (max-width: $screen-sm-max) { 
-			background: url('../content/images/iphone21.jpg');
+			background: url('../content/images/contact-phone.jpg');
 			background-size: cover;	
 		}
 
 		@media screen and (min-width: $screen-md-min) {
-			background: url('../content/images/iphone23.jpg');
+			background: url('../content/images/contact-desktop.jpg');
 			background-size: cover;	
-			background-position-y: 1427px;
 		}
 	}
 	
