@@ -7,45 +7,74 @@
 			background: rgba(0, 0, 0, .5);
 			height: 320px;
 		}
-		
-		h1 { 
-			color: #fff; 
-			line-height: 320px; 
+
+		h1 {
+			color: #fff;
+			line-height: 320px;
 			margin: 0;
 		}
 
-		@media screen and (max-width: $screen-sm-max) { 
+		@media screen and (max-width: $screen-sm-max) {
 			background: url('../content/images/tic-tac-toe-phone.jpg');
-			background-size: cover;	
+			background-size: cover;
 		}
 
 		@media screen and (min-width: $screen-md-min) {
 			background: url('../content/images/tic-tac-toe-desktop.jpg');
-			background-size: cover;	
+			background-size: cover;
 		}
 
+	}
+
+	.content {
+		margin-top: 64px;
+		text-align: center;
+		
+		.board-value,
+		.board-title {
+			display: inline-block;
+		}
 	}
 
 	.board {
-		table {
-			margin-top: 32px;
-			margin-bottom: 32px;
-		}
-		td {
-			width: 80px;
-			height: 80px;
-			text-align: center;
-			border: 1px solid black;
+		margin-top: 64px;
+		text-align: center;
+
+		.square-container {
+			height: 150px;
 		}
 
-		.board-title,
-		.board-value {
+		.square {
+			height: 150px;
+			width: 150px;
+			line-height: 150px;
+			text-align: center;
 			display: inline-block;
-			margin-top: 64px;
+
+			&:after {
+				content: '.';
+				visibility: hidden;
+			}
 		}
+
+		.right-bottom {
+			border-right: 1px solid black;
+			border-bottom: 1px solid black;
+		}
+
+		.bottom {
+			border-bottom: 1px solid black;
+		}
+
+		.right {
+			border-right: 1px solid black;
+		}
+
 		button {
+			margin-top: 64px;
 			margin-bottom: 64px;
 		}
 	}
+
 
 }
