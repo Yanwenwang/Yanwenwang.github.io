@@ -25,50 +25,41 @@
 	<section class="board">
 		 <div class= "container">
 		 	<div class="row">
-		 		<div class="col-md-12 square-container ">
-		 			<div class="square right-bottom" 
-		 				ng-bind="ticTacToeVM.board[0]" 
-		 				ng-click="ticTacToeVM.playTurn(0)">
+		 		<div class="col-md-12 square-container">
+		 			<div class="square right-bottom" ng-click="ticTacToeVM.playTurn(0)">
+		 				<p ng-bind="ticTacToeVM.board[0]"></p>
 		 			</div><!--
-		 			--><div class="square right-bottom" 
-			 			ng-bind="ticTacToeVM.board[1]" 
-			 			ng-click="ticTacToeVM.playTurn(1)">
+		 			--><div class="square right-bottom" ng-click="ticTacToeVM.playTurn(1)">
+			 			<p ng-bind="ticTacToeVM.board[1]"></p>
 			 		</div><!--
-		 			--><div class="square bottom" 
-		 				ng-bind="ticTacToeVM.board[2]" 
-		 				ng-click="ticTacToeVM.playTurn(2)">
+		 			--><div class="square bottom" ng-click="ticTacToeVM.playTurn(2)">
+		 				<p ng-bind="ticTacToeVM.board[2]"></p>
 		 			</div>
 		 		</div>
 		 	</div>
 		 	<div class="row">
-		 		<div class="col-md-12 square-container ">
-		 			<div class="square right-bottom" 
-			 			ng-bind="ticTacToeVM.board[3]" 
-			 			ng-click="ticTacToeVM.playTurn(3)">
+		 		<div class="col-md-12 square-container">
+		 			<div class="square right-bottom" ng-click="ticTacToeVM.playTurn(3)">
+			 			<p ng-bind="ticTacToeVM.board[3]"></p>
 			 		</div><!--
-		 			--><div class="square right-bottom" 
-			 			ng-bind="ticTacToeVM.board[4]" 
-			 			ng-click="ticTacToeVM.playTurn(4)">
+		 			--><div class="square right-bottom" ng-click="ticTacToeVM.playTurn(4)">
+			 			<p ng-bind="ticTacToeVM.board[4]"></p>
 			 		</div><!--
-		 			--><div class="square bottom" 
-			 			ng-bind="ticTacToeVM.board[5]" 
-			 			ng-click="ticTacToeVM.playTurn(5)">
+		 			--><div class="square bottom" ng-click="ticTacToeVM.playTurn(5)">
+			 			<p ng-bind="ticTacToeVM.board[5]"></p>
 			 		</div>
 		 		</div>
 		 	</div>
 		 	<div class="row">
-		 		<div class="col-md-12 square-container ">
-		 			<div class="square right" 
-			 			ng-bind="ticTacToeVM.board[6]" 
-			 			ng-click="ticTacToeVM.playTurn(6)">
+		 		<div class="col-md-12 square-container">
+		 			<div class="square right" ng-click="ticTacToeVM.playTurn(6)">
+			 			<p ng-bind="ticTacToeVM.board[6]" ></p>
 			 		</div><!--
-		 			--><div class="square right" 
-			 			ng-bind="ticTacToeVM.board[7]" 
-			 			ng-click="ticTacToeVM.playTurn(7)">
+		 			--><div class="square right" ng-click="ticTacToeVM.playTurn(7)">
+			 			<p ng-bind="ticTacToeVM.board[7]" ></p>
 			 		</div><!--
-		 			--><div class="square" 
-			 			ng-bind="ticTacToeVM.board[8]" 
-			 			ng-click="ticTacToeVM.playTurn(8)">
+		 			--><div class="square" ng-click="ticTacToeVM.playTurn(8)">
+			 			<p ng-bind="ticTacToeVM.board[8]"></p>
 			 		</div>
 		 		</div>
 		 	</div>

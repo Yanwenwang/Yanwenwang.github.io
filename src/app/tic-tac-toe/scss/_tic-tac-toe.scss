@@ -47,14 +47,17 @@
 		.square {
 			height: 150px;
 			width: 150px;
-			line-height: 150px;
 			text-align: center;
 			display: inline-block;
+			position: relative;
+		}
 
-			&:after {
-				content: '.';
-				visibility: hidden;
-			}
+		p {	
+			font-size: 5em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 
 		.right-bottom {
