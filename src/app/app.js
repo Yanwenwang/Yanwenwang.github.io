@@ -2,7 +2,8 @@
 	
 	angular
 		.module('ywPortal', [
-			'ngRoute'
+			'ngRoute',
+			'ui.bootstrap'
 		]);
 
 }());
