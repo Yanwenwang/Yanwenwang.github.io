@@ -7875,43 +7875,50 @@ hr {
 
 /* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
 .navbar {
-  background: #F5F5F5; }
-
-/* line 3, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.navbar .navbar-nav > li > a {
-  font-size: 16px;
-  color: #6991AC; }
-
-/* line 4, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.navbar .navbar-nav > li > a:hover {
-  color: #D85339; }
-
-/* line 5, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.navbar .navbar-nav > li > a.active {
-  color: #D85339; }
-
-/* line 7, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.navbar a {
-  color: #6991AC;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: .5s all; }
-
-/* line 10, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.navbar-default .navbar-brand {
-  color: #6991AC;
-  display: inline-block;
-  font-size: 1.5em;
-  letter-spacing: .1em; }
-
-/* line 11, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.navbar-default .navbar-brand:hover {
-  color: #D85339; }
-
-/* line 12, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.navbar-default .navbar-brand.active {
-  color: #D85339; }
+  background: #F5F5F5;
+  margin-bottom: 0px; }
+  /* line 4, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .navbar .nav-brand {
+    float: left; }
+  /* line 5, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .navbar .nav-brand-logo {
+    line-height: 51px;
+    font-size: 28px;
+    letter-spacing: 2px;
+    transition: .5s ease-in;
+    transform: translate(0, -50%);
+    text-decoration: none; }
+  /* line 7, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .navbar .nav-brand-logo:hover {
+    color: #D85339; }
+  /* line 8, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .navbar .nav-brand-logo.active {
+    color: #D85339; }
+  /* line 10, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .navbar ul {
+    margin: 0;
+    padding: 0; }
+  /* line 12, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .navbar ul li {
+    list-style: none; }
+  /* line 14, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .navbar ul li > a {
+    color: #6991AC;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 16px;
+    margin-left: 32px;
+    line-height: 51px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s all; }
+  /* line 18, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .navbar ul li > a:hover {
+    color: #D85339; }
+  /* line 20, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .navbar ul li > a.active {
+    color: #D85339; }
 
 /* line 2, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
 .tic-tac-toe .hero {

@@ -1,13 +1,22 @@
-.navbar { background: $primary; }
+.navbar {
+	background: $primary;	margin-bottom: 0px;
 
-.navbar .navbar-nav > li > a { font-size: 16px; color: $text; }
-.navbar .navbar-nav > li > a:hover { color: $accent-hover; }
-.navbar .navbar-nav > li > a.active { color: $accent-hover; }
+  .nav-brand { float: left; }
+	.nav-brand-logo { line-height: 51px; font-size: 28px; letter-spacing: 2px; transition: .5s ease-in;
+										transform: translate(0, -50%); text-decoration: none; }
+  .nav-brand-logo:hover { color: $accent-hover; }
+	.nav-brand-logo.active { color: $accent-hover; }
 
-.navbar a { color: $text; cursor: pointer; text-decoration: none; text-transform: uppercase; 
-	transition: .5s all; }
+	ul { margin: 0; padding: 0; }
 
-.navbar-default .navbar-brand { color: $text; display: inline-block; font-size: 1.5em; letter-spacing: .1em; }
-.navbar-default .navbar-brand:hover { color: $accent-hover; }
-.navbar-default .navbar-brand.active { color: $accent-hover; }
+	ul li { list-style: none; }
 
+	ul li > a { color: $text; cursor: pointer; display: block; float: right; font-size: 16px; margin-left: 32px;
+							line-height: 51px; text-decoration: none; text-transform: uppercase; transition: .5s all;
+				}
+
+	ul li > a:hover { color: $accent-hover; }
+
+	ul li > a.active { color: $accent-hover; }
+
+ }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html ng-app="ywPortal">
-	
+
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -10,40 +10,28 @@
 
 	<body>
 		<div class="wrapper">
-	    	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="navController as navVM">
+	    	<div class="navbar" ng-controller="navController as navVM">
 				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a ng-class="navVM.getClass('/')" class="navbar-brand" href="#/">.YW</a>
+					<div class="nav-brand">
+							<a ng-class="navVM.getClass('/')" class="nav-brand-logo" href="#/">.YW</a>
 					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a></li>
-							<li class="dropdown">
-								<a class="dropdown-toggle" 
-									data-toggle="dropdown" 
-									role="button"
-									ng-class="navVM.getClass('/projects')" 
-									href="#/projects">projects<b class="caret"></b>
-								</a>
-
-								<ul class="dropdown-menu" role="menu">
-									<li class="dropdown-header">Projects</li>
-									<li><a href="#">Project 1</a></li>
-									<li><a href="#">Project 2</a></li>
-								</ul>
-							</li>
-							<li><a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a></li>
-							<li><a ng-class="navVM.getClass('/tic-tac-toe')" href="#/tic-tac-toe">tic-tac-toe</a></li>
-						</ul>
-					</div>
+					<ul>
+						<li>
+							<a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a>
+						</li>
+						<li>
+							<a ng-class="navVM.getClass('/tic-tac-toe')" href="#/tic-tac-toe">tic-tac-toe</a>
+						</li>
+						<li>
+							<a ng-class="navVM.getClass('/projects')" href="#/projects">projects</a>
+						</li>
+						<li>
+							<a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
+						</li>
+					</ul>
 				</div>
-			</nav>
+			</div>
+
 			<div ng-view></div>
 			<div class="push"></div>
 		</div>
@@ -81,4 +69,3 @@
 	</body>
 
 </html>
-
