@@ -4,7 +4,9 @@
 		.module('ywPortal')
 		.controller('ticTacToeController', ticTacToeController);
 
-	function ticTacToeController () {
+	ticTacToeController.$inject = ['$modal'];	
+
+	function ticTacToeController ($modal) {
 		var vm = this;
 
 		vm.board = [
@@ -18,8 +20,7 @@
 		vm.playTurn = function (boardPosition) {
 
 			if(vm.board[boardPosition] !== ' ') {
-				alert('You can\'t do this!');
-				return;
+				vm.open();
 			}
 
 			if(vm.currentPlayer === 'X') {
@@ -33,6 +34,18 @@
 			}
 
 
+		};
+
+		vm.animationsEnabled = true;
+
+		vm.open = function (size) {
+			var modalInstance = $modal.open({
+				animation: vm.animationsEnabled,
+				templateUrl: './src/app/tic-tac-toe/html/modals/illegal-move.html',
+				controller: 'modalInstanceController',
+				controllerAs: 'modalInstanceVM',
+				size: size
+			});
 		};
 
 		vm.restart = function () {
@@ -71,7 +84,7 @@
 			if (vm.board[2] === currentPlayer && vm.board[4] === currentPlayer && vm.board[6] === currentPlayer) {
 				alert('Congratulations! ' + currentPlayer + ' won!');
 			}
-		}
+		};
 	}
 	
 }());
