@@ -4,7 +4,7 @@
 		height: 320px;
 
 		.overlay {
-			background: rgba(0, 0, 0, .5);
+			background: rgba(0, 0, 0, .2);
 			height: 320px;
 		}
 
@@ -22,6 +22,11 @@
 		@media screen and (min-width: $screen-md-min) {
 			background: url('../content/images/tic-tac-toe-desktop.jpg');
 			background-size: cover;
+
+			h1 {
+				font-size: 80px;
+				text-shadow: 4px 3px 0px #313436, 9px 8px 0px rgba(0, 0, 0, 0.15);
+			}
 		}
 
 	}
@@ -29,7 +34,7 @@
 	.content {
 		margin-top: 64px;
 		text-align: center;
-		
+
 		.board-value,
 		.board-title {
 			display: inline-block;
@@ -52,7 +57,7 @@
 			position: relative;
 		}
 
-		p {	
+		p {
 			font-size: 5em;
 			position: absolute;
 			top: 50%;
@@ -61,16 +66,16 @@
 		}
 
 		.right-bottom {
-			border-right: 1px solid black;
-			border-bottom: 1px solid black;
+			border-right: 2px solid $primary-light;
+			border-bottom: 2px solid $primary-light;
 		}
 
 		.bottom {
-			border-bottom: 1px solid black;
+			border-bottom: 2px solid $primary-light;
 		}
 
 		.right {
-			border-right: 1px solid black;
+			border-right: 2px solid $primary-light;
 		}
 
 		button {
