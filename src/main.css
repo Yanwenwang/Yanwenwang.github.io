@@ -7376,7 +7376,7 @@ h3 {
     color: #fff; }
   /* line 13, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
   .contacts .hero .overlay {
-    background: rgba(0, 0, 0, 0.5); }
+    background: rgba(0, 0, 0, 0.2); }
   @media screen and (max-width: 991px) {
     /* line 4, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
     .contacts .hero {
@@ -7386,7 +7386,11 @@ h3 {
     /* line 4, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
     .contacts .hero {
       background: url("../content/images/contact-desktop.jpg");
-      background-size: cover; } }
+      background-size: cover; }
+      /* line 26, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+      .contacts .hero h1 {
+        font-size: 90px;
+        text-shadow: 4px 3px 0px #313436, 9px 8px 0px rgba(0, 0, 0, 0.15); } }
 
 /* line 3, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home section {
@@ -7621,7 +7625,7 @@ h3 {
   height: 320px; }
   /* line 6, /Users/David/Desktop/git/resume/src/app/projects/scss/_projects.scss */
   .projects .hero .overlay {
-    background: rgba(0, 0, 0, 0.5); }
+    background: rgba(0, 0, 0, 0.2); }
   /* line 10, /Users/David/Desktop/git/resume/src/app/projects/scss/_projects.scss */
   .projects .hero h1 {
     margin: 0;
@@ -7645,14 +7649,16 @@ h3 {
       background-size: cover; }
       /* line 34, /Users/David/Desktop/git/resume/src/app/projects/scss/_projects.scss */
       .projects .hero h1 {
-        line-height: 320px; } }
+        font-size: 90px;
+        line-height: 320px;
+        text-shadow: 4px 3px 0px #313436, 9px 8px 0px rgba(0, 0, 0, 0.15); } }
 
 /* line 2, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
 .resume .hero {
   height: 320px; }
   /* line 6, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
   .resume .hero .overlay {
-    background: rgba(0, 0, 0, 0.3); }
+    background: rgba(0, 0, 0, 0.2); }
   /* line 10, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
   .resume .hero h1 {
     color: #fff;
@@ -7676,17 +7682,19 @@ h3 {
       background-size: cover; }
       /* line 34, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
       .resume .hero h1 {
-        line-height: 320px; } }
+        font-size: 90px;
+        line-height: 320px;
+        text-shadow: 4px 3px 0px #313436, 9px 8px 0px rgba(0, 0, 0, 0.15); } }
 
-/* line 43, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+/* line 45, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
 .resume .skill .main-skill-container {
   text-align: center; }
 
-/* line 47, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+/* line 49, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
 .resume .skill .sub-skill-container {
   text-align: center; }
 
-/* line 51, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+/* line 53, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
 .resume .skill .sub-skill {
   display: block;
   font-size: 16px;
@@ -7694,38 +7702,38 @@ h3 {
   color: #81888D;
   margin-bottom: 5px; }
 
-/* line 59, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+/* line 61, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
 .resume .skill .image {
   text-align: center;
   margin-bottom: 15px; }
 
-/* line 64, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+/* line 66, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
 .resume .skill .main-skill {
   color: #D75C37;
   border-bottom: 10px solid #d2d2d2;
   display: inline-block; }
 
 @media screen and (max-width: 991px) {
-  /* line 72, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  /* line 74, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
   .resume .skill .sub-skill-container {
     padding-bottom: 50px; }
-  /* line 76, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  /* line 78, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
   .resume .skill .sub-skill-container.divider {
     border-bottom: 1px solid #d2d2d2; }
-  /* line 80, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  /* line 82, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
   .resume .skill .image {
     margin-top: 64px; }
-  /* line 84, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  /* line 86, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
   .resume .skill .main-skill {
     margin-top: 32px;
     margin-bottom: 32px; } }
 
 @media screen and (min-width: 992px) {
-  /* line 41, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+  /* line 43, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
   .resume .skill {
     padding-top: 120px;
     padding-bottom: 120px; }
-    /* line 95, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
+    /* line 97, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
     .resume .skill .main-skill {
       margin-bottom: 16px; } }
 
@@ -7875,7 +7883,6 @@ hr {
 
 /* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
 .navbar {
-  background: #F5F5F5;
   margin-bottom: 0px; }
   /* line 4, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar .nav-brand {
@@ -7886,7 +7893,6 @@ hr {
     font-size: 28px;
     letter-spacing: 2px;
     transition: .5s ease-in;
-    transform: translate(0, -50%);
     text-decoration: none; }
   /* line 7, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar .nav-brand-logo:hover {
@@ -7925,7 +7931,7 @@ hr {
   height: 320px; }
   /* line 6, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .hero .overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     height: 320px; }
   /* line 11, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .hero h1 {
@@ -7941,49 +7947,53 @@ hr {
     /* line 2, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
     .tic-tac-toe .hero {
       background: url("../content/images/tic-tac-toe-desktop.jpg");
-      background-size: cover; } }
+      background-size: cover; }
+      /* line 26, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+      .tic-tac-toe .hero h1 {
+        font-size: 80px;
+        text-shadow: 4px 3px 0px #313436, 9px 8px 0px rgba(0, 0, 0, 0.15); } }
 
-/* line 29, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+/* line 34, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
 .tic-tac-toe .content {
   margin-top: 64px;
   text-align: center; }
-  /* line 34, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 39, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .content .board-value,
   .tic-tac-toe .content .board-title {
     display: inline-block; }
 
-/* line 39, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+/* line 44, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
 .tic-tac-toe .board {
   margin-top: 64px;
   text-align: center; }
-  /* line 43, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 48, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .square-container {
     height: 150px; }
-  /* line 47, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 52, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .square {
     height: 150px;
     width: 150px;
     text-align: center;
     display: inline-block;
     position: relative; }
-  /* line 55, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 60, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board p {
     font-size: 5em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  /* line 63, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
-  .tic-tac-toe .board .right-bottom {
-    border-right: 1px solid black;
-    border-bottom: 1px solid black; }
   /* line 68, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  .tic-tac-toe .board .right-bottom {
+    border-right: 2px solid #FFBD88;
+    border-bottom: 2px solid #FFBD88; }
+  /* line 73, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .bottom {
-    border-bottom: 1px solid black; }
-  /* line 72, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+    border-bottom: 2px solid #FFBD88; }
+  /* line 77, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .right {
-    border-right: 1px solid black; }
-  /* line 76, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+    border-right: 2px solid #FFBD88; }
+  /* line 81, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board button {
     margin-top: 64px;
     margin-bottom: 64px; }
