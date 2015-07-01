@@ -1,45 +1,68 @@
 .contacts {
-	.hero {
+    .hero {
+        height: 320px;
+        margin-top: -55px;
 
-		height: 320px;
-		margin-top: -55px;
+        .overlay {
+            background: rgba(0, 0, 0, .2);
+            height: 320px;
+        }
 
-		.overlay {
-			background: rgba(0, 0, 0, .2);
-			height: 320px;
-		}
+        h1 {
+            color: $primary;
+            margin: 0;
+        }
 
-		h1 {
-			color: $primary;
-			margin: 0;
-		}
+        @media screen and (max-width: $screen-sm-max) {
+            background: url("../content/images/contact-phone.jpg");
+            background-size: cover;
 
-		@media screen and (max-width: $screen-sm-max) {
-			background: url('../content/images/contact-phone.jpg');
-			background-size: cover;
+            h1 {
+                text-align: center;
+                margin-top: 167.5px;
+            }
+        }
 
-			h1 {
-				text-align: center;
-				margin-top: 167.5px;
-			}
-		}
+        @media screen and (min-width: $screen-md-min) {
+            background: url("../content/images/contact-desktop.jpg");
+            background-size: cover;
 
-		@media screen and (min-width: $screen-md-min) {
-			background: url('../content/images/contact-desktop.jpg');
-			background-size: cover;
+            h1 {
+                font-size: 90px;
+                line-height: 320px;
+                padding-top: 70px;
+                text-shadow: 4px 3px 0 #313436, 9px 8px 0 rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
 
-			h1 {
-				font-size: 90px;
-				line-height: 320px;
-				padding-top: 70px;
-				text-shadow: 4px 3px 0px #313436, 9px 8px 0px rgba(0, 0, 0, 0.15);
-			}
-		}
-	}
+    .contacts-info {
+				position: relative;
+        text-align: center;
+				height: 320px;
 
-	.contacts-info {
-				.content { margin-top: 64px; }
-				.info { display: inline-block; }
-	}
+        .content {
+            position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+        }
+				.fa { margin-bottom: 12px; }
 
+        .info-display,
+        .info {
+            display: inline-block;
+						font-size: 16px;
+						color: $accent-hover;
+						margin-left: 24px;
+        }
+
+				.info a {
+					color: $accent;
+					text-decoration: none;
+				}
+				.info a:hover {
+					color: $accent;
+				}
+    }
 }
