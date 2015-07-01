@@ -9,13 +9,16 @@
 		var vm = this;
 
 		vm.getClass = function(path) {
-			
+
 		    if ($location.path() === path) {
 		      	return 'active';
 		    }
 
-		    return ''; 
+		    return '';
 		};
+
+		vm.collapsed = true;
+
 	}
 
 }());
