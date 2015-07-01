@@ -1,12 +1,12 @@
 (function () {
-	
+
 	angular
 		.module('ywPortal')
-		.controller('modalInstanceController', modalInstanceController);
+		.controller('modalInfoController', modalInfoController);
 
-	modalInstanceController.$inject = ['$modalInstance'];	
+	modalInfoController.$inject = ['$modalInstance'];	
 
-		function modalInstanceController ($modalInstance) {
+		function modalInfoController ($modalInstance) {
 
 			var vm = this;
 

@@ -1,17 +1,17 @@
 (function () {
-	
+
 	angular
 		.module('ywPortal')
 		.controller('ticTacToeController', ticTacToeController);
 
-	ticTacToeController.$inject = ['$modal'];	
+	ticTacToeController.$inject = ['$modal'];
 
 	function ticTacToeController ($modal) {
 		var vm = this;
 
 		vm.board = [
-			' ', ' ', ' ', 
-			' ', ' ', ' ', 
+			' ', ' ', ' ',
+			' ', ' ', ' ',
 			' ', ' ', ' '
 		];
 
@@ -42,16 +42,16 @@
 			var modalInstance = $modal.open({
 				animation: vm.animationsEnabled,
 				templateUrl: './src/app/tic-tac-toe/html/modals/illegal-move.html',
-				controller: 'modalInstanceController',
-				controllerAs: 'modalInstanceVM',
+				controller: 'modalInfoController',
+				controllerAs: 'modalInfoVM',
 				size: size
 			});
 		};
 
 		vm.restart = function () {
 			vm.board = [
-				' ', ' ', ' ', 
-				' ', ' ', ' ', 
+				' ', ' ', ' ',
+				' ', ' ', ' ',
 				' ', ' ', ' '
 			];
 		};
@@ -59,7 +59,7 @@
 		vm.checkWinner = function (currentPlayer) {
 
 			if (vm.board[0] === currentPlayer && vm.board[1] === currentPlayer && vm.board[2] === currentPlayer) {
-				alert('Congratulations! ' + currentPlayer + ' won!');
+				vm.open();
 			}
 			if (vm.board[3] === currentPlayer && vm.board[4] === currentPlayer && vm.board[5] === currentPlayer) {
 				alert('Congratulations! ' + currentPlayer + ' won!');
@@ -67,7 +67,7 @@
 			if (vm.board[6] === currentPlayer && vm.board[7] === currentPlayer && vm.board[8] === currentPlayer) {
 				alert('Congratulations! ' + currentPlayer + ' won!');
 			}
-			
+
 			if (vm.board[0] === currentPlayer && vm.board[3] === currentPlayer && vm.board[6] === currentPlayer) {
 				alert('Congratulations! ' + currentPlayer + ' won!');
 			}
@@ -86,5 +86,5 @@
 			}
 		};
 	}
-	
+
 }());
