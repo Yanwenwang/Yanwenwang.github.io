@@ -1,22 +1,27 @@
 .contacts {
-
-	h1 { margin: 0; }
 	.hero {
 
 		height: 320px;
-
-		h1 {
-			line-height: 320px;
-			color: #fff;
-		}
+		margin-top: -55px;
 
 		.overlay {
 			background: rgba(0, 0, 0, .2);
+			height: 320px;
+		}
+
+		h1 {
+			color: $primary;
+			margin: 0;
 		}
 
 		@media screen and (max-width: $screen-sm-max) {
 			background: url('../content/images/contact-phone.jpg');
 			background-size: cover;
+
+			h1 {
+				text-align: center;
+				margin-top: 167.5px;
+			}
 		}
 
 		@media screen and (min-width: $screen-md-min) {
@@ -25,9 +30,16 @@
 
 			h1 {
 				font-size: 90px;
+				line-height: 320px;
+				padding-top: 70px;
 				text-shadow: 4px 3px 0px #313436, 9px 8px 0px rgba(0, 0, 0, 0.15);
 			}
 		}
+	}
+
+	.contacts-info {
+				.content { margin-top: 64px; }
+				.info { display: inline-block; }
 	}
 
 }
