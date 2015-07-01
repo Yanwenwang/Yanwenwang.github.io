@@ -8,20 +8,21 @@
 		var vm = this;
 
 		vm.groups = [
-			
-			{ 
-				groupName: 'HTML/CSS', 
+
+			{
+				groupName: 'HTML/CSS',
 				class: 'html-css',
 				showDivider: true,
 				image:'../content/images/logo-html.png',
-				skills: [ 
+				skills: [
 					{ name: 'Animate.css' },
 					{ name: 'Box model' },
 					{ name: 'Bootstrap' },
+					{ name: 'Responsive Design' },
 					{ name: 'Sass' },
 					{ name: 'Transitions' }
-		 			
-		 			
+
+
 				]
 			},
 			{
@@ -45,6 +46,7 @@
 				showDivider: true,
 				image:'../content/images/logo-angular.png',
 				skills: [
+					{ name: 'Angular UI Bootstrap' },
 					{ name: 'Controllers' },
 				 	{ name: 'ControllerAs' },
 					{ name: 'Directives' },
@@ -62,8 +64,9 @@
 				showDivider: true,
 				image:'../content/images/logo-tools.png',
 				skills: [
+					{ name: 'Atom' },
 					{ name: 'Github' },
-				    { name: 'SourceTree' },
+				  { name: 'SourceTree' },
 				 	{ name: 'Sublime Text' },
 					{ name: 'Terminal' }
 				]
