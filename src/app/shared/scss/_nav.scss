@@ -20,9 +20,11 @@
 
 	ul li > a.active { color: $accent-hover; }
 
+	.open > .btn-primary.dropdown-toggle { background: transparent; border: none; }
+
 	.btn-group,
 	.btn:active,
-	.btn-group.open .dropdown-toggle { box-shadow: none; }
+	.btn-group.open .dropdown-toggle { box-shadow: none; outline: none; }
 
 	.btn-primary { color: $primary; font-size: 16px; text-transform: uppercase; padding-left: 48px; }
 	.btn-primary:hover { color: $accent-hover }
