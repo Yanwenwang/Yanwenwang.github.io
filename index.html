@@ -1,71 +1,99 @@
 <!DOCTYPE html>
 <html ng-app="ywPortal">
 
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="./src/main.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	</head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./src/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
 
-	<body>
-		<div class="wrapper">
-	    	<div class="navbar" ng-controller="navController as navVM">
-				<div class="container">
-					<div class="nav-brand">
-							<a ng-class="navVM.getClass('/')" class="nav-brand-logo" href="#/">.YW</a>
-					</div>
-					<ul>
-						<li>
-							<a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a>
-						</li>
-						<li>
-							<a ng-class="navVM.getClass('/tic-tac-toe')" href="#/tic-tac-toe">tic-tac-toe</a>
-						</li>
-						<li>
-							<a ng-class="navVM.getClass('/projects')" href="#/projects">projects</a>
-						</li>
-						<li>
-							<a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+<body>
+    <div class="wrapper">
+        <div class="navbar" ng-controller="navController as navVM">
+            <div class="container">
+                <div class="nav-brand">
+                    <a ng-class="navVM.getClass('/')" class="nav-brand-logo" href="#/">.YW</a>
+                </div>
+                <ul class="hidden-xs hidden-sm">
+                    <li>
+												<a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
+                    </li>
+                    <li>
+                        <div class="btn-group" dropdown dropdown-append-to-body>
+                            <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle>
+                                Projects
+																<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+																	<a ng-class="navVM.getClass('/tic-tac-toe')" href="#/tic-tac-toe">tic-tac-toe</a>
+																</li>
+                                <li><a href="#">Sudoku</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a>
+                    </li>
+                </ul>
+								<ul class="hidden-lg hidden-md">
+											<i class="fa fa-bars fa-lg" ng-click="navVM.collapsed = !navVM.collapsed"></i>
 
-			<div ng-view></div>
-			<div class="push"></div>
-		</div>
+											<div collapse="navVM.collapsed" class="container navbar-collapse">
+												<div>
+													<a ng-class="navVM.getClass('/')" href="#/">Home</a>
+												</div>
+												<div>
+													<a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
+												</div>
+												<div>
+													<a ng-class="navVM.getClass('/tic-tac-toe')" href="#/tic-tac-toe">tic-tac-toe</a>
+												</div>
+												<div>
+													<a href="#">Sudoku</a>
+												</div>
+												<div>
+													<a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a>
+												</div>
+										 </div>
 
-		<div class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<p>&copy; Copyright 2015 Yanwen Wang</p>
-					</div>
-				</div>
-			</div>
-		</div>
+								</ul>
+            </div>
+        </div>
+        <div ng-view></div>
+        <div class="push"></div>
+    </div>
 
-		<!-- vendor dependencies -->
-		<script src="./bower_components/jquery/dist/jquery.js"></script>
-		<script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
-		<script src="./bower_components/angular/angular.js"></script>
-		<script src="./bower_components/angular-route/angular-route.js"></script>
-		<script src="./bower_components/angular-bootstrap/ui-bootstrap.js"></script>
-		<script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; Copyright 2015 Yanwen Wang</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<!-- project dependencies -->
-		<script src="./src/app/app.js"></script>
-		<script src="./src/app/routes.js"></script>
-		<script src="./src/app/home/js/home-controller.js"></script>
-		<script src="./src/app/resume/js/resume-controller.js"></script>
-		<script src="./src/app/projects/js/projects-controller.js"></script>
-		<script src="./src/app/about/js/about-controller.js"></script>
-		<script src="./src/app/contact/js/contact-controller.js"></script>
-		<script src="./src/app/shared/js/nav-controller.js"></script>
-		<script src="./src/app/tic-tac-toe/js/tic-tac-toe-controller.js"></script>
-		<script src="./src/app/shared/js/modal-info-controller.js"></script>
+    <!-- vendor dependencies -->
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-route/angular-route.js"></script>
+    <script src="./bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 
-	</body>
+    <!-- project dependencies -->
+    <script src="./src/app/app.js"></script>
+    <script src="./src/app/routes.js"></script>
+    <script src="./src/app/home/js/home-controller.js"></script>
+    <script src="./src/app/resume/js/resume-controller.js"></script>
+    <script src="./src/app/projects/js/projects-controller.js"></script>
+    <script src="./src/app/about/js/about-controller.js"></script>
+    <script src="./src/app/contact/js/contact-controller.js"></script>
+    <script src="./src/app/shared/js/nav-controller.js"></script>
+    <script src="./src/app/tic-tac-toe/js/tic-tac-toe-controller.js"></script>
+    <script src="./src/app/shared/js/modal-info-controller.js"></script>
+    <script src="./src/app/shared/js/dropdown-controller.js"></script>
+
+</body>
 
 </html>
