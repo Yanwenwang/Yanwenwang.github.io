@@ -37,32 +37,23 @@
     }
 
     .contacts-info {
-				position: relative;
-        text-align: center;
-				height: 320px;
+      text-align: center;
+      padding: 120px 0;
 
-        .content {
-            position: absolute;
-						left: 50%;
-						top: 50%;
-						transform: translate(-50%, -50%);
-        }
-				.fa { margin-bottom: 12px; }
+      .info-container {
+        height: 360px;
+        width:260px;
+        border: 1px solid black;
+        border-radius: 5px;
+        display: inline-block;
 
-        .info-display,
-        .info {
-            display: inline-block;
-						font-size: 16px;
-						color: $accent-hover;
-						margin-left: 24px;
-        }
+      }
 
-				.info a {
-					color: $accent;
-					text-decoration: none;
-				}
-				.info a:hover {
-					color: $accent;
-				}
+      p {
+        border-bottom: 1px solid black;
+        padding: 18px;
+        font-size: 32px;
+      }
+
     }
 }

@@ -7398,32 +7398,20 @@ h3 {
 
 /* line 39, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
 .contacts .contacts-info {
-  position: relative;
   text-align: center;
-  height: 320px; }
-  /* line 44, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-  .contacts .contacts-info .content {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); }
-  /* line 50, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-  .contacts .contacts-info .fa {
-    margin-bottom: 12px; }
-  /* line 53, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-  .contacts .contacts-info .info-display,
-  .contacts .contacts-info .info {
-    display: inline-block;
-    font-size: 16px;
-    color: #D75C37;
-    margin-left: 24px; }
-  /* line 60, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-  .contacts .contacts-info .info a {
-    color: #D85339;
-    text-decoration: none; }
-  /* line 64, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-  .contacts .contacts-info .info a:hover {
-    color: #D85339; }
+  padding: 120px 0; }
+  /* line 43, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+  .contacts .contacts-info .info-container {
+    height: 360px;
+    width: 260px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block; }
+  /* line 52, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+  .contacts .contacts-info p {
+    border-bottom: 1px solid black;
+    padding: 18px;
+    font-size: 32px; }
 
 /* line 3, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home section {
@@ -7998,8 +7986,8 @@ hr {
   /* line 91, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar .navbar-collapse {
     background: grey;
-    position: fixed;
-    height: 100% !important;
+    margin-top: 15px;
+    position: absolute;
     left: 0;
     width: 100%; }
   /* line 98, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
@@ -8095,3 +8083,24 @@ hr {
   .tic-tac-toe .board button {
     margin-top: 64px;
     margin-bottom: 64px; }
+
+/* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
+.modal-content {
+  border-radius: 15px;
+  pointer-events: none;
+  position: fixed;
+  width: 50%;
+  padding: 22px 8px;
+  background: #FFFFFF;
+  box-shadow: 0 0 25px black;
+  top: 50%;
+  left: 50%;
+  margin: 8% 0 0 -25%;
+  transition: .4s all ease; }
+  /* line 14, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
+  .modal-content h2 {
+    font-size: 24px; }
+  /* line 18, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
+  .modal-content .btn-primary {
+    background: #D75C37;
+    border: #D85339; }
