@@ -1,0 +1,22 @@
+.modal-content {
+  border-radius: 15px;
+  pointer-events: none;
+  position: fixed;
+  width: 50%;
+  padding: 22px 8px;
+  background: $primary;
+  box-shadow: 0 0 25px black;
+  top: 50%;
+  left: 50%;
+  margin: 8% 0 0 -25%;
+  transition: .4s all ease;
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .btn-primary {
+    background: $accent-hover;
+    border: $accent;
+  }
+}
