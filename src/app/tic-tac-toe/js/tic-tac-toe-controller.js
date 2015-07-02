@@ -21,6 +21,7 @@
 
 			if(vm.board[boardPosition] !== ' ') {
 				vm.open();
+				return;
 			}
 
 			if(vm.currentPlayer === 'X') {
