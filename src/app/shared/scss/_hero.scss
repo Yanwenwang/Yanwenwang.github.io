@@ -32,9 +32,21 @@
 }
 
 .hero.mod-large {
-    height: 640px;
+    @media screen and (max-width: $screen-sm-max) {
 
-    .overlay {
+        height: 365px;
+
+        .overlay {
+            height: 365px;
+        }
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+
         height: 640px;
+
+        .overlay {
+            height: 640px;
+        }
     }
 }
