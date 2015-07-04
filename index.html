@@ -15,7 +15,12 @@
                 <div class="nav-brand">
                     <a ng-class="navVM.getClass('/')" class="nav-brand-logo" href="#/">.YW</a>
                 </div>
-                <ul class="hidden-xs hidden-sm">
+
+                <i class="fa fa-bars fa-lg hidden-md hidden-lg"
+                    style="float: right;"
+                    ng-click="navVM.collapsed = !navVM.collapsed"></i>
+
+                <ul collapse="navVM.collapsed">
                     <li>
                         <a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
                     </li>
@@ -36,28 +41,6 @@
                     <li>
                         <a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a>
                     </li>
-                </ul>
-                <ul class="hidden-lg hidden-md">
-                    <i class="fa fa-bars fa-lg" ng-click="navVM.collapsed = !navVM.collapsed"></i>
-
-                    <div collapse="navVM.collapsed" class="container navbar-collapse">
-                        <div>
-                            <a ng-class="navVM.getClass('/')" href="#/">Home</a>
-                        </div>
-                        <div>
-                            <a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
-                        </div>
-                        <div>
-                            <a ng-class="navVM.getClass('/tic-tac-toe')" href="#/tic-tac-toe">tic-tac-toe</a>
-                        </div>
-                        <div>
-                            <a href="#">Sudoku</a>
-                        </div>
-                        <div>
-                            <a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a>
-                        </div>
-                    </div>
-
                 </ul>
             </div>
         </div>
