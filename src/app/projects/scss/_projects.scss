@@ -1,14 +1,5 @@
 .projects {
-	.hero {
-		@media screen and (max-width: $screen-sm-max) {
-			background: url('../content/images/projects-phone.jpg');
-			background-size: cover;
-		}
-
-		@media screen and (min-width: $screen-md-min) {
-			background: url('../content/images/projects-desktop.jpg');
-			background-size: cover;
-		}
-	}
-
+    .hero {
+        @include gradient-horizontal($accent-hover, $primary-light);
+    }
 }
