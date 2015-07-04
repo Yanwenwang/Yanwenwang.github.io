@@ -2,39 +2,4 @@
     .hero {
         @include gradient-horizontal($accent-hover, $primary-light);
     }
-
-    .contacts-info {
-      text-align: center;
-      padding: 120px 0;
-
-      .info-container {
-        height: 360px;
-        width:260px;
-        border-radius: 5px;
-        display: inline-block;
-        background: $primary-light;
-
-        &:hover {
-          backgrond: $accent-hover;
-        }
-      }
-
-      .info-container a {
-        text-decoration: none;
-      }
-
-      .info-container i {
-        font-size: 137px;
-        margin-top: 60px;
-        color: $primary;
-      }
-
-      p {
-        border-bottom: 2px solid $primary;
-        padding: 18px;
-        font-size: 32px;
-        color: $primary;
-      }
-
-    }
 }

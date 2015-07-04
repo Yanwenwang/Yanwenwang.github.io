@@ -1,0 +1,33 @@
+.card-section {
+    text-align: center;
+    padding: 120px 0;
+
+    .card-container {
+        height: 360px;
+        width: 260px;
+        border-radius: 5px;
+        display: inline-block;
+        background: $primary-light;
+
+        &:hover {
+            background: $accent-hover;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .card-container-logo {
+        font-size: 137px;
+        margin-top: 60px;
+        color: $primary;
+    }
+
+    .card-container-header {
+        border-bottom: 2px solid $primary;
+        padding: 18px;
+        font-size: 32px;
+        color: $primary;
+    }
+}
