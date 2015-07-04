@@ -1,41 +1,13 @@
 .projects {
 	.hero {
-
-		height: 320px;
-
-		.overlay {
-			background: rgba(0, 0, 0, .2);
-		}
-
-		h1 {
-			margin: 0;
-			color: #fff;
-		}
-
 		@media screen and (max-width: $screen-sm-max) {
 			background: url('../content/images/projects-phone.jpg');
 			background-size: cover;
-
-			.overlay {
-				height: 320px;
-			}
-
-			h1 {
-				text-align: center;
-				margin-top: 167.5px;
-			}
-
 		}
 
 		@media screen and (min-width: $screen-md-min) {
 			background: url('../content/images/projects-desktop.jpg');
 			background-size: cover;
-
-			h1 {
-					font-size: 90px;
-					line-height: 320px;
-					text-shadow: 4px 3px 0px #313436, 9px 8px 0px rgba(0, 0, 0, 0.15);
-			}
 		}
 	}
 

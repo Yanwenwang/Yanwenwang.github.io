@@ -1,252 +1,256 @@
 .home {
+    .hero {
+        text-align: center;
 
-	section {
-		overflow: hidden;
-	}
+        .content {
+            display: inline-block;
+        }
 
-	.hero {
-		margin-top: -55px;
-		text-align: center;
-		width: 100%;
-		position: relative;
+        .content h2 {
+            margin: -4px 0 0;
+        }
 
-		.overlay {
-			top: 0;
-			left: 0;
-			height: 640px;
-			width: 100%;
-			position: absolute;
-			background-color: rgba(0, 0, 0, 0.5);
-		}
+        .content h2,
+        .content h4 {
+            letter-spacing: 0.1em;
+            color: $primary;
+        }
 
-		.content {
-			display: inline-block;
-		}
+        .content .icon {
+            position: relative;
+            display: inline-block;
+            opacity: 0.8;
+        }
 
-		.content h2 { margin: 0; margin-top: -4px; }
-		.content h2,
-		.content h4 { letter-spacing: .1em; color: #ffffff; }
+        .content .icon .fa-linkedin-square {
+            margin-left: 0;
+            color: $primary;
+        }
 
-		.content .icon { position: relative; display: inline-block; opacity: .8; }
-		.content .icon .fa-linkedin-square { margin-left: 0; color: #ffffff; }
-		.content .icon .fa-github-square { margin-left: 29px; color: #ffffff; }
-		.content .icon .fa-envelope-o { margin-left: 29px; color: #ffffff; }
+        .content .icon .fa-github-square {
+            margin-left: 29px;
+            color: $primary;
+        }
 
+        .content .icon .fa-envelope-o {
+            margin-left: 29px;
+            color: $primary;
+        }
 
+        @media screen and (max-width: $screen-sm-max) {
+            background: url("../content/images/home-hero-phone.jpg");
+            background-size: cover;
+            background-position-y: 51px;
+            height: 365px;
 
-		@media screen and (max-width: $screen-sm-max) {
-			background: url('../content/images/home-hero-phone.jpg');
-			background-size: cover;
-			background-position-y: 51px;
-			height: 365px;
+            .content {
+                margin-top: 115px;
+                padding: 22px 50px;
+            }
 
-			.content {
-				margin-top: 115px;
-				padding: 22px 50px;
-			}
+            .icon {
+                margin-top: 12px;
+            }
 
-			.icon {
-				margin-top: 12px;
-			}
+            h2 {
+                font-size: 24px;
+            }
 
-			h2 {
-				font-size: 24px;
-			}
+            h4 {
+                font-size: 16px;
+                margin-top: 22px;
+            }
 
-			h4 {
-				font-size: 16px;
-				margin-top: 22px;
-			}
+            h2,
+            h4 {
+                line-height: 22px;
+            }
+        }
 
-			h2, h4 {
-				line-height: 22px;
-			}
+        @media screen and (min-width: $screen-md-min) {
+            background: url("../content/images/home-hero-desktop.jpg");
+            background-size: cover;
+            background-position-y: -40px;
+            height: 640px;
 
-		}
+            .container {
+                height: 640px;
+            }
 
-		@media screen and (min-width: $screen-md-min) {
-			background: url('../content/images/home-hero-desktop.jpg');
-			background-size: cover;
-			background-position-y: -40px;
+            .content {
+                margin-top: 223.5px;
+                border: 2px solid #fff;
+                padding: 36px 116px;
+            }
 
-			height: 640px;
+            .icon {
+                margin-top: 32px;
+            }
 
-			.container {
-				height: 640px;
-			}
+            h4 {
+                margin-top: 32px;
+            }
+        }
+    }
 
-			.content {
-				margin-top: 223.5px;
-				border: 2px solid #ffffff;
-				padding: 36px 116px;
-			}
+    .backgrounds {
+        background: $primary;
 
-			.icon {
-				margin-top: 32px;
-			}
+        .content-container {
+            position: relative;
+        }
 
-			h4 {
-				margin-top: 32px;
-			}
+        .content-container .content {
+            color: $text-secondary;
+            h3 {
+                margin-top: 0;
+                color: $accent;
+            }
+        }
 
-		}
-	}
+        .image-container {
+            text-align: center;
+            position: relative;
+        }
 
-	.backgrounds {
+        .image-container .image {
+            background: url("../content/images/home-background.jpg");
+            background-size: cover;
+            display: inline-block;
+            border-radius: 50%;
+        }
 
-		background: $primary;
+        @media screen and (max-width: $screen-sm-max) {
 
-		.content-container {
-			position: relative;
-		}
+            .content-container,
+            .image-container {
+                margin-top: 64px;
+                margin-bottom: 64px;
+                float: none;
+            }
 
-		.content-container .content {
-			color: $text-secondary;
-			h3 { margin-top: 0; color: $accent; }
-		}
+            .content-container .content {
+                text-align: center;
+                line-height: 1.45;
+                h3 {
+                    text-align: center;
+                    margin-bottom: 26px;
+                }
+            }
 
-		.image-container {
-			text-align: center;
-			position: relative;
-		}
+            .image-container .image {
+                height: 280px;
+                width: 280px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
 
-		.image-container .image {
-			background: url('../content/images/home-background.jpg');
-			background-size: cover;
-			display: inline-block;
-			border-radius: 50%;
-		}
+        @media screen and (min-width: $screen-md-min) {
+            height: 620px;
 
-		@media screen and (max-width: $screen-sm-max) {
+            .content-container {
+                height: 620px;
+            }
 
-			.content-container,
-			.image-container {
-				margin-top: 64px;
-				margin-bottom: 64px;
-				float: none;
-			}
+            .content-container .content {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
 
-			.content-container .content {
-				text-align: center;
-				line-height: 1.45;
-				h3 { text-align: center; margin-bottom: 26px; }
-			}
+            .image-container {
+                height: 620px;
+            }
 
-			.image-container .image {
-				height: 280px;
-				width: 280px;
-				margin-top: 0;
-				margin-bottom: 0;
-			}
+            .image-container .image {
+                height: 350px;
+                width: 350px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(0, -50%);
+            }
+        }
+    }
 
+    .programmings {
+        background: $primary;
 
-		}
+        .content-container {
+            position: relative;
+        }
 
-		@media screen and (min-width: $screen-md-min) {
+        .content-container .content {
+            color: $text-secondary;
 
-			height: 620px;
+            h3 {
+                margin-top: 0;
+                color: $accent;
+            }
+        }
 
-			.content-container {
-				height: 620px;
-			}
+        .image-container {
+            text-align: center;
+            position: relative;
+        }
 
-			.content-container .content {
-				position: absolute;
-				top: 50%;
-				transform: translate(0, -50%);
-			}
+        .image-container .image {
+            background: url("../content/images/home-programming.jpg");
+            background-size: cover;
+            display: inline-block;
+            border-radius: 50%;
+        }
 
-			.image-container {
-				height: 620px;
-			}
+        @media screen and (max-width: $screen-sm-max) {
+            text-align: center;
+            line-height: 1.45;
 
-			.image-container .image {
-				height: 350px;
-				width: 350px;
-				position: absolute;
-				top: 50%;
-				right: 0;
-				transform: translate(0, -50%);
-			}
+            h3 {
+                text-align: center;
+                margin-bottom: 26px;
+            }
 
-		}
-	}
+            .content-container,
+            .image-container {
+                margin-top: 64px;
+                margin-bottom: 64px;
+                float: none;
+            }
 
-	.programmings {
+            .image-container .image {
+                height: 280px;
+                width: 280px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
 
-		background: $primary;
+        @media screen and (min-width: $screen-md-min) {
+            height: 620px;
 
-		.content-container {
-			position: relative;
-		}
+            .content-container {
+                height: 620px;
+            }
 
-		.content-container .content {
-			color: $text-secondary;
+            .content-container .content {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
 
-			h3 { margin-top: 0; color: $accent; }
-		}
+            .image-container {
+                height: 620px;
+            }
 
-		.image-container {
-			text-align: center;
-			position: relative;
-		}
-
-		.image-container .image {
-			background: url('../content/images/home-programming.jpg');
-			background-size: cover;
-			display: inline-block;
-			border-radius: 50%;
-		}
-
-		@media screen and (max-width: $screen-sm-max) {
-
-			text-align: center;
-			line-height: 1.45;
-
-			h3 { text-align: center; margin-bottom: 26px; }
-
-			.content-container,
-			.image-container {
-				margin-top: 64px;
-				margin-bottom: 64px;
-				float: none;
-			}
-
-			.image-container .image {
-				height: 280px;
-				width: 280px;
-				margin-top: 0;
-				margin-bottom: 0;
-			}
-		}
-
-		@media screen and (min-width: $screen-md-min) {
-
-			height: 620px;
-
-			.content-container {
-				height: 620px;
-			}
-
-			.content-container .content {
-				position: absolute;
-				top: 50%;
-				transform: translate(0, -50%);
-			}
-
-			.image-container {
-				height: 620px;
-			}
-
-			.image-container .image {
-				height: 350px;
-				width: 350px;
-				position: absolute;
-				top: 50%;
-				right: 0;
-				transform: translate(0, -50%);
-			}
-
-		}
-	}
+            .image-container .image {
+                height: 350px;
+                width: 350px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(0, -50%);
+            }
+        }
+    }
 }
