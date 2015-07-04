@@ -7376,42 +7376,53 @@ h3 {
     color: #FFFFFF;
     margin: 0; }
   @media screen and (max-width: 991px) {
-    /* line 2, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-    .contacts .hero {
-      background: url("../content/images/contact-phone.jpg");
-      background-size: cover; }
-      /* line 20, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-      .contacts .hero h1 {
-        text-align: center;
-        margin-top: 167.5px; } }
+    /* line 20, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+    .contacts .hero h1 {
+      text-align: center;
+      margin-top: 167.5px; } }
   @media screen and (min-width: 992px) {
     /* line 2, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
     .contacts .hero {
-      background: url("../content/images/contact-desktop.jpg");
-      background-size: cover; }
-      /* line 30, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+      background-image: -webkit-linear-gradient(left, #D75C37 0%, #FFBD88 100%);
+      background-image: -o-linear-gradient(left, #D75C37 0%, #FFBD88 100%);
+      background-image: linear-gradient(to right, #D75C37 0%, #FFBD88 100%);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD75C37', endColorstr='#FFFFBD88', GradientType=1); }
+      /* line 31, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
       .contacts .hero h1 {
         font-size: 90px;
         line-height: 320px;
         padding-top: 70px;
         text-shadow: 4px 3px 0 #313436, 9px 8px 0 rgba(0, 0, 0, 0.15); } }
 
-/* line 39, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+/* line 40, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
 .contacts .contacts-info {
   text-align: center;
   padding: 120px 0; }
-  /* line 43, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+  /* line 44, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
   .contacts .contacts-info .info-container {
     height: 360px;
     width: 260px;
-    border: 1px solid black;
     border-radius: 5px;
-    display: inline-block; }
-  /* line 52, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+    display: inline-block;
+    background: #FFBD88; }
+    /* line 51, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+    .contacts .contacts-info .info-container:hover {
+      background: #de6262; }
+  /* line 56, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+  .contacts .contacts-info .info-container a {
+    text-decoration: none; }
+  /* line 60, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+  .contacts .contacts-info .info-container i {
+    font-size: 137px;
+    margin-top: 60px;
+    color: #FFFFFF; }
+  /* line 66, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
   .contacts .contacts-info p {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #FFFFFF;
     padding: 18px;
-    font-size: 32px; }
+    font-size: 32px;
+    color: #FFFFFF; }
 
 /* line 3, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home section {
