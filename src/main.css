@@ -3776,6 +3776,35 @@ section {
   height: 125px;
   line-height: 125px; }
 
+/* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+.card-section {
+  text-align: center;
+  padding: 120px 0; }
+  /* line 5, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+  .card-section .card-container {
+    height: 360px;
+    width: 260px;
+    border-radius: 5px;
+    display: inline-block;
+    background: #FFBD88; }
+    /* line 12, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+    .card-section .card-container:hover {
+      background: #D75C37; }
+  /* line 17, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+  .card-section a {
+    text-decoration: none; }
+  /* line 21, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+  .card-section .card-container-logo {
+    font-size: 137px;
+    margin-top: 60px;
+    color: #FFFFFF; }
+  /* line 27, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+  .card-section .card-container-header {
+    border-bottom: 2px solid #FFFFFF;
+    padding: 18px;
+    font-size: 32px;
+    color: #FFFFFF; }
+
 /* line 2, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
 .contacts .hero {
   background-image: -webkit-linear-gradient(left, #D75C37 0%, #FFBD88 100%);
@@ -3783,35 +3812,6 @@ section {
   background-image: linear-gradient(to right, #D75C37 0%, #FFBD88 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD75C37', endColorstr='#FFFFBD88', GradientType=1); }
-
-/* line 6, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-.contacts .contacts-info {
-  text-align: center;
-  padding: 120px 0; }
-  /* line 10, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-  .contacts .contacts-info .info-container {
-    height: 360px;
-    width: 260px;
-    border-radius: 5px;
-    display: inline-block;
-    background: #FFBD88; }
-    /* line 17, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-    .contacts .contacts-info .info-container:hover {
-      backgrond: #D75C37; }
-  /* line 22, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-  .contacts .contacts-info .info-container a {
-    text-decoration: none; }
-  /* line 26, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-  .contacts .contacts-info .info-container i {
-    font-size: 137px;
-    margin-top: 60px;
-    color: #FFFFFF; }
-  /* line 32, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
-  .contacts .contacts-info p {
-    border-bottom: 2px solid #FFFFFF;
-    padding: 18px;
-    font-size: 32px;
-    color: #FFFFFF; }
 
 /* line 2, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .hero {
@@ -4027,17 +4027,13 @@ section {
         right: 0;
         transform: translate(0, -50%); } }
 
-@media screen and (max-width: 991px) {
-  /* line 2, /Users/David/Desktop/git/resume/src/app/projects/scss/_projects.scss */
-  .projects .hero {
-    background: url("../content/images/projects-phone.jpg");
-    background-size: cover; } }
-
-@media screen and (min-width: 992px) {
-  /* line 2, /Users/David/Desktop/git/resume/src/app/projects/scss/_projects.scss */
-  .projects .hero {
-    background: url("../content/images/projects-desktop.jpg");
-    background-size: cover; } }
+/* line 2, /Users/David/Desktop/git/resume/src/app/projects/scss/_projects.scss */
+.projects .hero {
+  background-image: -webkit-linear-gradient(left, #D75C37 0%, #FFBD88 100%);
+  background-image: -o-linear-gradient(left, #D75C37 0%, #FFBD88 100%);
+  background-image: linear-gradient(to right, #D75C37 0%, #FFBD88 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD75C37', endColorstr='#FFFFBD88', GradientType=1); }
 
 @media screen and (max-width: 991px) {
   /* line 2, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
