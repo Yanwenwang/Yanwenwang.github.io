@@ -3493,12 +3493,21 @@ tbody.collapse.in {
       padding-top: 70px;
       text-shadow: 4px 3px 0 #313436, 9px 8px 0 rgba(0, 0, 0, 0.15); } }
 
-/* line 34, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
-.hero.mod-large {
-  height: 640px; }
-  /* line 37, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
-  .hero.mod-large .overlay {
+@media screen and (max-width: 991px) {
+  /* line 34, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+  .hero.mod-large {
+    height: 365px; }
+    /* line 39, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+    .hero.mod-large .overlay {
+      height: 365px; } }
+
+@media screen and (min-width: 992px) {
+  /* line 34, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+  .hero.mod-large {
     height: 640px; }
+    /* line 48, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+    .hero.mod-large .overlay {
+      height: 640px; } }
 
 /* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_footer.scss */
 .footer {
@@ -3638,19 +3647,17 @@ section {
     letter-spacing: 2px;
     transition: 0.5s ease-in;
     text-decoration: none; }
-  /* line 21, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .navbar .nav-brand-logo:hover {
-    color: #D75C37; }
-  /* line 24, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .navbar .nav-brand-logo.active {
-    color: #D75C37; }
-  /* line 28, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+    /* line 22, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+    .navbar .nav-brand-logo:active,
+    .navbar .nav-brand-logo:hover {
+      color: #D75C37; }
+  /* line 27, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar ul {
     margin: 0;
     padding: 0;
     text-align: right; }
     @media screen and (max-width: 991px) {
-      /* line 28, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+      /* line 27, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
       .navbar ul {
         position: absolute;
         text-align: center;
@@ -3662,25 +3669,25 @@ section {
         margin-top: 10px;
         border-top: 1px solid #3c3c3c;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); } }
-  /* line 47, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 46, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar ul.collapse {
     display: block; }
-  /* line 51, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 50, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar ul.in {
     height: 274px !important; }
     @media screen and (max-width: 991px) {
-      /* line 51, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+      /* line 50, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
       .navbar ul.in {
         margin-top: 11px; } }
-  /* line 58, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 57, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar ul li {
     list-style: none;
     display: inline-block; }
     @media screen and (max-width: 991px) {
-      /* line 58, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+      /* line 57, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
       .navbar ul li {
         display: block; } }
-  /* line 67, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 66, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar ul li > a {
     color: #FFFFFF;
     cursor: pointer;
@@ -3690,52 +3697,52 @@ section {
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s all; }
-  /* line 78, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 77, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar ul li > a:hover {
     color: #D75C37; }
-  /* line 82, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 81, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar ul li > a.active {
     color: #D75C37; }
-  /* line 86, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 85, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar .open > .btn-primary.dropdown-toggle {
     background: transparent;
     border: none; }
-  /* line 93, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 92, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar .btn-group,
   .navbar .btn:active,
   .navbar .btn-group.open .dropdown-toggle {
     box-shadow: none;
     outline: none; }
-  /* line 98, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 97, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar .btn-primary {
     color: #FFFFFF;
     font-size: 16px;
     text-transform: uppercase;
     padding-left: 48px; }
-  /* line 104, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 103, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar .btn-primary:hover {
     color: #D75C37; }
-  /* line 111, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 110, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar .btn-primary,
   .navbar .btn-primary:active,
   .navbar .btn-primary:hover,
   .navbar .btn-primary:focus {
     border-color: transparent;
     background: transparent; }
-  /* line 116, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 115, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar .fa {
     padding: 5px; }
-  /* line 119, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  /* line 118, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
   .navbar .fa-lg {
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
     margin-top: 10px; }
 
-/* line 126, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+/* line 125, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
 .dropdown-menu li a {
   text-transform: uppercase; }
 
-/* line 129, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+/* line 128, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
 .dropdown-menu li a:hover {
   background: #D75C37; }
 
