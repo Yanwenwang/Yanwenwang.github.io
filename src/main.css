@@ -3750,30 +3750,21 @@ section {
   .lines:after {
     top: -0.875rem; }
 
-/* line 144, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.lines-button.x2 .lines {
-  transition: background 0.3s 0.6s ease; }
-  /* line 148, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines-button.x2 .lines:before,
-  .lines-button.x2 .lines:after {
+/* line 145, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+.lines-button.close .lines {
+  /*hide the middle line*/
+  background: transparent;
+  /*overlay the lines by setting both their top values to 0*/ }
+  /* line 151, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .lines-button.close .lines:before, .lines-button.close .lines:after {
     transform-origin: 50% 50%;
-    transition: top 0.3s 0.6s ease, transform 0.3s ease; }
-
-/* line 156, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.lines-button.x2.close .lines {
-  transition: background 0.3s 0s ease;
-  background: transparent; }
-  /* line 161, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines-button.x2.close .lines:before,
-  .lines-button.x2.close .lines:after {
-    transition: top 0.3s ease, transform 0.3s 0.5s ease;
     top: 0;
     width: 3.5rem; }
-  /* line 166, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines-button.x2.close .lines:before {
+  /* line 158, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .lines-button.close .lines:before {
     transform: rotate3d(0, 0, 1, 45deg); }
-  /* line 169, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines-button.x2.close .lines:after {
+  /* line 161, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+  .lines-button.close .lines:after {
     transform: rotate3d(0, 0, 1, -45deg); }
 
 /* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_circle.scss */

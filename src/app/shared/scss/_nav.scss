@@ -141,32 +141,24 @@ $transition: 0.3s; // increase this to see the transformations in slow-motion
     }
 }
 
-.lines-button.x2 .lines {
-    transition: background 0.3s 0.6s ease;
 
-    &:before,
-    &:after {
+.lines-button.close .lines{
 
-        //set transform origin back to center
-        transform-origin: 50% 50%;
-        transition: top 0.3s 0.6s ease, transform 0.3s ease;
-    }
-}
-
-.lines-button.x2.close .lines {
-    transition: background 0.3s 0s ease;
+    /*hide the middle line*/
     background: transparent;
 
-    &:before,
-    &:after {
-        transition: top 0.3s ease, transform 0.3s 0.5s ease;
-        top: 0;
-        width: $button-size;
+    /*overlay the lines by setting both their top values to 0*/
+    &:before, &:after{
+      transform-origin: 50% 50%;
+      top:0;
+      width: $button-size;
     }
-    &:before {
-        transform: rotate3d(0,0,1,45deg);
+
+    // rotate the lines to form the x shape
+    &:before{
+      transform: rotate3d(0,0,1,45deg);
     }
-    &:after {
-        transform: rotate3d(0,0,1,-45deg);
+    &:after{
+      transform: rotate3d(0,0,1,-45deg);
     }
 }
