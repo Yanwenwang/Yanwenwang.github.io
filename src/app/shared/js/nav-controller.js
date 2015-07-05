@@ -11,7 +11,7 @@
 		vm.getClass = function(path) {
 
 		    if ($location.path() === path) {
-		      	return 'active';
+		      	return 'is-selected';
 		    }
 
 		    return '';
