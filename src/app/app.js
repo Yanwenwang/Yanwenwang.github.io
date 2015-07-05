@@ -1,8 +1,8 @@
 (function () {
-	
+
 	angular
 		.module('ywPortal', [
-			'ngRoute',
+			'ui.router',
 			'ui.bootstrap'
 		]);
 
