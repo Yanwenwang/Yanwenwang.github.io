@@ -1,24 +1,21 @@
 (function () {
 
-	angular
-		.module('ywPortal')
-		.controller('navController', navController);
+    angular
+        .module('ywPortal')
+        .controller('navController', navController);
 
-	function navController ($location) {
+    navController.$inject = ['$rootScope'];
 
-		var vm = this;
+    function navController($rootScope) {
 
-		vm.getClass = function(path) {
+        var vm = this;
 
-		    if ($location.path() === path) {
-		      	return 'is-selected';
-		    }
+        vm.showMobileNav = false;
 
-		    return '';
-		};
-
-		vm.showMobileNav = false;
-
-	}
+        $rootScope.$on('$stateChangeStart',
+            function (event, toState, toParams, fromState, fromParams) {
+                vm.showMobileNav = false;
+            });
+    }
 
 }());
