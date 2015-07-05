@@ -17,7 +17,7 @@
 		    return '';
 		};
 
-		vm.collapsed = true;
+		vm.showMobileNav = false;
 
 	}
 

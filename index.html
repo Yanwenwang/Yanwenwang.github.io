@@ -9,16 +9,38 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="navbar" ng-controller="navController as navVM">
+    <div class="wrapper" ng-controller="navController as navVM">
+        <div class="navbar" >
             <div class="container">
                 <div class="navbar-brand">
                     <a ng-class="navVM.getClass('/')" class="navbar-brand-logo" href="#/">.YW</a>
                 </div>
 
-                <i class="fa fa-bars fa-lg hidden-md hidden-lg"></i>
+                <button class="lines-button x2 hidden-md hidden-lg"
+                    type="button"
+                    role="button"
+                    aria-label="Toggle Navigation"
+                    ng-class=" { 'close': navVM.showMobileNav }"
+                    ng-click="navVM.showMobileNav = !navVM.showMobileNav">
+                  <span class="lines"></span>
+                </button>
 
                 <ul class="hidden-sm hidden-xs">
+                    <li>
+                        <a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
+                    </li>
+                    <li>
+                        <a ng-class="navVM.getClass('/projects')" href="#/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-nav" ng-class="{ 'is-shown': navVM.showMobileNav }">
+            <div class="container">
+                <ul>
                     <li>
                         <a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
                     </li>

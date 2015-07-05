@@ -1,6 +1,7 @@
 .navbar {
     margin-bottom: 0;
-    z-index: 1;
+    z-index: 2;
+    position: relative;
     border: none;
     text-align: right;
 
@@ -47,12 +48,125 @@
         color: $accent-hover;
     }
 
+    i { transition: .2s ease; }
+
     .fa {
         padding: 5px;
     }
+
     .fa-lg {
         border: 1px solid $primary;
         color: $primary;
         margin-top: 10px;
+    }
+}
+
+.mobile-nav {
+    position: absolute;
+    right: 0;
+    background-color: $primary-dark;
+    width: 0;
+    height: 100vh;
+    margin-top: -54px;
+    padding-top: 54px;
+    z-index: 1;
+    overflow: hidden;
+    transition: width .5s ease;
+
+    ul {
+
+    }
+
+    ul li {
+        list-style: none;
+    }
+}
+
+.mobile-nav.is-shown {
+    width: 100%;
+}
+
+
+$button-size: 3.5rem;
+$transition: 0.3s; // increase this to see the transformations in slow-motion
+
+@mixin line {
+    display: inline-block;
+    width: $button-size;
+    height: $button-size/7;
+    background: white;
+    border-radius: $button-size/14;
+    transition: $transition;
+}
+
+.lines-button {
+    display: inline-block;
+    padding: $button-size/2 $button-size/4;
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:active {
+        transition: 0;
+        background: rgba(0,0,0,.1);
+    }
+}
+
+.lines {
+    //create middle line
+    @include line;
+    position: relative;
+
+    /*create the upper and lower lines as pseudo-elements of the middle line*/
+    &:before,
+    &:after {
+        @include line;
+        position: absolute;
+        left: 0;
+        content: '';
+        transform-origin: $button-size/14 center;
+    }
+    &:before {
+        top: $button-size/4;
+    }
+    &:after {
+        top: -$button-size/4;
+    }
+}
+
+.lines-button.x2 .lines {
+    transition: background 0.3s 0.6s ease;
+
+    &:before,
+    &:after {
+
+        //set transform origin back to center
+        transform-origin: 50% 50%;
+        transition: top 0.3s 0.6s ease, transform 0.3s ease;
+    }
+}
+
+.lines-button.x2.close .lines {
+    transition: background 0.3s 0s ease;
+    background: transparent;
+
+    &:before,
+    &:after {
+        transition: top 0.3s ease, transform 0.3s 0.5s ease;
+        top: 0;
+        width: $button-size;
+    }
+    &:before {
+        transform: rotate3d(0,0,1,45deg);
+    }
+    &:after {
+        transform: rotate3d(0,0,1,-45deg);
     }
 }
