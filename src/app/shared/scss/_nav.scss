@@ -86,79 +86,79 @@
     width: 100%;
 }
 
-
-$button-size: 3.5rem;
-$transition: 0.3s; // increase this to see the transformations in slow-motion
-
-@mixin line {
-    display: inline-block;
-    width: $button-size;
-    height: $button-size/7;
-    background: white;
-    border-radius: $button-size/14;
-    transition: $transition;
+ #nav-icon3 {
+  width: 23px;
+  height: 15px;
+  right: 0;
+  margin-top: 15px;
+  margin-right: 10px;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
 }
 
-.lines-button {
-    display: inline-block;
-    padding: $button-size/2 $button-size/4;
-    transition: 0.3s;
-    cursor: pointer;
-    user-select: none;
-    background: transparent;
-    border: none;
-    outline: none;
-
-    &:hover {
-        opacity: 1;
-    }
-
-    &:active {
-        transition: 0;
-        background: rgba(0,0,0,.1);
-    }
-}
-
-.lines {
-    //create middle line
-    @include line;
-    position: relative;
-
-    /*create the upper and lower lines as pseudo-elements of the middle line*/
-    &:before,
-    &:after {
-        @include line;
-        position: absolute;
-        left: 0;
-        content: '';
-        transform-origin: $button-size/14 center;
-    }
-    &:before {
-        top: $button-size/4;
-    }
-    &:after {
-        top: -$button-size/4;
-    }
+ #nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 
-.lines-button.close .lines{
 
-    /*hide the middle line*/
-    background: transparent;
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
 
-    /*overlay the lines by setting both their top values to 0*/
-    &:before, &:after{
-      transform-origin: 50% 50%;
-      top:0;
-      width: $button-size;
-    }
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 6px;
+}
 
-    // rotate the lines to form the x shape
-    &:before{
-      transform: rotate3d(0,0,1,45deg);
-    }
-    &:after{
-      transform: rotate3d(0,0,1,-45deg);
-    }
+#nav-icon3 span:nth-child(4) {
+  top: 12px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 6px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 6px;
+  width: 0%;
+  left: 50%;
 }

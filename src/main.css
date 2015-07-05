@@ -3702,70 +3702,80 @@ section {
 .mobile-nav.is-shown {
   width: 100%; }
 
-/* line 102, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.lines-button {
-  display: inline-block;
-  padding: 1.75rem 0.875rem;
-  transition: 0.3s;
-  cursor: pointer;
-  user-select: none;
-  background: transparent;
-  border: none;
-  outline: none; }
-  /* line 112, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines-button:hover {
-    opacity: 1; }
-  /* line 116, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines-button:active {
-    transition: 0;
-    background: rgba(0, 0, 0, 0.1); }
+/* line 89, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+#nav-icon3 {
+  width: 23px;
+  height: 15px;
+  right: 0;
+  margin-top: 15px;
+  margin-right: 10px;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer; }
 
-/* line 122, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.lines {
-  display: inline-block;
-  width: 3.5rem;
-  height: 0.5rem;
-  background: white;
-  border-radius: 0.25rem;
-  transition: 0.3s;
-  position: relative;
-  /*create the upper and lower lines as pseudo-elements of the middle line*/ }
-  /* line 129, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines:before,
-  .lines:after {
-    display: inline-block;
-    width: 3.5rem;
-    height: 0.5rem;
-    background: white;
-    border-radius: 0.25rem;
-    transition: 0.3s;
-    position: absolute;
-    left: 0;
-    content: '';
-    transform-origin: 0.25rem center; }
-  /* line 136, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines:before {
-    top: 0.875rem; }
-  /* line 139, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines:after {
-    top: -0.875rem; }
+/* line 107, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out; }
 
-/* line 145, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-.lines-button.close .lines {
-  /*hide the middle line*/
-  background: transparent;
-  /*overlay the lines by setting both their top values to 0*/ }
-  /* line 151, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines-button.close .lines:before, .lines-button.close .lines:after {
-    transform-origin: 50% 50%;
-    top: 0;
-    width: 3.5rem; }
-  /* line 158, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines-button.close .lines:before {
-    transform: rotate3d(0, 0, 1, 45deg); }
-  /* line 161, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
-  .lines-button.close .lines:after {
-    transform: rotate3d(0, 0, 1, -45deg); }
+/* line 128, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+#nav-icon3 span:nth-child(1) {
+  top: 0px; }
+
+/* line 132, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+  top: 6px; }
+
+/* line 136, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+#nav-icon3 span:nth-child(4) {
+  top: 12px; }
+
+/* line 140, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+#nav-icon3.open span:nth-child(1) {
+  top: 6px;
+  width: 0%;
+  left: 50%; }
+
+/* line 146, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* line 153, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/* line 160, /Users/David/Desktop/git/resume/src/app/shared/scss/_nav.scss */
+#nav-icon3.open span:nth-child(4) {
+  top: 6px;
+  width: 0%;
+  left: 50%; }
 
 /* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_circle.scss */
 .circle {

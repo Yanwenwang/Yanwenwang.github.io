@@ -16,14 +16,14 @@
                     <a ng-class="navVM.getClass('/')" class="navbar-brand-logo" href="#/">.YW</a>
                 </div>
 
-                <button class="lines-button hidden-md hidden-lg"
-                    type="button"
-                    role="button"
-                    aria-label="Toggle Navigation"
-                    ng-class=" { 'close': navVM.showMobileNav }"
-                    ng-click="navVM.showMobileNav = !navVM.showMobileNav">
-                  <span class="lines"></span>
-                </button>
+                <div id="nav-icon3" class="mobile-hamburger hidden-md hidden-lg"
+                        ng-class="{ 'open': navVM.showMobileNav }"
+                        ng-click="navVM.showMobileNav = !navVM.showMobileNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
                 <ul class="hidden-sm hidden-xs">
                     <li>
