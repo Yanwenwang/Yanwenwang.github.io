@@ -16,8 +16,8 @@
                     <a ng-class="navVM.getClass('/')" class="navbar-brand-logo" href="#/">.YW</a>
                 </div>
 
-                <div id="nav-icon3" class="mobile-hamburger hidden-md hidden-lg"
-                        ng-class="{ 'open': navVM.showMobileNav }"
+                <div class="mobile-hamburger hidden-md hidden-lg"
+                        ng-class="{ 'is-open': navVM.showMobileNav }"
                         ng-click="navVM.showMobileNav = !navVM.showMobileNav">
                     <span></span>
                     <span></span>
@@ -38,6 +38,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="mobile-nav" ng-class="{ 'is-shown': navVM.showMobileNav }">
             <div class="container">
                 <ul>
@@ -53,6 +54,7 @@
                 </ul>
             </div>
         </div>
+
         <div ng-view></div>
         <div class="push"></div>
     </div>
