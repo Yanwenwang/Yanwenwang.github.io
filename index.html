@@ -9,69 +9,21 @@
 </head>
 
 <body>
-    <div class="wrapper" ng-controller="navController as navVM">
-        <div class="navbar" >
-            <div class="container">
-                <div class="navbar-brand">
-                    <a ng-class="navVM.getClass('/')" class="navbar-brand-logo" href="#/">.YW</a>
-                </div>
+    <div class="wrapper">
 
-                <div class="mobile-hamburger hidden-md hidden-lg"
-                        ng-class="{ 'is-open': navVM.showMobileNav }"
-                        ng-click="navVM.showMobileNav = !navVM.showMobileNav">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <div ui-view="navbar"></div>
 
-                <ul class="hidden-sm hidden-xs">
-                    <li>
-                        <a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
-                    </li>
-                    <li>
-                        <a ng-class="navVM.getClass('/projects')" href="#/projects">Projects</a>
-                    </li>
-                    <li>
-                        <a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <div ui-view="content"></div>
 
-        <div class="mobile-nav" ng-class="{ 'is-shown': navVM.showMobileNav }">
-            <div class="container">
-                <ul>
-                    <li>
-                        <a ng-class="navVM.getClass('/resume')" href="#/resume">Resume</a>
-                    </li>
-                    <li>
-                        <a ng-class="navVM.getClass('/projects')" href="#/projects">Projects</a>
-                    </li>
-                    <li>
-                        <a ng-class="navVM.getClass('/contact')" href="#/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div ng-view></div>
         <div class="push"></div>
+
     </div>
 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>&copy; Copyright 2015 Yanwen Wang</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div ui-view="footer"></div>
 
     <!-- vendor dependencies -->
     <script src="./bower_components/angular/angular.js"></script>
-    <script src="./bower_components/angular-route/angular-route.js"></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="./bower_components/angular-bootstrap/ui-bootstrap.js"></script>
     <script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 

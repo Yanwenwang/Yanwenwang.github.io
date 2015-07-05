@@ -4,43 +4,82 @@
 		.module('ywPortal')
 		.config(routes);
 
-	routes.$inject = ['$routeProvider'];
+	routes.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-	function routes($routeProvider) {
+	function routes($stateProvider, $urlRouterProvider) {
 
-		$routeProvider
-			.when('/', {
-				templateUrl: './src/app/home/html/home.html',
-                controller: 'homeController',
-                controllerAs: 'homeVM'
-			})
-			.when('/resume', {
-				templateUrl: './src/app/resume/html/resume.html',
-				controller: 'resumeController',
-				controllerAs: 'resumeVM'
-			})
-			.when('/projects', {
-				templateUrl: './src/app/projects/html/projects.html',
-				controller: 'projectsController',
-				controllerAs: 'projectsVM'
-			})
-			.when('/about', {
-				templateUrl: './src/app/about/html/about.html',
-				controller: 'aboutController',
-				controllerAs: 'aboutVM'
-			})
-			.when('/contact', {
-				templateUrl: './src/app/contact/html/contact.html',
-				controller: 'contactController',
-				controllerAs: 'contactVM'
-			})
-			.when('/tic-tac-toe', {
-				templateUrl: './src/app/tic-tac-toe/html/tic-tac-toe.html',
-				controller: 'ticTacToeController',
-				controllerAs: 'ticTacToeVM'
-			})
-			.otherwise({redirectTo:'/'});
+		$urlRouterProvider.otherwise('/home');
 
+		$stateProvider
+			.state('main', {
+				abstract: true,
+				url: '/',
+				views: {
+					'navbar': {
+						templateUrl: './src/app/shared/html/navbar.html',
+						controller: 'navController',
+						controllerAs: 'navVM'
+					},
+					'footer': {
+						templateUrl: './src/app/shared/html/footer.html'
+					}
+				}
+			})
+
+			.state('main.home', {
+				url: 'home',
+				views: {
+					'content@': {
+						templateUrl: './src/app/home/html/home.html',
+						controller: 'homeController',
+						controllerAs: 'homeVM'
+					}
+				}
+			})
+
+			.state('main.resume', {
+				url: 'resume',
+				views: {
+					'content@': {
+						templateUrl: './src/app/resume/html/resume.html',
+						controller: 'resumeController',
+						controllerAs: 'resumeVM'
+					}
+				}
+			})
+
+			.state('main.projects', {
+				url: 'projects',
+				views: {
+					'content@': {
+						templateUrl: './src/app/projects/html/projects.html',
+						controller: 'projectsController',
+						controllerAs: 'projectsVM'
+					}
+				}
+			})
+
+			.state('main.contact', {
+				url: 'contact',
+				views: {
+					'content@': {
+						templateUrl: './src/app/contact/html/contact.html',
+						controller: 'contactController',
+						controllerAs: 'contactVM'
+					}
+				}
+			})
+
+			.state('main.tic-tac-toe', {
+				url: 'tic-tac-toe',
+				views: {
+					'content@': {
+						templateUrl: './src/app/tic-tac-toe/html/tic-tac-toe.html',
+						controller: 'ticTacToeController',
+						controllerAs: 'ticTacToeVM'
+					}
+				}
+			});
 	}
 
 }());

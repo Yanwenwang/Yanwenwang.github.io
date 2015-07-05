@@ -1,0 +1,44 @@
+<div class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a ui-sref-active="is-selected" class="navbar-brand-logo" ui-sref="main.home">.YW</a>
+        </div>
+
+        <div class="mobile-hamburger hidden-md hidden-lg"
+                ng-class="{ 'is-open': navVM.showMobileNav }"
+                ng-click="navVM.showMobileNav = !navVM.showMobileNav">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="hidden-sm hidden-xs">
+            <li>
+                <a ui-sref-active="is-selected" ui-sref="main.resume">Resume</a>
+            </li>
+            <li>
+                <a ui-sref-active="is-selected" ui-sref="main.projects">Projects</a>
+            </li>
+            <li>
+                <a ui-sref-active="is-selected" ui-sref="main.contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="mobile-nav" ng-class="{ 'is-shown': navVM.showMobileNav }">
+    <div class="container">
+        <ul>
+            <li>
+                <a ui-sref-active="is-selected" ui-sref="main.resume">Resume</a>
+            </li>
+            <li>
+                <a ui-sref-active="is-selected" ui-sref="main.projects">Projects</a>
+            </li>
+            <li>
+                <a ui-sref-active="is-selected" ui-sref="main.contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
