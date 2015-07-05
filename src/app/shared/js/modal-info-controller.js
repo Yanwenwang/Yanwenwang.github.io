@@ -1,18 +1,18 @@
 (function () {
 
-	angular
-		.module('ywPortal')
-		.controller('modalInfoController', modalInfoController);
+    angular
+        .module('ywPortal')
+        .controller('modalInfoController', modalInfoController);
 
-	modalInfoController.$inject = ['$modalInstance'];	
+    modalInfoController.$inject = ['$modalInstance'];
 
-		function modalInfoController ($modalInstance) {
+    function modalInfoController($modalInstance) {
 
-			var vm = this;
+        var vm = this;
 
-			vm.ok =function () {
-				$modalInstance.close('ok');
-			};
-		}
+        vm.ok = function () {
+            $modalInstance.close('ok');
+        };
+    }
 
 }());
