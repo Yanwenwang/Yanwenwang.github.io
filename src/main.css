@@ -3843,13 +3843,16 @@ section {
         margin: 32px 0; } }
   /* line 25, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
   .card-section a {
-    text-decoration: none; }
-  /* line 29, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block; }
+  /* line 32, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
   .card-section .card-container-logo {
     font-size: 137px;
     margin-top: 60px;
     color: #FFFFFF; }
-  /* line 35, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+  /* line 38, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
   .card-section .card-container-header {
     border-bottom: 2px solid #FFFFFF;
     padding: 18px;
