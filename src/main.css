@@ -3886,13 +3886,13 @@ button {
   padding: 15px 45px;
   text-transform: uppercase;
   outline: none;
-  color: #FFBD88;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  background: #FFBD88;
   border: 1px solid #FFBD88; }
-  /* line 10, /Users/David/Desktop/git/resume/src/app/shared/scss/_button.scss */
+  /* line 9, /Users/David/Desktop/git/resume/src/app/shared/scss/_button.scss */
   button:hover {
-    color: #FFFFFF;
-    background: #FFBD88; }
+    color: #FFBD88;
+    background: #FFFFFF; }
 
 /* line 2, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
 .contacts .hero {

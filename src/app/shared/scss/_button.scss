@@ -2,13 +2,12 @@ button {
     padding: 15px 45px;
     text-transform: uppercase;
     outline: none;
-
-    color: $primary-light;
-    background: $primary;
+    color: $primary;
+    background: $primary-light;
     border: 1px solid $primary-light;
 
     &:hover {
-        color: $primary;
-        background: $primary-light;
+        color: $primary-light;
+        background: $primary;
     }
 }
