@@ -3447,36 +3447,43 @@ tbody.collapse.in {
     display: none !important; } }
 
 /* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
+body.modal-open {
+  overflow: visible; }
+
+/* line 5, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
 .modal-content {
   border-radius: 10px;
   overflow: hidden; }
-  /* line 5, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
+  /* line 9, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
   .modal-content .modal-header {
     text-align: center;
     color: #FFFFFF;
     background: #D75C37;
     border-bottom: 2px solid #D75C37;
     padding: 15px; }
-    /* line 12, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
+    /* line 16, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
     .modal-content .modal-header h3 {
       font-weight: 400; }
-  /* line 15, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
+  /* line 19, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
   .modal-content .modal-body {
     color: #81888D;
     padding: 64px 30px; }
-  /* line 20, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
+  /* line 24, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
+  .modal-content .modal-body.mod-congrats {
+    text-align: center; }
+  /* line 28, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
   .modal-content .modal-footer {
     text-align: center;
     border: none;
     padding: 0 0 15px 0; }
-    /* line 25, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
+    /* line 33, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
     .modal-content .modal-footer button {
       padding-top: 10px;
       padding-bottom: 10px;
       border: 1px solid transparent;
       background: #D75C37;
       color: #FFFFFF; }
-      /* line 33, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
+      /* line 41, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
       .modal-content .modal-footer button:hover {
         background: #FFFFFF;
         color: #D75C37;

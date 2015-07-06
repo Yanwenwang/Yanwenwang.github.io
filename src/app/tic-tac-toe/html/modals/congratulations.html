@@ -1,11 +1,11 @@
 <div class="modal-header">
-	<h2 class="modal-tittle">Congratulations!</h2>
+	<h2 class="modal-title">Congratulations!</h2>
 </div>
 
-<div class="modal-body" ng-bind="ticTacToeVM.currentPlayer">
-	has won!
+<div class="modal-body mod-congrats">
+	Player {{ modalInfoVM.data }} has won!
 </div>
 
 <div class="modal-footer">
-	<button class="btn btn-primary" ng-click="modalInstanceVM.ok()">Ok</button>
+	<button ng-click="modalInfoVM.ok()">Ok</button>
 </div>

@@ -1,101 +1,163 @@
 (function () {
 
-	angular
-		.module('ywPortal')
-		.controller('ticTacToeController', ticTacToeController);
+    angular
+        .module('ywPortal')
+        .controller('ticTacToeController', ticTacToeController);
 
-	ticTacToeController.$inject = ['$modal'];
+    ticTacToeController.$inject = ['$modal'];
 
-	function ticTacToeController ($modal) {
-		var vm = this;
+    function ticTacToeController($modal) {
+        var vm = this;
 
-		vm.board = [
-			' ', ' ', ' ',
-			' ', ' ', ' ',
-			' ', ' ', ' '
-		];
+        vm.board = [
+            ' ', ' ', ' ',
+            ' ', ' ', ' ',
+            ' ', ' ', ' '
+        ];
 
- 		vm.currentPlayer = 'X';
+        vm.gameOver = false;
 
-		vm.playTurn = function (boardPosition) {
+        vm.currentPlayer = 'X';
 
-			if(vm.board[boardPosition] !== ' ') {
-				vm.open();
-				return;
-			}
+        vm.playTurn = function (boardPosition) {
 
-			if(vm.currentPlayer === 'X') {
-				vm.board[boardPosition] = 'X';
-				vm.checkWinner(vm.currentPlayer);
-				vm.currentPlayer = 'O';
-			} else {
-				vm.board[boardPosition] = 'O';
-				vm.checkWinner(vm.currentPlayer);
-				vm.currentPlayer = 'X';
-			}
+            if (vm.gameOver) {
+                return;
+            }
 
+            if (vm.board[boardPosition] !== ' ') {
+                vm.openIllegalMoveModal();
+                return;
+            }
 
-		};
+            if (vm.currentPlayer === 'X') {
+                vm.board[boardPosition] = 'X';
+                vm.checkWinner(vm.currentPlayer);
+                vm.currentPlayer = 'O';
+            } else {
+                vm.board[boardPosition] = 'O';
+                vm.checkWinner(vm.currentPlayer);
+                vm.currentPlayer = 'X';
+            }
 
-		vm.open = function () {
-			var modalInstance = $modal.open({
-				animation: true,
-				templateUrl: './src/app/tic-tac-toe/html/modals/illegal-move.html',
-				controller: 'modalInfoController',
-				controllerAs: 'modalInfoVM',
-				size: 'sm'
-			});
-		};
+        };
 
-		vm.restart = function () {
-			vm.board = [
-				' ', ' ', ' ',
-				' ', ' ', ' ',
-				' ', ' ', ' '
-			];
-		};
+        vm.openIllegalMoveModal = function () {
+            $modal.open({
+                animation: true,
+                templateUrl: './src/app/tic-tac-toe/html/modals/illegal-move.html',
+                controller: 'modalInfoController',
+                controllerAs: 'modalInfoVM',
+                size: 'sm',
+                resolve: {
+                    data: function () {
+                        return;
+                    }
+                }
+            });
+        };
 
-		vm.getMark = function (boardPosition) {
-			if(vm.board[boardPosition] === 'X') {
-				return 'fa-times';
-			}
+        vm.openDrawModal = function () {
 
-			if(vm.board[boardPosition] === 'O') {
-				return 'fa-circle-o';
-			}
+            vm.gameOver = true;
 
-			return;
-		};
+            $modal.open({
+                animation: true,
+                templateUrl: './src/app/tic-tac-toe/html/modals/draw.html',
+                controller: 'modalInfoController',
+                controllerAs: 'modalInfoVM',
+                size: 'sm',
+                resolve: {
+                    data: function () {
+                        return;
+                    }
+                }
+            });
+        }
 
-		vm.checkWinner = function (currentPlayer) {
+        vm.openCongratsModal = function (currentPlayer) {
 
-			if (vm.board[0] === currentPlayer && vm.board[1] === currentPlayer && vm.board[2] === currentPlayer) {
-				vm.open();
-			}
-			if (vm.board[3] === currentPlayer && vm.board[4] === currentPlayer && vm.board[5] === currentPlayer) {
-				alert('Congratulations! ' + currentPlayer + ' won!');
-			}
-			if (vm.board[6] === currentPlayer && vm.board[7] === currentPlayer && vm.board[8] === currentPlayer) {
-				alert('Congratulations! ' + currentPlayer + ' won!');
-			}
+            vm.gameOver = true;
 
-			if (vm.board[0] === currentPlayer && vm.board[3] === currentPlayer && vm.board[6] === currentPlayer) {
-				alert('Congratulations! ' + currentPlayer + ' won!');
-			}
-			if (vm.board[1] === currentPlayer && vm.board[4] === currentPlayer && vm.board[7] === currentPlayer) {
-				alert('Congratulations! ' + currentPlayer + ' won!');
-			}
-			if (vm.board[2] === currentPlayer && vm.board[5] === currentPlayer && vm.board[8] === currentPlayer) {
-				alert('Congratulations! ' + currentPlayer + ' won!');
-			}
+            $modal.open({
+                animation: true,
+                templateUrl: './src/app/tic-tac-toe/html/modals/congratulations.html',
+                controller: 'modalInfoController',
+                controllerAs: 'modalInfoVM',
+                size: 'sm',
+                resolve: {
+                    data: function () {
+                        return currentPlayer;
+                    }
+                }
+            });
+        };
 
-			if (vm.board[0] === currentPlayer && vm.board[4] === currentPlayer && vm.board[8] === currentPlayer) {
-				alert('Congratulations! ' + currentPlayer + ' won!');
-			}
-			if (vm.board[2] === currentPlayer && vm.board[4] === currentPlayer && vm.board[6] === currentPlayer) {
-				alert('Congratulations! ' + currentPlayer + ' won!');
-			}
-		};
-	}
+        vm.restart = function () {
+            vm.board = [
+                ' ', ' ', ' ',
+                ' ', ' ', ' ',
+                ' ', ' ', ' '
+            ];
+
+            vm.currentPlayer = 'X';
+            vm.gameOver = false;
+        };
+
+        vm.getMark = function (boardPosition) {
+            if (vm.board[boardPosition] === 'X') {
+                return 'fa-times';
+            }
+
+            if (vm.board[boardPosition] === 'O') {
+                return 'fa-circle-o';
+            }
+
+            return;
+        };
+
+        vm.checkWinner = function (currentPlayer) {
+
+            var emptyBoardPositions = vm.board.filter(function (boardPos) {
+                return boardPos === ' ';
+            });
+
+            if (emptyBoardPositions.length === 0) {
+                vm.openDrawModal();
+            }
+
+            if (vm.board[0] === currentPlayer && vm.board[1] === currentPlayer && vm.board[2] === currentPlayer) {
+                vm.openCongratsModal(currentPlayer);
+            }
+
+            if (vm.board[3] === currentPlayer && vm.board[4] === currentPlayer && vm.board[5] === currentPlayer) {
+                vm.openCongratsModal(currentPlayer);
+            }
+
+            if (vm.board[6] === currentPlayer && vm.board[7] === currentPlayer && vm.board[8] === currentPlayer) {
+                vm.openCongratsModal(currentPlayer);
+            }
+
+            if (vm.board[0] === currentPlayer && vm.board[3] === currentPlayer && vm.board[6] === currentPlayer) {
+                vm.openCongratsModal(currentPlayer);
+            }
+
+            if (vm.board[1] === currentPlayer && vm.board[4] === currentPlayer && vm.board[7] === currentPlayer) {
+                vm.openCongratsModal(currentPlayer);
+            }
+
+            if (vm.board[2] === currentPlayer && vm.board[5] === currentPlayer && vm.board[8] === currentPlayer) {
+                vm.openCongratsModal(currentPlayer);
+            }
+
+            if (vm.board[0] === currentPlayer && vm.board[4] === currentPlayer && vm.board[8] === currentPlayer) {
+                vm.openCongratsModal(currentPlayer);
+            }
+
+            if (vm.board[2] === currentPlayer && vm.board[4] === currentPlayer && vm.board[6] === currentPlayer) {
+                vm.openCongratsModal(currentPlayer);
+            }
+        };
+    }
 
 }());
