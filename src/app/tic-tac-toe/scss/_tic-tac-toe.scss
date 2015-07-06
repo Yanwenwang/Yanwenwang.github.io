@@ -18,6 +18,8 @@
 		.board-value,
 		.board-title {
 			display: inline-block;
+			font-size: 24px;
+			color: $primary-light;
 		}
 	}
 
@@ -42,7 +44,8 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -50%);
+
+			@include translate(-50%, -50%);
 		}
 
 		.right-bottom {
@@ -61,7 +64,35 @@
 		button {
 			margin-top: 64px;
 			margin-bottom: 64px;
+			padding: 15px 45px;
+			text-transform: uppercase;
+			outline: none;
+
+			color: $primary-light;
+			background: $primary;
+			border: 1px solid $primary-light;
+
+			&:hover {
+				color: $primary;
+				background: $primary-light;
+			}
 		}
+
+
+		@media screen and (max-width: $screen-xs-max) {
+			.square-container {
+				height: 75px;
+			}
+
+	        .square {
+				height: 75px;
+				width: 75px;
+			}
+
+			p {
+				font-size: 2em;
+			}
+	    }
 	}
 
 
