@@ -8,21 +8,17 @@
 		var vm = this;
 
 		vm.groups = [
-
 			{
 				groupName: 'HTML/CSS',
 				class: 'html-css',
 				showDivider: true,
 				image:'../content/images/logo-html.png',
 				skills: [
-					{ name: 'Animate.css' },
 					{ name: 'Box model' },
 					{ name: 'Bootstrap' },
 					{ name: 'Responsive Design' },
 					{ name: 'Sass' },
 					{ name: 'Transitions' }
-
-
 				]
 			},
 			{
@@ -49,13 +45,12 @@
 					{ name: 'Angular UI Bootstrap' },
 					{ name: 'Controllers' },
 				 	{ name: 'ControllerAs' },
-					{ name: 'Directives' },
+					{ name: 'ng-bind' },
+					{ name: 'ng-click' },
 					{ name: 'ng-class' },
-				 	{ name: 'ng-bind' },
-				 	{ name: 'Routing' },
-				 	{ name: 'Services' },
-				 	{ name: '$http' },
-				 	{ name: '$location' }
+					{ name: 'Services' },
+					{ name: '$http' },
+				 	{ name: 'UI Router' }
 				]
 			},
 			{
@@ -66,7 +61,7 @@
 				skills: [
 					{ name: 'Atom' },
 					{ name: 'Github' },
-				  { name: 'SourceTree' },
+				  	{ name: 'SourceTree' },
 				 	{ name: 'Sublime Text' },
 					{ name: 'Terminal' }
 				]
@@ -80,12 +75,11 @@
 					{ name: 'Browsersync' },
 					{ name: 'Bower' },
 					{ name: 'Gulp' },
-				 	{ name: 'Npm' },
+				 	{ name: 'NPM' },
 				 	{ name: 'Jshint' }
 				]
 			}
 		];
-
 	}
 
 }());
