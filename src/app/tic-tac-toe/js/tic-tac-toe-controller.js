@@ -57,6 +57,18 @@
 			];
 		};
 
+		vm.getMark = function (boardPosition) {
+			if(vm.board[boardPosition] === 'X') {
+				return 'fa-times';
+			}
+
+			if(vm.board[boardPosition] === 'O') {
+				return 'fa-circle-o';
+			}
+
+			return;
+		};
+
 		vm.checkWinner = function (currentPlayer) {
 
 			if (vm.board[0] === currentPlayer && vm.board[1] === currentPlayer && vm.board[2] === currentPlayer) {

@@ -39,13 +39,21 @@
 			position: relative;
 		}
 
-		p {
+		i {
 			font-size: 5em;
 			position: absolute;
 			top: 50%;
 			left: 50%;
 
 			@include translate(-50%, -50%);
+		}
+
+		i.fa-times {
+			color: $primary-light;
+		}
+
+		i.fa-circle-o {
+			color: $text;
 		}
 
 		.right-bottom {
@@ -89,8 +97,8 @@
 				width: 75px;
 			}
 
-			p {
-				font-size: 2em;
+			i {
+				font-size: 3em;
 			}
 	    }
 	}

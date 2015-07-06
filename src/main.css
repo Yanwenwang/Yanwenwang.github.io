@@ -4144,7 +4144,7 @@ section {
     display: inline-block;
     position: relative; }
   /* line 42, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
-  .tic-tac-toe .board p {
+  .tic-tac-toe .board i {
     font-size: 5em;
     position: absolute;
     top: 50%;
@@ -4154,16 +4154,22 @@ section {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
   /* line 51, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  .tic-tac-toe .board i.fa-times {
+    color: #FFBD88; }
+  /* line 55, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  .tic-tac-toe .board i.fa-circle-o {
+    color: #6991AC; }
+  /* line 59, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .right-bottom {
     border-right: 2px solid #FFBD88;
     border-bottom: 2px solid #FFBD88; }
-  /* line 56, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 64, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .bottom {
     border-bottom: 2px solid #FFBD88; }
-  /* line 60, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 68, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .right {
     border-right: 2px solid #FFBD88; }
-  /* line 64, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 72, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board button {
     margin-top: 64px;
     margin-bottom: 64px;
@@ -4173,18 +4179,18 @@ section {
     color: #FFBD88;
     background: #FFFFFF;
     border: 1px solid #FFBD88; }
-    /* line 75, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+    /* line 83, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
     .tic-tac-toe .board button:hover {
       color: #FFFFFF;
       background: #FFBD88; }
   @media screen and (max-width: 767px) {
-    /* line 83, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+    /* line 91, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
     .tic-tac-toe .board .square-container {
       height: 75px; }
-    /* line 87, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+    /* line 95, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
     .tic-tac-toe .board .square {
       height: 75px;
       width: 75px; }
-    /* line 92, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
-    .tic-tac-toe .board p {
-      font-size: 2em; } }
+    /* line 100, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+    .tic-tac-toe .board i {
+      font-size: 3em; } }
