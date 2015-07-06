@@ -3469,24 +3469,23 @@ tbody.collapse.in {
 
 /* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
 .hero {
-  pointer-events: none;
   margin-top: -55px;
   height: 320px; }
-  /* line 6, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+  /* line 5, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
   .hero .overlay {
     background: rgba(0, 0, 0, 0.2);
     height: 320px; }
-  /* line 11, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+  /* line 10, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
   .hero h1 {
     margin: 0;
     color: #FFFFFF; }
   @media screen and (max-width: 991px) {
-    /* line 17, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+    /* line 16, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
     .hero h1 {
       text-align: center;
       margin-top: 167.5px; } }
   @media screen and (min-width: 992px) {
-    /* line 25, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+    /* line 24, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
     .hero h1 {
       font-size: 90px;
       line-height: 320px;
@@ -3494,18 +3493,18 @@ tbody.collapse.in {
       text-shadow: 4px 3px 0 #313436, 9px 8px 0 rgba(0, 0, 0, 0.15); } }
 
 @media screen and (max-width: 991px) {
-  /* line 34, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+  /* line 33, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
   .hero.mod-large {
     height: 365px; }
-    /* line 39, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+    /* line 38, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
     .hero.mod-large .overlay {
       height: 365px; } }
 
 @media screen and (min-width: 992px) {
-  /* line 34, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+  /* line 33, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
   .hero.mod-large {
     height: 640px; }
-    /* line 48, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
+    /* line 47, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
     .hero.mod-large .overlay {
       height: 640px; } }
 
