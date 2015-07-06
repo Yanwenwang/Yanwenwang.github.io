@@ -154,7 +154,8 @@
             .content-container .content {
                 position: absolute;
                 top: 50%;
-                transform: translate(0, -50%);
+
+                @include translate(0, -50%);
             }
 
             .image-container {
@@ -167,7 +168,8 @@
                 position: absolute;
                 top: 50%;
                 right: 0;
-                transform: translate(0, -50%);
+
+                @include translate(0, -50%);
             }
         }
     }

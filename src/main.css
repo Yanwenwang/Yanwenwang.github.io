@@ -3995,27 +3995,33 @@ section {
       .home .section-content .content-container .content {
         position: absolute;
         top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
         transform: translate(0, -50%); }
-      /* line 160, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 161, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .section-content .image-container {
         height: 510px; }
-      /* line 164, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      /* line 165, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
       .home .section-content .image-container .image {
         height: 350px;
         width: 350px;
         position: absolute;
         top: 50%;
         right: 0;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
         transform: translate(0, -50%); } }
 
-/* line 176, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+/* line 178, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .section-content.mod-background .image-container .image {
   background: url("../content/images/home-background.jpg");
   background-size: cover;
   display: inline-block;
   border-radius: 50%; }
 
-/* line 185, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+/* line 187, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .section-content.mod-programming .image-container .image {
   background: url("../content/images/home-programming.jpg");
   background-size: cover;
