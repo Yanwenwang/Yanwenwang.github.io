@@ -37,15 +37,13 @@
 
 		};
 
-		vm.animationsEnabled = true;
-
-		vm.open = function (size) {
+		vm.open = function () {
 			var modalInstance = $modal.open({
-				animation: vm.animationsEnabled,
+				animation: true,
 				templateUrl: './src/app/tic-tac-toe/html/modals/illegal-move.html',
 				controller: 'modalInfoController',
 				controllerAs: 'modalInfoVM',
-				size: size
+				size: 'sm'
 			});
 		};
 

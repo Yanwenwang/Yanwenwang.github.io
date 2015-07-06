@@ -72,20 +72,7 @@
 		button {
 			margin-top: 64px;
 			margin-bottom: 64px;
-			padding: 15px 45px;
-			text-transform: uppercase;
-			outline: none;
-
-			color: $primary-light;
-			background: $primary;
-			border: 1px solid $primary-light;
-
-			&:hover {
-				color: $primary;
-				background: $primary-light;
-			}
 		}
-
 
 		@media screen and (max-width: $screen-xs-max) {
 			.square-container {
