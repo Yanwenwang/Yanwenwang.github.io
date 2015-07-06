@@ -8,7 +8,7 @@
 	.body1 { font-size: 16px; line-height: 22px; }
 }
 
-@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 
 	h1 { font-size: 40px; line-height: 44px; }
 	h2 { font-size: 32px; line-height: 36px; }
@@ -17,7 +17,7 @@
 	.body1 { font-size: 16px; line-height: 22px; }
 }
 
-@media screen and (max-width: $screen-sm-min) {
+@media screen and (max-width: $screen-sm-max) {
 
 	h1 { font-size: 32px; line-height: 36px; }
 	h2 { font-size: 26px; line-height: 30px; }
@@ -25,4 +25,3 @@
 	h4 { font-size: 18px; line-height: 22px; }
 	.body1 { font-size: 16px; line-height: 20px; }
 }
-

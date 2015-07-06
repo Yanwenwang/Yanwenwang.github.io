@@ -92,7 +92,7 @@
         }
     }
 
-    .backgrounds {
+    .section-content {
         background: $primary;
 
         .content-container {
@@ -104,19 +104,18 @@
             h3 {
                 margin-top: 0;
                 color: $accent;
+                margin-bottom: 32px;
+            }
+
+            p {
+                margin-top: 26px;
+                text-align: left;
             }
         }
 
         .image-container {
             text-align: center;
             position: relative;
-        }
-
-        .image-container .image {
-            background: url("../content/images/home-background.jpg");
-            background-size: cover;
-            display: inline-block;
-            border-radius: 50%;
         }
 
         @media screen and (max-width: $screen-sm-max) {
@@ -131,9 +130,9 @@
             .content-container .content {
                 text-align: center;
                 line-height: 1.45;
+
                 h3 {
                     text-align: center;
-                    margin-bottom: 26px;
                 }
             }
 
@@ -146,10 +145,10 @@
         }
 
         @media screen and (min-width: $screen-md-min) {
-            height: 620px;
+            height: 510px;
 
             .content-container {
-                height: 620px;
+                height: 510px;
             }
 
             .content-container .content {
@@ -159,7 +158,7 @@
             }
 
             .image-container {
-                height: 620px;
+                height: 510px;
             }
 
             .image-container .image {
@@ -173,83 +172,21 @@
         }
     }
 
-    .programmings {
-        background: $primary;
-
-        .content-container {
-            position: relative;
+    .section-content.mod-background {
+        .image-container .image {
+            background: url("../content/images/home-background.jpg");
+            background-size: cover;
+            display: inline-block;
+            border-radius: 50%;
         }
+    }
 
-        .content-container .content {
-            color: $text-secondary;
-
-            h3 {
-                margin-top: 0;
-                color: $accent;
-            }
-        }
-
-        .image-container {
-            text-align: center;
-            position: relative;
-        }
-
+    .section-content.mod-programming {
         .image-container .image {
             background: url("../content/images/home-programming.jpg");
             background-size: cover;
             display: inline-block;
             border-radius: 50%;
-        }
-
-        @media screen and (max-width: $screen-sm-max) {
-            text-align: center;
-            line-height: 1.45;
-
-            h3 {
-                text-align: center;
-                margin-bottom: 26px;
-            }
-
-            .content-container,
-            .image-container {
-                margin-top: 64px;
-                margin-bottom: 64px;
-                float: none;
-            }
-
-            .image-container .image {
-                height: 280px;
-                width: 280px;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-        }
-
-        @media screen and (min-width: $screen-md-min) {
-            height: 620px;
-
-            .content-container {
-                height: 620px;
-            }
-
-            .content-container .content {
-                position: absolute;
-                top: 50%;
-                transform: translate(0, -50%);
-            }
-
-            .image-container {
-                height: 620px;
-            }
-
-            .image-container .image {
-                height: 350px;
-                width: 350px;
-                position: absolute;
-                top: 50%;
-                right: 0;
-                transform: translate(0, -50%);
-            }
         }
     }
 }
