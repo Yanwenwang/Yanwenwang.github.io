@@ -4,9 +4,9 @@
         .module('ywPortal')
         .controller('ticTacToeController', ticTacToeController);
 
-    ticTacToeController.$inject = ['$modal'];
+    ticTacToeController.$inject = ['$modal', '$timeout'];
 
-    function ticTacToeController($modal) {
+    function ticTacToeController($modal, $timeout) {
         var vm = this;
 
         vm.board = [
@@ -14,6 +14,12 @@
             ' ', ' ', ' ',
             ' ', ' ', ' '
         ];
+
+        vm.animation = '';
+
+        vm.getAnimation = function () {
+            return vm.animation;
+        }
 
         vm.gameOver = false;
 
@@ -43,54 +49,74 @@
         };
 
         vm.openIllegalMoveModal = function () {
-            $modal.open({
-                animation: true,
-                templateUrl: './src/app/tic-tac-toe/html/modals/illegal-move.html',
-                controller: 'modalInfoController',
-                controllerAs: 'modalInfoVM',
-                size: 'sm',
-                resolve: {
-                    data: function () {
-                        return;
+            vm.animation = 'shake';
+
+            $timeout(function () {
+                vm.animation = '';
+
+                $modal.open({
+                    animation: true,
+                    templateUrl: './src/app/tic-tac-toe/html/modals/illegal-move.html',
+                    controller: 'modalInfoController',
+                    controllerAs: 'modalInfoVM',
+                    size: 'sm',
+                    resolve: {
+                        data: function () {
+                            return;
+                        }
                     }
-                }
-            });
+                });
+
+            }, 1200);
         };
 
         vm.openDrawModal = function () {
 
             vm.gameOver = true;
+            vm.animation = 'bounce';
 
-            $modal.open({
-                animation: true,
-                templateUrl: './src/app/tic-tac-toe/html/modals/draw.html',
-                controller: 'modalInfoController',
-                controllerAs: 'modalInfoVM',
-                size: 'sm',
-                resolve: {
-                    data: function () {
-                        return;
+            $timeout(function () {
+                vm.animation = '';
+
+                $modal.open({
+                    animation: true,
+                    templateUrl: './src/app/tic-tac-toe/html/modals/draw.html',
+                    controller: 'modalInfoController',
+                    controllerAs: 'modalInfoVM',
+                    size: 'sm',
+                    resolve: {
+                        data: function () {
+                            return;
+                        }
                     }
-                }
-            });
+                });
+
+            }, 1200);
         };
 
         vm.openCongratsModal = function (currentPlayer) {
 
             vm.gameOver = true;
+            vm.animation = 'tada';
 
-            $modal.open({
-                animation: true,
-                templateUrl: './src/app/tic-tac-toe/html/modals/congratulations.html',
-                controller: 'modalInfoController',
-                controllerAs: 'modalInfoVM',
-                size: 'sm',
-                resolve: {
-                    data: function () {
-                        return currentPlayer;
+            $timeout(function () {
+
+                vm.animation = '';
+                
+                $modal.open({
+                    animation: true,
+                    templateUrl: './src/app/tic-tac-toe/html/modals/congratulations.html',
+                    controller: 'modalInfoController',
+                    controllerAs: 'modalInfoVM',
+                    size: 'sm',
+                    resolve: {
+                        data: function () {
+                            return currentPlayer;
+                        }
                     }
-                }
-            });
+                });
+
+            }, 1200);
         };
 
         vm.restart = function () {
