@@ -25,7 +25,7 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 
-// App specific
+// App Components
 @import "app/shared/scss/color";
 @import "app/shared/scss/modal";
 @import "app/shared/scss/hero";
@@ -35,7 +35,9 @@
 @import "app/shared/scss/nav";
 @import "app/shared/scss/circle";
 @import "app/shared/scss/card";
+@import "app/shared/scss/button";
 
+// App page specific
 @import "app/contact/scss/contact";
 @import "app/home/scss/home";
 @import "app/projects/scss/projects";
