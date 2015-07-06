@@ -17,7 +17,7 @@
 					{ name: 'Box model' },
 					{ name: 'Bootstrap' },
 					{ name: 'Responsive Design' },
-					{ name: 'Sass' },
+					{ name: 'SASS' },
 					{ name: 'Transitions' }
 				]
 			},
@@ -60,7 +60,7 @@
 				image:'../content/images/logo-tools.png',
 				skills: [
 					{ name: 'Atom' },
-					{ name: 'Github' },
+					{ name: 'GitHub' },
 				  	{ name: 'SourceTree' },
 				 	{ name: 'Sublime Text' },
 					{ name: 'Terminal' }
@@ -76,7 +76,7 @@
 					{ name: 'Bower' },
 					{ name: 'Gulp' },
 				 	{ name: 'NPM' },
-				 	{ name: 'Jshint' }
+				 	{ name: 'JSHint' }
 				]
 			}
 		];
