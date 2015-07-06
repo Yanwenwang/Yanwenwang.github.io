@@ -79,6 +79,17 @@
 						controllerAs: 'ticTacToeVM'
 					}
 				}
+			})
+
+			.state('main.sudouku', {
+				url: 'sudouku',
+				views: {
+					'content@': {
+						templateUrl: './src/app/sudouku/html/sudouku.html',
+						controller: 'sudoukuController',
+						controllerAs: 'sudoukuVM'
+					}
+				}
 			});
 	}
 

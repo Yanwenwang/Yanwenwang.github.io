@@ -4194,3 +4194,9 @@ section {
     /* line 100, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
     .tic-tac-toe .board i {
       font-size: 3em; } }
+
+/* line 3, /Users/David/Desktop/git/resume/src/app/sudouku/scss/_sudouku.scss */
+.sudouku h3 {
+  text-align: center;
+  color: #D85339;
+  margin-top: 120px; }
