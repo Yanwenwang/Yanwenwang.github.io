@@ -3985,34 +3985,37 @@ section {
       margin-top: 0;
       margin-bottom: 0; } }
   @media screen and (min-width: 992px) {
-    /* line 149, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
-    .home .section-content .content-container {
+    /* line 95, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+    .home .section-content {
       height: 510px; }
-    /* line 153, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
-    .home .section-content .content-container .content {
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%); }
-    /* line 159, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
-    .home .section-content .image-container {
-      height: 510px; }
-    /* line 163, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
-    .home .section-content .image-container .image {
-      height: 350px;
-      width: 350px;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translate(0, -50%); } }
+      /* line 150, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .section-content .content-container {
+        height: 510px; }
+      /* line 154, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .section-content .content-container .content {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%); }
+      /* line 160, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .section-content .image-container {
+        height: 510px; }
+      /* line 164, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+      .home .section-content .image-container .image {
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%); } }
 
-/* line 175, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+/* line 176, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .section-content.mod-background .image-container .image {
   background: url("../content/images/home-background.jpg");
   background-size: cover;
   display: inline-block;
   border-radius: 50%; }
 
-/* line 184, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
+/* line 185, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .section-content.mod-programming .image-container .image {
   background: url("../content/images/home-programming.jpg");
   background-size: cover;
