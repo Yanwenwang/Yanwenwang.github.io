@@ -73,7 +73,7 @@
                     }
                 }
             });
-        }
+        };
 
         vm.openCongratsModal = function (currentPlayer) {
 
