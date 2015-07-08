@@ -8,7 +8,8 @@
 
         var service = {
             getRandomInt: getRandomInt,
-            scrambleArray: scrambleArray
+            scrambleArray: scrambleArray,
+            getLetterPressed: getLetterPressed
         };
 
         return service;
@@ -30,6 +31,21 @@
             }
 
             return scrambledArray;
+        }
+
+        function getLetterPressed(which) {
+
+            // which codes for a-z are 65-90
+
+            if(which < 65 || which > 90) {
+                return;
+            }
+
+            var arr = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' ];
+
+            var index = which - 65;
+
+            return arr[index];
         }
     }
 
