@@ -19,7 +19,7 @@
 
         vm.getAnimation = function () {
             return vm.animation;
-        }
+        };
 
         vm.gameOver = false;
 
@@ -102,7 +102,7 @@
             $timeout(function () {
 
                 vm.animation = '';
-                
+
                 $modal.open({
                     animation: true,
                     templateUrl: './src/app/tic-tac-toe/html/modals/congratulations.html',
