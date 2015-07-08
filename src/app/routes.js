@@ -90,6 +90,17 @@
 						controllerAs: 'sudoukuVM'
 					}
 				}
+			})
+
+			.state('main.scramble-word', {
+				url: 'scramble-word',
+				views: {
+					'content@': {
+						templateUrl: './src/app/scramble-word/html/scramble-word.html',
+						controller: 'scrambleWordController',
+						controllerAs: 'scrambleWordVM'
+					}
+				}
 			});
 	}
 
