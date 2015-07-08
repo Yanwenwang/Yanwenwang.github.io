@@ -4,9 +4,22 @@
 		.module('ywPortal')
 		.controller('scrambleWordController', scrambleWordController);
 
-        function scrambleWordController () {
+		scrambleWordController.$inject = ['scrambleWordService', 'commonService'];
+
+        function scrambleWordController (scrambleWordService, commonService) {
+
     		var vm = this;
-            vm.greeting = 'hello scramble word';
+			
+            vm.word = '';
+			vm.wordArray = [];
+			vm.scrambledWordArray = [];
+
+			scrambleWordService.getNewWord()
+				.then(function (newWord) {
+					vm.word = newWord;
+					vm.wordArray = newWord.split('');
+					vm.scrambledWordArray = commonService.scrambleArray(newWord.split(''));
+				})
         }
 
 }());
