@@ -1,24 +1,33 @@
 <div class="scramble-word">
 
-	<section class="hero">
-		<div class="overlay">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>Scramble Word</h1>
-					</div>
-				</div>
-			</div>
-		</div>
+    <section class="hero">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Scramble Word</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-	<section class="content">
+    <section class="content">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+
+					<div class="word">
+						<div class="letter"
+							ng-repeat="letter in scrambleWordVM.scrambledWordArray"
+							ng-bind="letter"></div>
+					</div>
+
                     <h3 ng-bind="scrambleWordVM.word"></h3>
                     <h3 ng-bind="scrambleWordVM.wordArray"></h3>
-					<h3 ng-bind="scrambleWordVM.scrambledWordArray"></h3>
+                    <h3 ng-bind="scrambleWordVM.scrambledWordArray"></h3>
+
+
                 </div>
             </div>
         </div>
