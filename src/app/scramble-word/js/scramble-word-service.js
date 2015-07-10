@@ -9,7 +9,8 @@
         function scrambleWordService (scrambleWordDataService, commonService, modalService) {
 
             var service = {
-				checkKeyPress: checkKeyPress
+				checkKeyPress: checkKeyPress,
+				checkLetterClick: checkLetterClick
             };
 
             return service;
@@ -26,6 +27,10 @@
 
 				// if letter was pressed, check to see if it is valid
 				checkValidLetter(letterPressed);
+			}
+
+			function checkLetterClick(letterClicked) {
+				checkValidLetter(letterClicked);
 			}
 
 			function checkValidLetter(letterPressed) {

@@ -31,6 +31,12 @@
 				// since this event takes place outside of angular, need scope.apply to update angular
 				$scope.$apply();
 			});
+
+			// this will trigger on click event
+			vm.checkLetterClick = function (letterClicked) {
+				console.log(letterClicked);
+				scrambleWordService.checkLetterClick(letterClicked);
+			};
         }
 
 }());

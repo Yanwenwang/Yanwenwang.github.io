@@ -19,11 +19,12 @@
 
 					<div class="word">
 						<div class="letter"
-							ng-repeat="letter in scrambleWordVM.data.scrambledWordArray"
-							ng-bind="letter.letter"
-							ng-class="{ 'is-typed': letter.typed }"></div>
+							ng-repeat="letterObject in scrambleWordVM.data.scrambledWordArray"
+							ng-bind="letterObject.letter"
+                            ng-click="scrambleWordVM.checkLetterClick(letterObject.letter)"
+							ng-class="{ 'is-typed': letterObject.typed }"></div>
 					</div>
-                    
+
                 </div>
             </div>
         </div>
