@@ -4,36 +4,33 @@
 		.module('ywPortal')
 		.controller('scrambleWordController', scrambleWordController);
 
-		scrambleWordController.$inject = ['$scope', 'scrambleWordService', 'commonService'];
+		scrambleWordController.$inject = [
+			'$scope',
+			'scrambleWordDataService',
+			'scrambleWordService'
+		];
 
-        function scrambleWordController ($scope, scrambleWordService, commonService) {
+        function scrambleWordController (
+			$scope,
+			scrambleWordDataService,
+			scrambleWordService) {
 
     		var vm = this;
 
-			vm.letterPressed = '';
+			// bind data from data service to vm.data
+			vm.data = scrambleWordDataService.data;
 
+			// populate data
+			scrambleWordDataService.getNewWord();
+
+			// this will listen for keydown event
 			var $doc = angular.element(document);
             $doc.on('keydown', function (e) {
-				var letterPressed = commonService.getLetterPressed(e.which);
+				scrambleWordService.checkKeyPress(e.which);
 
-				if(!letterPressed) {
-					return;
-				}
-
-				vm.letterPressed = letterPressed;
+				// since this event takes place outside of angular, need scope.apply to update angular
 				$scope.$apply();
 			});
-
-            vm.word = '';
-			vm.wordArray = [];
-			vm.scrambledWordArray = [];
-
-			scrambleWordService.getNewWord()
-				.then(function (newWord) {
-					vm.word = newWord.toLowerCase();
-					vm.wordArray = newWord.toLowerCase().split('');
-					vm.scrambledWordArray = commonService.scrambleArray(newWord.toLowerCase().split(''));
-				});
         }
 
 }());
