@@ -4,9 +4,9 @@
 		.module('ywPortal')
 		.factory('scrambleWordService', scrambleWordService);
 
-        scrambleWordService.$inject = ['scrambleWordDataService', 'commonService'];
+        scrambleWordService.$inject = ['scrambleWordDataService', 'commonService', 'modalService'];
 
-        function scrambleWordService (scrambleWordDataService, commonService) {
+        function scrambleWordService (scrambleWordDataService, commonService, modalService) {
 
             var service = {
 				checkKeyPress: checkKeyPress
@@ -85,6 +85,10 @@
 
 				if(match) {
 					// show modal for correct word
+					modalService.openMessageModal({
+						title: 'Correct Word!',
+						body: 'Good job.'
+					});
 
 					// reset the data so everything is back to empty
 					scrambleWordDataService.resetGame();
@@ -93,6 +97,10 @@
 					scrambleWordDataService.getNewWord();
 				} else {
 					// show modal for wrong word
+					modalService.openMessageModal({
+						title: 'Wrong Word!',
+						body: 'Please try again.'
+					});
 
 					// reset round
 					scrambleWordDataService.resetRound();

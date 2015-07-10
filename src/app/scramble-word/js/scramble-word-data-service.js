@@ -4,9 +4,9 @@
         .module('ywPortal')
         .factory('scrambleWordDataService', scrambleWordDataService);
 
-    scrambleWordDataService.$inject = ['$http', 'commonService'];
+    scrambleWordDataService.$inject = ['$http', 'commonService', 'modalService'];
 
-    function scrambleWordDataService($http, commonService) {
+    function scrambleWordDataService($http, commonService, modalService) {
 
         var data = {
             wordArray: [], // this holds the correct word in array format
@@ -37,6 +37,10 @@
                     // got reponse from wordnik api, check to make sure nothing is falsy
                     if (!response || !response.data || !response.data.word) {
                         // open modal for unable to get word from wordnik
+                        modalService.openMessageModal({
+                            title: 'Error!',
+                            body: 'Could not load wordnik data.'
+                        });
                         return;
                     }
 
@@ -52,6 +56,10 @@
                 })
                 .catch(function (error) {
                     // open modal for unable to get word from wordnik
+                    modalService.openMessageModal({
+                        title: 'Error!',
+                        body: 'Could not load wordnik data.'
+                    });
                 });
         }
 
