@@ -30,7 +30,10 @@
 
             while (copyArr.length > 0) {
 
+                // splice random element out of array
                 var randomIndex = getRandomInt(0, copyArr.length);
+
+                // splice returns array, take first element
                 var randomElement = copyArr.splice(randomIndex, 1)[0];
 
                 scrambledArray.push(randomElement);
