@@ -8,7 +8,9 @@
 
     .word {
         text-align: center;
-        margin: 120px 0;
+        margin-top: 120px;
+        margin-bottom: 64px;
+        height: 80px;
     }
 
     .letter {
@@ -24,11 +26,26 @@
     }
 
     .letter.is-typed {
-        background: $accent;
+        background: $primary-light;
         color: $primary;
     }
 
+    .button-container {
+        margin-bottom: 120px;
+        text-align: center;
+    }
+
+    button.mod-reset {
+        margin-left: 35px;
+    }
+
 	@media screen and (max-width: $screen-xs-max) {
+        .word {
+            height: 35px;
+            margin-top: 64px;
+            margin-bottom: 32px;
+        }
+
         .letter {
             width: 35px;
             height: 35px;
@@ -36,6 +53,18 @@
             margin: 0 5px;
             font-size: 16px;
         }
-    }
 
+        .button-container {
+            margin-bottom: 64px;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 12px;
+        }
+
+        button.mod-reset {
+            margin-left: 25px;
+        }
+    }
 }

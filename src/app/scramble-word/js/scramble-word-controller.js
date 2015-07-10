@@ -34,9 +34,14 @@
 
 			// this will trigger on click event
 			vm.checkLetterClick = function (letterClicked) {
-				console.log(letterClicked);
 				scrambleWordService.checkLetterClick(letterClicked);
 			};
+
+			vm.resetGame = function () {
+				scrambleWordDataService.resetGame();
+				scrambleWordDataService.getNewWord();
+			}
+			vm.resetRound = scrambleWordDataService.resetRound;
         }
 
 }());

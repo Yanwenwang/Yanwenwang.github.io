@@ -4235,9 +4235,11 @@ button {
 /* line 9, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word .word {
   text-align: center;
-  margin: 120px 0; }
+  margin-top: 120px;
+  margin-bottom: 64px;
+  height: 80px; }
 
-/* line 14, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+/* line 16, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word .letter {
   display: inline-block;
   width: 80px;
@@ -4249,16 +4251,40 @@ button {
   color: #FFBD88;
   font-size: 48px; }
 
-/* line 26, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+/* line 28, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word .letter.is-typed {
-  background: #D85339;
+  background: #FFBD88;
   color: #FFFFFF; }
 
+/* line 33, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+.scramble-word .button-container {
+  margin-bottom: 120px;
+  text-align: center; }
+
+/* line 38, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+.scramble-word button.mod-reset {
+  margin-left: 35px; }
+
 @media screen and (max-width: 767px) {
-  /* line 32, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  /* line 43, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  .scramble-word .word {
+    height: 35px;
+    margin-top: 64px;
+    margin-bottom: 32px; }
+  /* line 49, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
   .scramble-word .letter {
     width: 35px;
     height: 35px;
     line-height: 35px;
     margin: 0 5px;
-    font-size: 16px; } }
+    font-size: 16px; }
+  /* line 57, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  .scramble-word .button-container {
+    margin-bottom: 64px; }
+  /* line 61, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  .scramble-word button {
+    padding: 15px 25px;
+    font-size: 12px; }
+  /* line 66, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  .scramble-word button.mod-reset {
+    margin-left: 25px; } }
