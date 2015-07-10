@@ -1,33 +1,73 @@
 (function () {
 
-	angular
-		.module('ywPortal')
-		.factory('scrambleWordDataService', scrambleWordDataService);
+    angular
+        .module('ywPortal')
+        .factory('scrambleWordDataService', scrambleWordDataService);
 
-        scrambleWordDataService.$inject = [];
+    scrambleWordDataService.$inject = ['$http', 'commonService'];
 
-        function scrambleWordDataService () {
+    function scrambleWordDataService($http, commonService) {
 
-            var data = {
-                word: '',
-                wordArray: [],
-                scrambledWordArray: [],
-                letterTypedCount: 0
-            };
+        var data = {
+            wordArray: [],
+            scrambledWordArray: [],
+            letterTypedCount: 0
+        };
 
-            var service = {
-                data: data,
-				resetData: resetData
-            };
+        var service = {
+            data: data,
+            getNewWord: getNewWord,
+            resetData: resetData
+        };
 
-            return service;
+        return service;
 
-			function resetData() {
-				data.word = '';
-				data.wordArray.length = 0;
-				data.scrambledWordArray.length = 0;
-				data.letterTypedCount = 0;
-			}
+        function getNewWord() {
+
+            // this is the wornik url
+            // I increased minCorpusCount to 1000000 so the words made sense
+            // higher corpusCount means more common word
+            var wordnikUrl = "http://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&includePartOfSpeech=noun&minCorpusCount=1000000&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=8&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5";
+
+            // calls wordnik api
+            $http.get(wordnikUrl)
+                .then(function (response) {
+
+                    // got reponse from wordnik api, check to make sure nothing is falsy
+                    if (!response || !response.data || !response.data.word) {
+                        // open modal for unable to get word from wordnik
+                        return;
+                    }
+
+                    // make everything lowercase so comparison works with ===
+                    var newWord = response.data.word.toLowerCase();
+
+                    // hold original word as array
+                    data.wordArray = newWord.split('');
+
+                    // create scrambled array of objects so we can use ng-class to change color
+                    var scrambledWordArray = commonService.scrambleArray(data.wordArray);
+                    populatedScrambledArray(scrambledWordArray);
+                })
+                .catch(function (error) {
+                    // open modal for unable to get word from wordnik
+                });
         }
+
+        function populatedScrambledArray(scrambledWordArray) {
+            for (var i = 0; i < scrambledWordArray.length; i++) {
+                data.scrambledWordArray.push({
+                    letter: scrambledWordArray[i],
+                    typed: false
+                });
+            }
+        }
+
+        function resetData() {
+            data.wordArray.length = 0;
+            data.scrambledWordArray.length = 0;
+            data.letterTypedCount = 0;
+        }
+    }
 
 }());
