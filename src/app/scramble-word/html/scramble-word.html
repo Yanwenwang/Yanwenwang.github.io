@@ -17,19 +17,13 @@
             <div class="row">
                 <div class="col-md-12">
 
-					<h3 ng-bind="scrambleWordVM.letterPressed"></h3>
-
 					<div class="word">
 						<div class="letter"
-							ng-repeat="letter in scrambleWordVM.scrambledWordArray"
-							ng-bind="letter"></div>
+							ng-repeat="letter in scrambleWordVM.data.scrambledWordArray"
+							ng-bind="letter.letter"
+							ng-class="{ 'is-typed': letter.typed }"></div>
 					</div>
-
-                    <h3 ng-bind="scrambleWordVM.word"></h3>
-                    <h3 ng-bind="scrambleWordVM.wordArray"></h3>
-                    <h3 ng-bind="scrambleWordVM.scrambledWordArray"></h3>
-
-
+                    
                 </div>
             </div>
         </div>
