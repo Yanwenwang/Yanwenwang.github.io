@@ -45,6 +45,11 @@
                         return;
                     }
 
+                    if(response.data.word.length >= 7) {
+                        getNewWord();
+                        return;
+                    }
+
                     // make everything lowercase so comparison works with ===
                     var newWord = response.data.word.toLowerCase();
 
