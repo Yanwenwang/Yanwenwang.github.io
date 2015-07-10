@@ -9,18 +9,18 @@
     .word {
         text-align: center;
         margin: 120px 0;
-        font-size: 28px;
     }
 
     .letter {
         display: inline-block;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
         text-align: center;
         margin: 0 15px;
         border: 1px solid $primary-light;
         color: $primary-light;
+        font-size: 48px;
     }
 
     .letter.is-typed {
@@ -28,7 +28,7 @@
         color: $primary;
     }
 
-	@media screen and (max-width: $screen-sm-max) {
+	@media screen and (max-width: $screen-xs-max) {
         .letter {
             width: 35px;
             height: 35px;

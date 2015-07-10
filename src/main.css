@@ -4235,26 +4235,26 @@ button {
 /* line 9, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word .word {
   text-align: center;
-  margin: 120px 0;
-  font-size: 28px; }
+  margin: 120px 0; }
 
-/* line 15, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+/* line 14, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word .letter {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
   text-align: center;
   margin: 0 15px;
   border: 1px solid #FFBD88;
-  color: #FFBD88; }
+  color: #FFBD88;
+  font-size: 48px; }
 
 /* line 26, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word .letter.is-typed {
   background: #D85339;
   color: #FFFFFF; }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   /* line 32, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
   .scramble-word .letter {
     width: 35px;
