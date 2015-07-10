@@ -9,15 +9,16 @@
     function scrambleWordDataService($http, commonService) {
 
         var data = {
-            wordArray: [],
-            scrambledWordArray: [],
-            letterTypedCount: 0
+            wordArray: [], // this holds the correct word in array format
+            scrambledWordArray: [], // this holds the scrambled word in array format
+            letterTypedCount: 0 // this holds the number of valid letters typed
         };
 
         var service = {
             data: data,
             getNewWord: getNewWord,
-            resetData: resetData
+            resetGame: resetGame,
+            resetRound: resetRound
         };
 
         return service;
@@ -63,10 +64,18 @@
             }
         }
 
-        function resetData() {
+        function resetGame() {
             data.wordArray.length = 0;
             data.scrambledWordArray.length = 0;
             data.letterTypedCount = 0;
+        }
+
+        function resetRound() {
+            data.letterTypedCount = 0;
+
+            for(var i = 0; i < data.scrambledWordArray.length; i ++) {
+                data.scrambledWordArray[i].typed = false;
+            }
         }
     }
 
