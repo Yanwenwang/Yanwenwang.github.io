@@ -4,9 +4,9 @@
 		.module('ywPortal')
 		.factory('scrambleWordService', scrambleWordService);
 
-        scrambleWordService.$inject = ['scrambleWordDataService', 'commonService', 'modalService'];
+        scrambleWordService.$inject = ['$timeout', 'scrambleWordDataService', 'commonService', 'modalService'];
 
-        function scrambleWordService (scrambleWordDataService, commonService, modalService) {
+        function scrambleWordService ($timeout, scrambleWordDataService, commonService, modalService) {
 
             var service = {
 				checkKeyPress: checkKeyPress,
@@ -86,29 +86,52 @@
 					return;
 				}
 
-				var match = checkIfWordMatches();
+				var wordMatches = checkIfWordMatches();
 
-				if(match) {
-					// show modal for correct word
-					modalService.openMessageModal({
-						title: 'Correct Word!',
-						body: 'Good job.'
-					});
+				if(wordMatches) {
 
-					// reset the data so everything is back to empty
-					scrambleWordDataService.resetGame();
+					// play tada animation
+					scrambleWordDataService.data.animation = 'tada';
 
-					// get new word, which will start the game over
-					scrambleWordDataService.getNewWord();
+					// show modal after 1200 ms
+					$timeout(function () {
+						scrambleWordDataService.data.animation = '';
+
+						// show modal for correct word
+						modalService.openMessageModal({
+							title: 'Correct Word!',
+							body: 'Good job.'
+						});
+
+
+						// reset the data so everything is back to empty
+						scrambleWordDataService.resetGame();
+
+						// get new word, which will start the game over
+						scrambleWordDataService.getNewWord();
+
+					}, 1200);
+
 				} else {
-					// show modal for wrong word
-					modalService.openMessageModal({
-						title: 'Wrong Word!',
-						body: 'Please try again.'
-					});
 
-					// reset round
-					scrambleWordDataService.resetRound();
+					// play shake animation
+					scrambleWordDataService.data.animation = 'shake';
+
+					// show wrong word modal after 1200 ms
+					$timeout(function () {
+						scrambleWordDataService.data.animation = '';
+
+						// show modal for wrong word
+						modalService.openMessageModal({
+							title: 'Wrong Word!',
+							body: 'Please try again.'
+						});
+
+						// reset round
+						scrambleWordDataService.resetRound();
+
+					}, 1200);
+
 				}
 			}
 

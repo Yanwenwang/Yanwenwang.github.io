@@ -11,7 +11,8 @@
         var data = {
             wordArray: [], // this holds the correct word in array format
             scrambledWordArray: [], // this holds the scrambled word in array format
-            letterTypedCount: 0 // this holds the number of valid letters typed
+            letterTypedCount: 0, // this holds the number of valid letters typed
+            animation: '' // this is the animation the words will do
         };
 
         var service = {
@@ -46,6 +47,9 @@
 
                     // make everything lowercase so comparison works with ===
                     var newWord = response.data.word.toLowerCase();
+
+                    // comment out this line to cheat
+                    //console.log(newWord);
 
                     // hold original word as array
                     data.wordArray = newWord.split('');
