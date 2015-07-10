@@ -4247,3 +4247,7 @@ button {
   text-align: center;
   margin: 0 15px;
   border: 1px solid black; }
+
+/* line 25, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+.scramble-word .letter.is-typed {
+  background: lime; }
