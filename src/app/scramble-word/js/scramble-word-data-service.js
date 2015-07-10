@@ -16,10 +16,18 @@
             };
 
             var service = {
-                data: data
+                data: data,
+				resetData: resetData
             };
 
             return service;
+
+			function resetData() {
+				data.word = '';
+				data.wordArray.length = 0;
+				data.scrambledWordArray.length = 0;
+				data.letterTypedCount = 0;
+			}
         }
 
 }());
