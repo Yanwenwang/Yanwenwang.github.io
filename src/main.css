@@ -4246,8 +4246,10 @@ button {
   line-height: 50px;
   text-align: center;
   margin: 0 15px;
-  border: 1px solid black; }
+  border: 1px solid #FFBD88;
+  color: #FFBD88; }
 
-/* line 25, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+/* line 26, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word .letter.is-typed {
-  background: lime; }
+  background: #D85339;
+  color: #FFFFFF; }

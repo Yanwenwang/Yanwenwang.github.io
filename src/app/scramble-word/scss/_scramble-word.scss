@@ -19,11 +19,13 @@
         line-height: 50px;
         text-align: center;
         margin: 0 15px;
-        border: 1px solid black;
+        border: 1px solid $primary-light;
+        color: $primary-light;
     }
 
     .letter.is-typed {
-        background: lime;
+        background: $accent;
+        color: $primary;
     }
 
 }
