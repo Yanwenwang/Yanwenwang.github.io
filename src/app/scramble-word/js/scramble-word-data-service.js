@@ -45,7 +45,7 @@
                         return;
                     }
 
-                    if(response.data.word.length >= 7) {
+                    if(response.data.word.length >= 6) {
                         getNewWord();
                         return;
                     }
