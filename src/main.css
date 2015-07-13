@@ -4226,6 +4226,12 @@ button {
   color: #81888D;
   margin-top: 120px; }
 
+@media screen and (max-width: 991px) {
+  /* line 10, /Users/David/Desktop/git/resume/src/app/sudouku/scss/_sudouku.scss */
+  .sudouku h3 {
+    margin-top: 64px;
+    margin-bottom: 64px; } }
+
 /* line 3, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word h3 {
   text-align: center;

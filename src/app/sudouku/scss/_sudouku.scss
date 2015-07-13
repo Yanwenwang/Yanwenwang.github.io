@@ -6,4 +6,11 @@
         margin-top: 120px;
     }
 
+    @media screen and (max-width: $screen-sm-max) {
+        h3 {
+            margin-top: 64px;
+            margin-bottom: 64px;
+        }
+    }
+
 }
