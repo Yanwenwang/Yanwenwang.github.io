@@ -63,7 +63,8 @@
 					{ name: 'GitHub' },
 				  	{ name: 'SourceTree' },
 				 	{ name: 'Sublime Text' },
-					{ name: 'Terminal' }
+					{ name: 'Terminal'},
+					{ name: 'Trello' }
 				]
 			},
 			{
