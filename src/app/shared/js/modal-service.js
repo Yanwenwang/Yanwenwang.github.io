@@ -4,7 +4,7 @@
         .module('ywPortal')
         .factory('modalService', modalService);
 
-    modalService.$inject = ['$modal']
+    modalService.$inject = ['$modal'];
 
     function modalService($modal) {
 

@@ -40,7 +40,8 @@
 			vm.resetGame = function () {
 				scrambleWordDataService.resetGame();
 				scrambleWordDataService.getNewWord();
-			}
+			};
+			
 			vm.resetRound = scrambleWordDataService.resetRound;
         }
 
