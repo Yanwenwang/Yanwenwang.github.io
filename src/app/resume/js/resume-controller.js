@@ -16,6 +16,7 @@
 				skills: [
 					{ name: 'Box model' },
 					{ name: 'Bootstrap' },
+					{ name: 'Mixins' },
 					{ name: 'Responsive Design' },
 					{ name: 'SASS' },
 					{ name: 'Transitions' }
