@@ -26,6 +26,7 @@
 			// this will listen for keydown event
 			var $doc = angular.element(document);
             $doc.on('keydown', function (e) {
+            	e.preventDefault();
 				scrambleWordService.checkKeyPress(e.which);
 
 				// since this event takes place outside of angular, need scope.apply to update angular

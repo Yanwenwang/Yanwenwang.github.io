@@ -15,7 +15,16 @@
 
             return service;
 
+            function backSpaceLetter () {
+            	var lastIndexOfLastTyped = scrambleWordDataService.data.letterTypedCount - 1;
+            	scrambleWordDataService.data.scrambledWordArray[lastIndexOfLastTyped].typed = false;
+            	scrambleWordDataService.data.letterTypedCount --;
+            }
+
 			function checkKeyPress(which) {
+				if(commonService.getBackSpace(which)) {
+					backSpaceLetter();
+				}
 
 				// check to see if alphabetic letter was pressed
 				var letterPressed = commonService.getLetterPressed(which);

@@ -9,10 +9,16 @@
         var service = {
             getRandomInt: getRandomInt,
             scrambleArray: scrambleArray,
-            getLetterPressed: getLetterPressed
+            getLetterPressed: getLetterPressed,
+            getBackSpace: getBackSpace
         };
 
         return service;
+
+        function getBackSpace (which) {
+            return which === 8;
+
+        }
 
         // this returns a random number between min and max, not including max
         function getRandomInt(min, max) {
