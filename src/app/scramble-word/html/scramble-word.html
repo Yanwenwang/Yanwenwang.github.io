@@ -16,6 +16,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <div class="count-container"
+                        <div class="count-item-container">
+                            <div class="count-item" ng-bind="scrambleWordVM.data.countdown"></div>
+                            <p>s left</p>
+                        </div>
+                    </div>
 
 					<div class="word animated" ng-class="scrambleWordVM.data.animation">
 						<div class="letter"

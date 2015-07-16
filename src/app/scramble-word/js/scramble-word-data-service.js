@@ -4,16 +4,17 @@
         .module('ywPortal')
         .factory('scrambleWordDataService', scrambleWordDataService);
 
-    scrambleWordDataService.$inject = ['$http', 'commonService', 'modalService'];
+    scrambleWordDataService.$inject = ['$interval', '$http', 'commonService', 'modalService'];
 
-    function scrambleWordDataService($http, commonService, modalService) {
+    function scrambleWordDataService($interval, $http, commonService, modalService) {
 
         var data = {
             wordArray: [], // this holds the correct word in array format
             scrambledWordArray: [], // this holds the scrambled word in array format
             letterTypedCount: 0, // this holds the number of valid letters typed
-            animation: '' // this is the animation the words will do
-        };
+            animation: '', // this is the animation the words will do
+            countdown: 20
+        }; 
 
         var service = {
             data: data,
@@ -62,6 +63,8 @@
                     // create scrambled array of objects so we can use ng-class to change color
                     var scrambledWordArray = commonService.scrambleArray(data.wordArray);
                     populatedScrambledArray(scrambledWordArray);
+
+                    //startCountdown(); 
                 })
                 .catch(function (error) {
                     // open modal for unable to get word from wordnik
@@ -85,6 +88,7 @@
             data.wordArray.length = 0;
             data.scrambledWordArray.length = 0;
             data.letterTypedCount = 0;
+            data.countdown = 20;
         }
 
         function resetRound() {
@@ -93,6 +97,19 @@
             for(var i = 0; i < data.scrambledWordArray.length; i ++) {
                 data.scrambledWordArray[i].typed = false;
             }
+        }
+
+        function decrementCountdown () {
+            data.countdown -= 1;
+            if(data.countdown === 1) {
+                //open modal show point and play again
+                resetGame();
+                getNewWord();
+            }
+        }
+
+        function startCountdown () {
+            $interval(decrementCountdown, 1000);
         }
     }
 

@@ -6,11 +6,34 @@
         margin: 45px 0;
     }
 
-    .word {
+    .count-container {
         text-align: center;
         margin-top: 120px;
+        margin-bottom: 64px
+
+    }
+
+    .count-item-container {
+        background: lime;
+        display: inline-block;
+    }
+
+    .count-item {
+        color: $accent;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    p {
+        color: $accent;
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .word {
+        text-align: center;
         margin-bottom: 64px;
-        height: 80px;
     }
 
     .letter {
