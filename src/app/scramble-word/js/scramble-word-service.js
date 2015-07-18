@@ -22,6 +22,10 @@
             }
 
 			function checkKeyPress(which) {
+				if (scrambleWordDataService.data.gameOver) {
+					return;
+				}
+
 				if(commonService.getBackSpace(which)) {
 					backSpaceLetter();
 				}
@@ -39,6 +43,11 @@
 			}
 
 			function checkLetterClick(letterClicked) {
+
+				if (scrambleWordDataService.data.gameOver) {
+					return;
+				}
+
 				checkValidLetter(letterClicked);
 			}
 
@@ -105,42 +114,19 @@
 					// show modal after 1200 ms
 					$timeout(function () {
 						scrambleWordDataService.data.animation = '';
-
-						// show modal for correct word
-						modalService.openMessageModal({
-							title: 'Correct Word!',
-							body: 'Good job.'
-						});
-
-
-						// reset the data so everything is back to empty
-						scrambleWordDataService.resetGame();
-
-						// get new word, which will start the game over
-						scrambleWordDataService.getNewWord();
-
+						scrambleWordDataService.resetWord();
 					}, 1200);
+
 
 				} else {
 
 					// play shake animation
 					scrambleWordDataService.data.animation = 'shake';
 
-					// show wrong word modal after 1200 ms
 					$timeout(function () {
 						scrambleWordDataService.data.animation = '';
-
-						// show modal for wrong word
-						modalService.openMessageModal({
-							title: 'Wrong Word!',
-							body: 'Please try again.'
-						});
-
-						// reset round
 						scrambleWordDataService.resetRound();
-
 					}, 1200);
-
 				}
 			}
 

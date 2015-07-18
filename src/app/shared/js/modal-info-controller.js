@@ -10,6 +10,13 @@
 
         var vm = this;
 
+        if(data.hasOwnProperty('actionText')) {
+            vm.actionText = data.actionText;
+        } else {
+            vm.actionText = 'Ok';
+        }
+
+
         vm.ok = function () {
             $modalInstance.close('ok');
         };

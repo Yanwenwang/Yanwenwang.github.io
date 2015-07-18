@@ -15,7 +15,8 @@
         return service;
 
         function openMessageModal(data) {
-            $modal.open({
+
+            var modalInstance = $modal.open({
                 animation: true,
                 templateUrl: './src/app/shared/html/message-modal.html',
                 controller: 'modalInfoController',
@@ -27,6 +28,8 @@
                     }
                 }
             });
+
+            return modalInstance.result;
         }
     }
 }());

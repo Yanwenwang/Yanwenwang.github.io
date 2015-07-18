@@ -13,14 +13,16 @@
             scrambledWordArray: [], // this holds the scrambled word in array format
             letterTypedCount: 0, // this holds the number of valid letters typed
             animation: '', // this is the animation the words will do
-            countdown: 20
+            countdown: 60,
+            interval: {},
+            gameOver: false
         }; 
 
         var service = {
             data: data,
-            getNewWord: getNewWord,
-            resetGame: resetGame,
-            resetRound: resetRound
+            resetWord: resetWord,
+            resetRound: resetRound,
+            playGame: playGame
         };
 
         return service;
@@ -63,8 +65,6 @@
                     // create scrambled array of objects so we can use ng-class to change color
                     var scrambledWordArray = commonService.scrambleArray(data.wordArray);
                     populatedScrambledArray(scrambledWordArray);
-
-                    //startCountdown(); 
                 })
                 .catch(function (error) {
                     // open modal for unable to get word from wordnik
@@ -88,7 +88,6 @@
             data.wordArray.length = 0;
             data.scrambledWordArray.length = 0;
             data.letterTypedCount = 0;
-            data.countdown = 20;
         }
 
         function resetRound() {
@@ -101,15 +100,52 @@
 
         function decrementCountdown () {
             data.countdown -= 1;
-            if(data.countdown === 1) {
+            if(data.countdown === 0) {
+
+                data.gameOver = true;
+
+                if(data.interval) {
+                    $interval.cancel(data.interval);
+                }
+
+                
+
+                // show modal for correct word
+                modalService.openMessageModal({
+                    title: 'Game over',
+                    body: 'The game is over.',
+                    actionText: 'Play Again'
+                })
+                    .then(function (response) {
+                        // player clicked 'play again'
+                        playGame();
+                    })
+                    .catch(function (error) {
+                        // player did not want to 'play again'
+                        alert('do not play again');
+                    });
+
                 //open modal show point and play again
-                resetGame();
-                getNewWord();
+                //resetGame();
+                //getNewWord();
             }
         }
 
+        function resetWord () {
+            resetGame();
+            getNewWord();
+        }
+
         function startCountdown () {
-            $interval(decrementCountdown, 1000);
+            data.countdown = 60;
+            data.interval = $interval(decrementCountdown, 1000);
+        }
+
+        function playGame () {
+            data.gameOver = false;
+            resetGame();
+            getNewWord();
+            startCountdown();
         }
     }
 

@@ -21,7 +21,7 @@
 			vm.data = scrambleWordDataService.data;
 
 			// populate data
-			scrambleWordDataService.getNewWord();
+			scrambleWordDataService.playGame();
 
 			// this will listen for keydown event
 			var $doc = angular.element(document);
@@ -38,9 +38,8 @@
 				scrambleWordService.checkLetterClick(letterClicked);
 			};
 
-			vm.resetGame = function () {
-				scrambleWordDataService.resetGame();
-				scrambleWordDataService.getNewWord();
+			vm.resetWord = function () {
+				scrambleWordDataService.resetWord();
 			};
 			
 			vm.resetRound = scrambleWordDataService.resetRound;
