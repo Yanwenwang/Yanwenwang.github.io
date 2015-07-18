@@ -14,25 +14,37 @@
 
     <section class="content">
         <div class="container">
+
             <div class="row">
                 <div class="col-md-12">
-                    <div class="count-container"
+                    <div class="count-container">
                         <div class="count-item-container">
                             <div class="count-item" ng-bind="scrambleWordVM.data.countdown"></div>
                             <p>s left</p>
                         </div>
+                        <div class="count-item-container">
+                            <div class="count-item" ng-bind="scrambleWordVM.data.points"></div>
+                            <p>points</p>
+                        </div>
                     </div>
-
-					<div class="word animated" ng-class="scrambleWordVM.data.animation">
-						<div class="letter"
-							ng-repeat="letterObject in scrambleWordVM.data.scrambledWordArray"
-							ng-bind="letterObject.letter"
-                            ng-click="scrambleWordVM.checkLetterClick(letterObject.letter)"
-							ng-class="{ 'is-typed': letterObject.typed }"></div>
-					</div>
-
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-12">
+    				<div class="word animated" ng-class="scrambleWordVM.data.animation">
+    					<div class="letter"
+    						ng-repeat="letterObject in scrambleWordVM.data.scrambledWordArray"
+    						ng-bind="letterObject.letter"
+                            ng-click="scrambleWordVM.checkLetterClick(letterObject.letter)"
+    						ng-class="{ 'is-typed': letterObject.typed }">
+                        </div>
+    				</div>
+                </div>
+            </div>
+
+          
+            
 
             <div class="row">
                 <div class="col-md-12">
@@ -46,6 +58,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 

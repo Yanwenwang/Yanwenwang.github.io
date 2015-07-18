@@ -107,6 +107,8 @@
 				var wordMatches = checkIfWordMatches();
 
 				if(wordMatches) {
+					
+					scrambleWordDataService.addPoints(); 
 
 					// play tada animation
 					scrambleWordDataService.data.animation = 'tada';

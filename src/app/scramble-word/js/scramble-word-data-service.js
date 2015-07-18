@@ -15,7 +15,8 @@
             animation: '', // this is the animation the words will do
             countdown: 60,
             interval: {},
-            gameOver: false
+            gameOver: false,
+            points: 0 
         }; 
 
         var service = {
@@ -23,7 +24,8 @@
             resetWord: resetWord,
             resetRound: resetRound,
             playGame: playGame,
-            stopCountdown: stopCountdown
+            stopCountdown: stopCountdown,
+            addPoints: addPoints
         };
 
         return service;
@@ -151,6 +153,10 @@
             if(data.interval) {
                 $interval.cancel(data.interval);
             }
+        }
+
+        function addPoints() {
+            data.points += 5;
         }
     }
 
