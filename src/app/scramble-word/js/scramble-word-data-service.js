@@ -22,7 +22,8 @@
             data: data,
             resetWord: resetWord,
             resetRound: resetRound,
-            playGame: playGame
+            playGame: playGame,
+            stopCountdown: stopCountdown
         };
 
         return service;
@@ -104,9 +105,7 @@
 
                 data.gameOver = true;
 
-                if(data.interval) {
-                    $interval.cancel(data.interval);
-                }
+                stopCountdown();
 
                 
 
@@ -146,6 +145,12 @@
             resetGame();
             getNewWord();
             startCountdown();
+        }
+
+        function stopCountdown () {
+            if(data.interval) {
+                $interval.cancel(data.interval);
+            }
         }
     }
 

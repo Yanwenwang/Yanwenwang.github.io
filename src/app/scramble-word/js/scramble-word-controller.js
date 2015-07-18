@@ -43,6 +43,11 @@
 			};
 			
 			vm.resetRound = scrambleWordDataService.resetRound;
+
+			$scope.$on('$destroy', function() {
+
+          		scrambleWordDataService.stopCountdown();
+        	});
         }
 
 }());
