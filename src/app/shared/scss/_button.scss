@@ -1,10 +1,11 @@
 button {
-    padding: 15px 45px;
+    padding: 14px 32px;
     text-transform: uppercase;
     outline: none;
     color: $primary;
     background: $primary-light;
     border: 1px solid $primary-light;
+    font-size: 18px;
 
     &:hover {
         color: $primary-light;
