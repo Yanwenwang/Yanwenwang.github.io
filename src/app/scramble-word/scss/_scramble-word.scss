@@ -67,16 +67,24 @@
 	@media screen and (max-width: $screen-xs-max) {
         .word {
             height: 35px;
+            margin-bottom: 68px;
+        }
+
+        .count-container {
             margin-top: 64px;
-            margin-bottom: 32px;
+            margin-bottom: 46px;
+        }
+
+        .count-item-container {
+            margin: 0 18px;
         }
 
         .letter {
-            width: 35px;
-            height: 35px;
-            line-height: 35px;
+            width: 46px;
+            height: 46px;
+            line-height: 46px;
             margin: 0 5px;
-            font-size: 16px;
+            font-size: 24px;
         }
 
         .button-container {
@@ -84,8 +92,8 @@
         }
 
         button {
-            padding: 15px 25px;
-            font-size: 12px;
+            padding: 12px 15px;
+            font-size: 14px;
         }
 
         button.mod-reset {
