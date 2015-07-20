@@ -106,6 +106,7 @@
             if(data.countdown === 0) {
 
                 data.gameOver = true;
+                data.points = 0;
 
                 stopCountdown();
 
