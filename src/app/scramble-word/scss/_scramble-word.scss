@@ -9,31 +9,33 @@
     .count-container {
         text-align: center;
         margin-top: 120px;
-        margin-bottom: 64px
+        margin-bottom: 82px
 
     }
 
     .count-item-container {
-        background: lime;
         display: inline-block;
+        margin: 0 60px;
     }
 
     .count-item {
         color: $accent;
         display: inline-block;
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 28px;
+        font-weight: 700;
     }
 
     p {
         color: $accent;
         display: inline-block;
-        font-size: 18px;
+        font-size: 28px;
+        font-weight: 700;
+        opacity: .5;
     }
 
     .word {
         text-align: center;
-        margin-bottom: 64px;
+        margin-bottom: 82px;
     }
 
     .letter {
