@@ -3892,8 +3892,8 @@ button {
   font-size: 18px; }
   /* line 10, /Users/David/Desktop/git/resume/src/app/shared/scss/_button.scss */
   button:hover {
-    color: #FFBD88;
-    background: #FFFFFF; }
+    color: #FFFFFF;
+    background: #F4A460; }
 
 /* line 2, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
 .contacts .hero {
