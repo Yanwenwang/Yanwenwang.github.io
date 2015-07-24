@@ -17,6 +17,7 @@
 					{ name: 'Box model' },
 					{ name: 'Bootstrap' },
 					{ name: 'Mixins' },
+					{ name: 'Media Queries' },
 					{ name: 'Responsive Design' },
 					{ name: 'SASS' },
 					{ name: 'Transitions' }
