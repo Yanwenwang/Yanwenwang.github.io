@@ -10,7 +10,7 @@
 
         var vm = this;
 
-        if(data.hasOwnProperty('actionText')) {
+        if(data && data.hasOwnProperty('actionText')) {
             vm.actionText = data.actionText;
         } else {
             vm.actionText = 'Ok';
