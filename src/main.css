@@ -4268,9 +4268,10 @@ button {
 /* line 36, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word .word {
   text-align: center;
-  margin-bottom: 82px; }
+  margin-bottom: 82px;
+  height: 80px; }
 
-/* line 41, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+/* line 42, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word .letter {
   display: inline-block;
   width: 80px;
@@ -4282,46 +4283,46 @@ button {
   color: #FFBD88;
   font-size: 48px; }
 
-/* line 53, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+/* line 54, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word .letter.is-typed {
   background: #FFBD88;
   color: #FFFFFF; }
 
-/* line 58, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+/* line 59, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word .button-container {
   margin-bottom: 120px;
   text-align: center; }
 
-/* line 63, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+/* line 64, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
 .scramble-word button.mod-reset {
   margin-left: 35px; }
 
 @media screen and (max-width: 767px) {
-  /* line 68, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  /* line 69, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
   .scramble-word .word {
     height: 35px;
     margin-bottom: 68px; }
-  /* line 73, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  /* line 74, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
   .scramble-word .count-container {
     margin-top: 64px;
     margin-bottom: 46px; }
-  /* line 78, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  /* line 79, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
   .scramble-word .count-item-container {
     margin: 0 18px; }
-  /* line 82, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  /* line 83, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
   .scramble-word .letter {
     width: 46px;
     height: 46px;
     line-height: 46px;
     margin: 0 5px;
     font-size: 24px; }
-  /* line 90, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  /* line 91, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
   .scramble-word .button-container {
     margin-bottom: 64px; }
-  /* line 94, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  /* line 95, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
   .scramble-word button {
     padding: 12px 15px;
     font-size: 14px; }
-  /* line 99, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
+  /* line 100, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
   .scramble-word button.mod-reset {
     margin-left: 25px; } }
