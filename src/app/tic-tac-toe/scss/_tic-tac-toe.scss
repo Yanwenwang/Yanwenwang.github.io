@@ -20,6 +20,7 @@
 			display: inline-block;
 			font-size: 24px;
 			color: $primary-light;
+			margin-top: 120px;
 		}
 	}
 
@@ -71,7 +72,7 @@
 
 		button {
 			margin-top: 64px;
-			margin-bottom: 64px;
+			margin-bottom: 120px;
 		}
 
 		@media screen and (max-width: $screen-xs-max) {
