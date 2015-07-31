@@ -12,6 +12,7 @@
         border-radius: 5px;
         display: inline-block;
         background: $primary-light;
+        @include transition(all .5s ease-in);
 
         &:hover {
             background: $accent-hover;
