@@ -14,6 +14,8 @@
         background: $primary-light;
         @include transition(all .5s ease-in-out);
 
+        @include box-shadow(0 10px 6px -6px #777);
+
         &:hover {
             background: $accent-hover;
             transform: scale(1.1); 
