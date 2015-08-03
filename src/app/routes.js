@@ -101,6 +101,17 @@
 						controllerAs: 'scrambleWordVM'
 					}
 				}
+			})
+
+			.state('main.to-do-list', {
+				url: 'to-do-list',
+				views: {
+					'content@': {
+						templateUrl: './src/app/to-do-list/html/to-do-list.html',
+						controller: 'toDoListController',
+						controllerAs: 'toDoListVM'
+					}
+				}
 			});
 	}
 
