@@ -1,0 +1,120 @@
+.todo-list {
+	.title-container {
+		margin-top: 120px;
+		text-align: center;
+		background: $primary-dark;
+		padding: 22px 0;
+
+		h3 {
+			color: $primary;
+			font-size: 32px;
+		}
+	}
+
+	.list-container {
+		background: $primary-light;
+		min-height: 250px;
+		padding: 32px 0;
+
+		.item {
+			font-size: 18px;
+			margin: 5px 0;
+			position: relative;
+			cursor: pointer;
+			padding: 0 15px;
+			height: 50px;
+			overflow: none;
+
+			@include transition(all .5s ease-in);
+
+			&:hover {
+				background: $primary-dark;
+				i {
+					display: block;
+				}
+			}
+		}
+
+		.item.is-open {
+			height: 120px;
+
+			@include transition(all .5s ease-in);
+
+			.edit-container {
+				opacity: 1;
+
+				@include transition(all .5s ease-in);
+			}
+		}
+
+		p {
+			line-height: 50px;
+			display: inline-block;
+			margin: 3px;
+		}
+
+		i {
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			@include translate(0, -50%);
+			display: none;
+		}
+
+		.edit-container {
+			display: block;
+			opacity: 0;
+
+			@include transition(all .5s ease-in);
+		}
+
+		input {
+			display: inline-block;
+			vertical-align: top;
+			text-indent: 5px;
+			width: 30%;
+			height: 42px;
+			outline: none;
+		}
+
+		.fa-pencil {
+			right: 60px;
+		}
+
+		button {
+			vertical-align: top;
+			border: 1px solid $accent;
+			background: $accent;
+			padding: 10px 19px;
+			font-size: 14px;
+			margin-left: 12px;
+		}
+	}
+
+	.button-container {
+		margin-top: 32px;
+		margin-bottom: 120px;
+		position: relative;
+
+		button {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	.input-container {
+		padding-right: 120px;
+
+		input {
+			width: 100%;
+			height: 55px;
+			font-size: 28px;
+			line-height: 55px;
+			text-indent: 10px;
+			outline: none;
+
+		}
+	}
+}
+
