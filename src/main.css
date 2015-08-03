@@ -3458,8 +3458,8 @@ body.modal-open {
   .modal-content .modal-header {
     text-align: center;
     color: #FFFFFF;
-    background: #D75C37;
-    border-bottom: 2px solid #D75C37;
+    background: #FFBD88;
+    border-bottom: 2px solid #FFBD88;
     padding: 15px; }
     /* line 16, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
     .modal-content .modal-header h3 {
@@ -3481,13 +3481,13 @@ body.modal-open {
       padding-top: 10px;
       padding-bottom: 10px;
       border: 1px solid transparent;
-      background: #D75C37;
+      background: #FFBD88;
       color: #FFFFFF; }
       /* line 41, /Users/David/Desktop/git/resume/src/app/shared/scss/_modal.scss */
       .modal-content .modal-footer button:hover {
-        background: #FFFFFF;
-        color: #D75C37;
-        border: 1px solid #D75C37; }
+        background: #F4A460;
+        color: #FFFFFF;
+        border: 1px solid #FFBD88; }
 
 /* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_hero.scss */
 .hero {
@@ -3707,7 +3707,7 @@ section {
 .mobile-nav {
   position: absolute;
   right: 0;
-  background-color: #222222;
+  background-color: #F4A460;
   width: 0;
   height: 100vh;
   margin-top: -54px;
@@ -3855,26 +3855,32 @@ section {
     width: 260px;
     border-radius: 5px;
     display: inline-block;
-    background: #FFBD88; }
-    /* line 16, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+    background: #FFBD88;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777; }
+    /* line 19, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
     .card-section .card-container:hover {
-      background: #D75C37; }
+      background: #D75C37;
+      transform: scale(1.1); }
     @media screen and (max-width: 991px) {
       /* line 9, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
       .card-section .card-container {
         margin: 32px 0; } }
-  /* line 25, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+  /* line 29, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
   .card-section a {
     text-decoration: none;
     width: 100%;
     height: 100%;
     display: inline-block; }
-  /* line 32, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+  /* line 36, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
   .card-section .card-container-logo {
     font-size: 137px;
     margin-top: 60px;
     color: #FFFFFF; }
-  /* line 38, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+  /* line 42, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
   .card-section .card-container-header {
     border-bottom: 2px solid #FFFFFF;
     padding: 18px;
@@ -3902,6 +3908,13 @@ button {
   background-image: linear-gradient(to right, #D75C37 0%, #FFBD88 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD75C37', endColorstr='#FFFFBD88', GradientType=1); }
+
+/* line 7, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+.contacts .card-section i {
+  transition: all 0.5s ease-in-out; }
+  /* line 9, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+  .contacts .card-section i:hover {
+    transform: scale(1.1); }
 
 /* line 2, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .hero {
@@ -4074,6 +4087,13 @@ button {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD75C37', endColorstr='#FFFFBD88', GradientType=1); }
 
+/* line 7, /Users/David/Desktop/git/resume/src/app/projects/scss/_projects.scss */
+.projects .card-section i {
+  transition: all 0.5s ease-in-out; }
+  /* line 9, /Users/David/Desktop/git/resume/src/app/projects/scss/_projects.scss */
+  .projects .card-section i:hover {
+    transform: scale(1.1); }
+
 @media screen and (max-width: 991px) {
   /* line 2, /Users/David/Desktop/git/resume/src/app/resume/scss/_resume.scss */
   .resume .hero {
@@ -4156,30 +4176,37 @@ button {
 
 /* line 14, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
 .tic-tac-toe .content {
-  margin-top: 64px;
   text-align: center; }
-  /* line 19, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 18, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .content .board-value,
   .tic-tac-toe .content .board-title {
     display: inline-block;
-    font-size: 24px;
-    color: #FFBD88; }
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFBD88;
+    margin-top: 120px;
+    margin-left: 10px; }
+    @media screen and (max-width: 767px) {
+      /* line 18, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+      .tic-tac-toe .content .board-value,
+      .tic-tac-toe .content .board-title {
+        margin-top: 64px; } }
 
-/* line 26, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+/* line 32, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
 .tic-tac-toe .board {
   margin-top: 64px;
   text-align: center; }
-  /* line 30, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 36, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .square-container {
     height: 150px; }
-  /* line 34, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 40, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .square {
     height: 150px;
     width: 150px;
     text-align: center;
     display: inline-block;
     position: relative; }
-  /* line 42, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 48, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board i {
     font-size: 5em;
     position: absolute;
@@ -4189,37 +4216,40 @@ button {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-  /* line 51, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 57, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board i.fa-times {
     color: #FFBD88; }
-  /* line 55, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 61, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board i.fa-circle-o {
     color: #6991AC; }
-  /* line 59, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 65, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .right-bottom {
     border-right: 2px solid #FFBD88;
     border-bottom: 2px solid #FFBD88; }
-  /* line 64, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 70, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .bottom {
     border-bottom: 2px solid #FFBD88; }
-  /* line 68, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 74, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board .right {
     border-right: 2px solid #FFBD88; }
-  /* line 72, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+  /* line 78, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
   .tic-tac-toe .board button {
     margin-top: 64px;
-    margin-bottom: 64px; }
+    margin-bottom: 120px; }
   @media screen and (max-width: 767px) {
-    /* line 78, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+    /* line 85, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
     .tic-tac-toe .board .square-container {
       height: 75px; }
-    /* line 82, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+    /* line 89, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
     .tic-tac-toe .board .square {
       height: 75px;
       width: 75px; }
-    /* line 87, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+    /* line 94, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
     .tic-tac-toe .board i {
-      font-size: 3em; } }
+      font-size: 3em; }
+    /* line 98, /Users/David/Desktop/git/resume/src/app/tic-tac-toe/scss/_tic-tac-toe.scss */
+    .tic-tac-toe .board button {
+      margin-bottom: 64px; } }
 
 /* line 3, /Users/David/Desktop/git/resume/src/app/sudouku/scss/_sudouku.scss */
 .sudouku h3 {
@@ -4326,3 +4356,114 @@ button {
   /* line 100, /Users/David/Desktop/git/resume/src/app/scramble-word/scss/_scramble-word.scss */
   .scramble-word button.mod-reset {
     margin-left: 25px; } }
+
+/* line 2, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+.todo-list .title-container {
+  margin-top: 120px;
+  text-align: center;
+  background: #F4A460;
+  padding: 22px 0; }
+  /* line 8, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  .todo-list .title-container h3 {
+    color: #FFFFFF;
+    font-size: 32px; }
+
+/* line 14, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+.todo-list .list-container {
+  background: #FFBD88;
+  min-height: 250px;
+  padding: 32px 0; }
+  /* line 19, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  .todo-list .list-container .item {
+    font-size: 18px;
+    margin: 5px 0;
+    position: relative;
+    cursor: pointer;
+    padding: 0 15px;
+    height: 50px;
+    overflow: none;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+    /* line 30, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+    .todo-list .list-container .item:hover {
+      background: #F4A460; }
+      /* line 32, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+      .todo-list .list-container .item:hover i {
+        display: block; }
+  /* line 38, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  .todo-list .list-container .item.is-open {
+    height: 120px;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+    /* line 43, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+    .todo-list .list-container .item.is-open .edit-container {
+      opacity: 1;
+      -webkit-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in; }
+  /* line 50, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  .todo-list .list-container p {
+    line-height: 50px;
+    display: inline-block;
+    margin: 3px; }
+  /* line 56, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  .todo-list .list-container i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    display: none; }
+  /* line 64, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  .todo-list .list-container .edit-container {
+    display: block;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+  /* line 71, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  .todo-list .list-container input {
+    display: inline-block;
+    vertical-align: top;
+    text-indent: 5px;
+    width: 30%;
+    height: 42px;
+    outline: none; }
+  /* line 80, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  .todo-list .list-container .fa-pencil {
+    right: 60px; }
+  /* line 84, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  .todo-list .list-container button {
+    vertical-align: top;
+    border: 1px solid #D85339;
+    background: #D85339;
+    padding: 10px 19px;
+    font-size: 14px;
+    margin-left: 12px; }
+
+/* line 94, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+.todo-list .button-container {
+  margin-top: 32px;
+  margin-bottom: 120px;
+  position: relative; }
+  /* line 99, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  .todo-list .button-container button {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+/* line 106, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+.todo-list .input-container {
+  padding-right: 120px; }
+  /* line 109, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  .todo-list .input-container input {
+    width: 100%;
+    height: 55px;
+    font-size: 28px;
+    line-height: 55px;
+    text-indent: 10px;
+    outline: none; }
