@@ -3844,7 +3844,7 @@ section {
 /* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
 .card-section {
   text-align: center;
-  padding: 120px 0; }
+  padding: 88px 0; }
   @media screen and (max-width: 991px) {
     /* line 1, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
     .card-section {
@@ -3856,19 +3856,17 @@ section {
     border-radius: 5px;
     display: inline-block;
     background: #FFBD88;
+    margin-top: 32px;
+    margin-bottom: 32px;
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     -webkit-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777; }
-    /* line 19, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+    /* line 23, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
     .card-section .card-container:hover {
       background: #D75C37;
       transform: scale(1.1); }
-    @media screen and (max-width: 991px) {
-      /* line 9, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
-      .card-section .card-container {
-        margin: 32px 0; } }
   /* line 29, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
   .card-section a {
     text-decoration: none;
@@ -3894,9 +3892,10 @@ button {
   outline: none;
   color: #FFFFFF;
   background: #FFBD88;
-  border: 1px solid #FFBD88;
-  font-size: 18px; }
-  /* line 10, /Users/David/Desktop/git/resume/src/app/shared/scss/_button.scss */
+  border: 1px solid #e5aa7a;
+  font-size: 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2); }
+  /* line 11, /Users/David/Desktop/git/resume/src/app/shared/scss/_button.scss */
   button:hover {
     color: #FFFFFF;
     background: #F4A460; }
@@ -4437,29 +4436,33 @@ button {
   .todo-list .list-container .fa-pencil {
     right: 60px; }
   /* line 84, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
-  .todo-list .list-container button {
+  .todo-list .list-container .update-botton {
     vertical-align: top;
-    border: 1px solid #D85339;
-    background: #D85339;
+    border: 1px solid #cc4e29;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    background: #db6c4b;
     padding: 10px 19px;
     font-size: 14px;
     margin-left: 12px; }
+    /* line 92, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+    .todo-list .list-container .update-botton:hover {
+      background: #D85339; }
 
-/* line 94, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+/* line 98, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
 .todo-list .button-container {
   margin-top: 32px;
   margin-bottom: 120px;
   position: relative; }
-  /* line 99, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  /* line 103, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
   .todo-list .button-container button {
     position: absolute;
     right: 0;
     top: 0; }
 
-/* line 106, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+/* line 110, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
 .todo-list .input-container {
   padding-right: 120px; }
-  /* line 109, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  /* line 113, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
   .todo-list .input-container input {
     width: 100%;
     height: 55px;
