@@ -1,0 +1,61 @@
+<div class="todo-list">
+
+	<section class="hero">
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>To Do List</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <div ng-bind="toDoListVM.greeting"></div>
+
+    <section class="content">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="title-container">
+    					<h3>Todo List</h3>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="list-container">
+
+     					<div class="item" 
+                                ng-class="{ 'is-open': item.open }" 
+                                ng-repeat="item in toDoListVM.data.todoList">
+                            <p ng-bind="item.id"></p>
+    						<p ng-bind="item.item"></p>
+    						<i class="fa fa-2x fa-times" ng-click="toDoListVM.actions.deleteItem(item.id)"></i>
+    						<i class="fa fa-2x fa-pencil" ng-click="item.open = !item.open"></i>
+
+                            <div class="edit-container">
+                                <input type="text" ng-model="item.update" ng-if="item.open" />
+                                <button ng-if="item.open" ng-click="toDoListVM.actions.updateItem(item.id, item.update)">Update</button>
+                            </div>
+    					</div>	
+
+    				</div>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="button-container">
+	    				<div class="input-container">
+	    					<input type="text" 
+                                    placeHolder="What do you want to add ?"
+                                    ng-model="toDoListVM.newItem">
+	    				</div>
+	    				<button ng-click="toDoListVM.actions.addItem(toDoListVM.newItem)">Add</button>
+	    			</div>
+    			</div>
+    		</div>
+
+    	</div>
+    </section>
