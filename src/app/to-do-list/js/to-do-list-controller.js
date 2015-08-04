@@ -11,8 +11,6 @@
     		var vm = this;
 
     		vm.data = toDoListDataService.data;
-            
-    		vm.newItem = '';
 
     		//toDoListDataService.getItems();
 

@@ -10,7 +10,8 @@
 
 		var data = {
 			todoList: [],
-			id: 1
+			id: 1,
+			newItem: ''
 		};
 
 		var service = {
@@ -38,10 +39,13 @@
 		function addItem (itemName) {
 			data.todoList.push({ 
 				item: itemName,
-			      id: data.id
+			      id: data.id,
+			    update: itemName
 			});
 
+			data.newItem = '';
 			data.id++;
+			
 
 			// $http.post('http://localhost:8080/api/items', { name: itemName })
 			// 	.then(function (response) {
@@ -65,7 +69,9 @@
 			for (var i = 0; i < data.todoList.length; i++) {
 				if(itemId === data.todoList[i].id) {
 					data.todoList[i].item = newItem;
+					data.todoList[i].open = false;
 				}
+				
 			}
 			
 			// $http.put('http://localhost:8080/api/items/' + itemId, { name: itemName })
