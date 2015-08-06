@@ -1,0 +1,56 @@
+.stop-watch {
+	.time-container {
+		margin-top: 120px;
+		margin-bottom: 64px;
+		text-align: center;
+		font-size: 28px;
+		box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
+	}
+
+	.time { 
+		display: inline-block;
+		font-size: 112px;
+		font-weight: 700;
+		border: 8px solid rgba(0, 0, 0, 0);
+		border-radius: 10px;
+		color: $primary;
+		width: 250px;
+		height: 250px;
+		line-height: 250px;
+		background: $primary-dark;
+		line-height: 250px;
+		margin: 32px;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
+		// -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF; 
+		// -moz-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF; 
+		// box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
+	
+	}
+
+	p {
+		display: inline-block;
+		font-size: 112px;
+		font-weight: 700;
+		color: #d2d2d2;
+	}
+
+	.button-container {
+		margin-bottom: 120px;
+		text-align: center;
+		i {
+			margin: 0 32px;
+			border: 8px solid $divider;
+			border-radius: 50%;
+			height: 115px;
+			width: 115px;
+			line-height: 99px;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
+			background: $divider;
+			color: grey;
+			&:hover {
+				background: #bdbdbd;
+				cursor: pointer;
+			}
+		}
+	}
+}

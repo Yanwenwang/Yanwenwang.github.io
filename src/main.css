@@ -4470,3 +4470,54 @@ button {
     line-height: 55px;
     text-indent: 10px;
     outline: none; }
+
+/* line 2, /Users/David/Desktop/git/resume/src/app/stop-watch/scss/_stop-watch.scss */
+.stop-watch .time-container {
+  margin-top: 120px;
+  margin-bottom: 64px;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #FFF; }
+
+/* line 10, /Users/David/Desktop/git/resume/src/app/stop-watch/scss/_stop-watch.scss */
+.stop-watch .time {
+  display: inline-block;
+  font-size: 112px;
+  font-weight: 700;
+  border: 8px solid transparent;
+  border-radius: 10px;
+  color: #FFFFFF;
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  background: #F4A460;
+  line-height: 250px;
+  margin: 32px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #FFF; }
+
+/* line 30, /Users/David/Desktop/git/resume/src/app/stop-watch/scss/_stop-watch.scss */
+.stop-watch p {
+  display: inline-block;
+  font-size: 112px;
+  font-weight: 700;
+  color: #d2d2d2; }
+
+/* line 37, /Users/David/Desktop/git/resume/src/app/stop-watch/scss/_stop-watch.scss */
+.stop-watch .button-container {
+  margin-bottom: 120px;
+  text-align: center; }
+  /* line 40, /Users/David/Desktop/git/resume/src/app/stop-watch/scss/_stop-watch.scss */
+  .stop-watch .button-container i {
+    margin: 0 32px;
+    border: 8px solid #d2d2d2;
+    border-radius: 50%;
+    height: 115px;
+    width: 115px;
+    line-height: 99px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #FFF;
+    background: #d2d2d2;
+    color: grey; }
+    /* line 50, /Users/David/Desktop/git/resume/src/app/stop-watch/scss/_stop-watch.scss */
+    .stop-watch .button-container i:hover {
+      background: #bdbdbd;
+      cursor: pointer; }
