@@ -112,6 +112,17 @@
 						controllerAs: 'toDoListVM'
 					}
 				}
+			})
+
+			.state('main.stop-watch', {
+				url: 'stop-watch',
+				views: {
+					'content@': {
+						templateUrl: './src/app/stop-watch/html/stop-watch.html',
+						controller: 'stopWatchController',
+						controllerAs: 'stopWatchVM'
+					}
+				}
 			});
 	}
 
