@@ -38,6 +38,10 @@
 					display: block;
 				}
 			}
+
+			@media screen and (max-width: $screen-xs-max) {
+				font-size: 14px;
+			}
 		}
 
 		.item.is-open {
@@ -45,10 +49,18 @@
 
 			@include transition(all .5s ease-in);
 
+			i {
+				margin-top: 10px;
+			}
+
 			.edit-container {
 				opacity: 1;
 
 				@include transition(all .5s ease-in);
+			}
+
+			@media screen and (max-width: $screen-xs-max) {
+				height: 102px;
 			}
 		}
 
@@ -64,6 +76,10 @@
 			top: 50%;
 			@include translate(0, -50%);
 			display: none;
+
+			@media screen and (max-width: $screen-xs-max) {
+				right: 14px;
+			}
 		}
 
 		.edit-container {
@@ -71,6 +87,10 @@
 			opacity: 0;
 
 			@include transition(all .5s ease-in);
+			
+			@media screen and (max-width: $screen-xs-max) {
+				margin-top: -9px;
+			}
 		}
 
 		input {
@@ -80,10 +100,19 @@
 			width: 30%;
 			height: 42px;
 			outline: none;
+
+			@media screen and (max-width: $screen-xs-max) {
+				height: 31px;
+				width: 43%;
+			}
 		}
 
 		.fa-pencil {
 			right: 60px;
+
+			@media screen and (max-width: $screen-xs-max) {
+				right: 43px;
+			}
 		}
 
 		.update-botton {
@@ -96,6 +125,12 @@
 			margin-left: 12px;
 			&:hover {
 				background: $accent;
+			}
+
+			@media screen and (max-width: $screen-xs-max) {
+				padding: 6px 6px;
+				font-size: 12px;
+				margin-left: 14px;
 			}
 		}
 	}

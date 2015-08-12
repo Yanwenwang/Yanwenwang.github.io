@@ -32,8 +32,8 @@
                                 ng-repeat="item in toDoListVM.data.todoList">
                             <p ng-bind="item.id"></p>
     						<p ng-bind="item.item"></p>
-    						<i class="fa fa-2x fa-times" ng-click="toDoListVM.actions.deleteItem(item.id)"></i>
-    						<i class="fa fa-2x fa-pencil" ng-click="item.open = !item.open"></i>
+    						<i class="fa fa-times" ng-click="toDoListVM.actions.deleteItem(item.id)"></i>
+    						<i class="fa fa-pencil" ng-click="item.open = !item.open"></i>
 
                             <div class="edit-container">
                                 <input type="text" ng-model="item.update" ng-if="item.open" />
