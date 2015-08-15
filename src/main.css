@@ -4500,20 +4500,26 @@ button {
   .todo-list .button-container button {
     position: absolute;
     right: 0;
-    top: 0; }
+    top: 0;
+    background: #db6c4b;
+    border: 1px solid #cc4e29;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2); }
+    /* line 154, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+    .todo-list .button-container button:hover {
+      background: #D85339; }
     @media screen and (max-width: 767px) {
       /* line 147, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
       .todo-list .button-container button {
         padding: 6px 10px; } }
 
-/* line 158, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+/* line 164, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
 .todo-list .input-container {
   padding-right: 120px; }
   @media screen and (max-width: 767px) {
-    /* line 158, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+    /* line 164, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
     .todo-list .input-container {
       padding-right: 92px; } }
-  /* line 165, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+  /* line 171, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
   .todo-list .input-container input {
     width: 100%;
     height: 55px;
@@ -4522,7 +4528,7 @@ button {
     text-indent: 10px;
     outline: none; }
     @media screen and (max-width: 767px) {
-      /* line 165, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
+      /* line 171, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
       .todo-list .input-container input {
         font-size: 14px;
         text-indent: 5px;
