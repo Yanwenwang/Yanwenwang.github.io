@@ -44,6 +44,14 @@
 			}
 		}
 
+		.fa {
+			font-size: 24px;
+			
+			@media screen and (max-width: $screen-xs-max) {
+				font-size: 14px;
+			}
+		}
+
 		.item.is-open {
 			height: 120px;
 
