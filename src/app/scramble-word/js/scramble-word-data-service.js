@@ -106,16 +106,11 @@
             if(data.countdown === 0) {
 
                 data.gameOver = true;
-                data.points = 0;
-
-                stopCountdown();
-
-                
 
                 // show modal for correct word
                 modalService.openMessageModal({
                     title: 'Game over',
-                    body: 'The game is over.',
+                    body: 'You got ' + data.points + ' points!',
                     actionText: 'Play Again'
                 })
                     .then(function (response) {
@@ -126,6 +121,10 @@
                         // player did not want to 'play again'
                         alert('do not play again');
                     });
+
+            data.points = 0;
+
+            stopCountdown();
 
                 //open modal show point and play again
                 //resetGame();
