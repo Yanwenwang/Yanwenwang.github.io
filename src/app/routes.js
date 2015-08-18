@@ -37,13 +37,13 @@
 				}
 			})
 
-			.state('main.resume', {
-				url: 'resume',
+			.state('main.skills', {
+				url: 'skills',
 				views: {
 					'content@': {
-						templateUrl: './src/app/resume/html/resume.html',
-						controller: 'resumeController',
-						controllerAs: 'resumeVM'
+						templateUrl: './src/app/skills/html/skills.html',
+						controller: 'skillsController',
+						controllerAs: 'skillsVM'
 					}
 				}
 			})

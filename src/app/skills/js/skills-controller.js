@@ -2,9 +2,9 @@
 
 	angular
 		.module('ywPortal')
-		.controller('resumeController', resumeController);
+		.controller('skillsController', skillsController);
 
-	function resumeController() {
+	function skillsController() {
 		var vm = this;
 
 		vm.groups = [
