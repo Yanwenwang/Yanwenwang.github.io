@@ -25,16 +25,25 @@
         .content .icon .fa-linkedin-square {
             margin-left: 0;
             color: $primary;
+            &:hover {
+                color: $divider;
+            }
         }
 
         .content .icon .fa-github-square {
             margin-left: 29px;
             color: $primary;
+            &:hover {
+                color: $divider;
+            }
         }
 
         .content .icon .fa-envelope-o {
             margin-left: 29px;
             color: $primary;
+            &:hover {
+                color: $divider;
+            }
         }
 
         @media screen and (max-width: $screen-sm-max) {
