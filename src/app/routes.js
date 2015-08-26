@@ -114,6 +114,17 @@
 				}
 			})
 
+			.state('main.d3', {
+				url: 'd3',
+				views: {
+					'content@': {
+						templateUrl: './src/app/d3/html/d3.html',
+						controller: 'd3Controller',
+						controllerAs: 'd3VM'
+					}
+				}
+			})
+
 			.state('main.stop-watch', {
 				url: 'stop-watch',
 				views: {
