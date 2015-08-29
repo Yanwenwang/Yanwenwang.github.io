@@ -9,4 +9,13 @@
 	    	&:hover { transform: scale(1.1); }
 	    }
 	}
+
+	.card-container {
+		background: $accent-hover;
+
+		&:hover {
+            background: $primary-light;
+            transform: scale(1.1); 
+        }
+	}
 }

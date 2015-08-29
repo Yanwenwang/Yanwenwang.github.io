@@ -3915,6 +3915,14 @@ button {
   .contacts .card-section i:hover {
     transform: scale(1.1); }
 
+/* line 13, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+.contacts .card-container {
+  background: #D75C37; }
+  /* line 16, /Users/David/Desktop/git/resume/src/app/contact/scss/_contact.scss */
+  .contacts .card-container:hover {
+    background: #FFBD88;
+    transform: scale(1.1); }
+
 /* line 2, /Users/David/Desktop/git/resume/src/app/home/scss/_home.scss */
 .home .hero {
   text-align: center; }
