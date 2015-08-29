@@ -3894,8 +3894,9 @@ button {
   background: #FFBD88;
   border: 1px solid #e5aa7a;
   font-size: 18px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2); }
-  /* line 11, /Users/David/Desktop/git/resume/src/app/shared/scss/_button.scss */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  letter-spacing: 1px; }
+  /* line 12, /Users/David/Desktop/git/resume/src/app/shared/scss/_button.scss */
   button:hover {
     color: #FFFFFF;
     background: #F4A460; }
