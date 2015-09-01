@@ -4547,9 +4547,9 @@ button {
   /* line 179, /Users/David/Desktop/git/resume/src/app/to-do-list/scss/_to-do-list.scss */
   .todo-list .input-container input {
     width: 100%;
-    height: 55px;
-    font-size: 28px;
-    line-height: 55px;
+    height: 43px;
+    font-size: 18px;
+    line-height: 43px;
     text-indent: 10px;
     outline: none; }
     @media screen and (max-width: 767px) {
