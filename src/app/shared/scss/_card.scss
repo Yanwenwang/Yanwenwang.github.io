@@ -11,8 +11,9 @@
         width: 260px;
         border-radius: 5px;
         display: inline-block;
-        background: $primary-light;
-        
+        //background: $primary-light;
+        background: linear-gradient(160deg,$primary-light 0,$accent 100%);
+
         margin-top: 32px;
         margin-bottom: 32px;
 
@@ -21,7 +22,7 @@
         @include box-shadow(0 10px 6px -6px #777);
 
         &:hover {
-            background: $accent-hover;
+            background: linear-gradient(160deg,$accent 0,$primary-light 100%);
             transform: scale(1.1); 
         }
     }

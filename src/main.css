@@ -3855,7 +3855,7 @@ section {
     width: 260px;
     border-radius: 5px;
     display: inline-block;
-    background: #FFBD88;
+    background: linear-gradient(160deg, #FFBD88 0, #D85339 100%);
     margin-top: 32px;
     margin-bottom: 32px;
     -webkit-transition: all 0.5s ease-in-out;
@@ -3863,22 +3863,22 @@ section {
     transition: all 0.5s ease-in-out;
     -webkit-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777; }
-    /* line 23, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+    /* line 24, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
     .card-section .card-container:hover {
-      background: #D75C37;
+      background: linear-gradient(160deg, #D85339 0, #FFBD88 100%);
       transform: scale(1.1); }
-  /* line 29, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+  /* line 30, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
   .card-section a {
     text-decoration: none;
     width: 100%;
     height: 100%;
     display: inline-block; }
-  /* line 36, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+  /* line 37, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
   .card-section .card-container-logo {
     font-size: 137px;
     margin-top: 60px;
     color: #FFFFFF; }
-  /* line 42, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
+  /* line 43, /Users/David/Desktop/git/resume/src/app/shared/scss/_card.scss */
   .card-section .card-container-header {
     border-bottom: 2px solid #FFFFFF;
     padding: 18px;
@@ -3896,7 +3896,7 @@ button {
   font-size: 18px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
   letter-spacing: 1px; }
-  /* line 12, /Users/David/Desktop/git/resume/src/app/shared/scss/_button.scss */
+  /* line 13, /Users/David/Desktop/git/resume/src/app/shared/scss/_button.scss */
   button:hover {
     color: #FFFFFF;
     background: #F4A460; }
