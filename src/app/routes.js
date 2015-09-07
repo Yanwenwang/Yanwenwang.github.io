@@ -125,6 +125,18 @@
 				}
 			})
 
+			.state('main.components', {
+				url: 'components',
+				views: {
+					'content@': {
+						templateUrl: './src/app/components/html/components.html',
+						controller: 'componentsController',
+						controllerAs: 'componentsVM'
+					}
+				}
+			})
+			
+
 			.state('main.stop-watch', {
 				url: 'stop-watch',
 				views: {
