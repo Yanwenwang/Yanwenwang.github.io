@@ -4663,3 +4663,11 @@ button {
   .d3 h3 {
     margin-top: 64px;
     margin-bottom: 64px; } }
+
+/* line 2, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+.components .circle-color {
+  border: 1px solid #D85339;
+  border-radius: 50%;
+  background-color: #D85339;
+  width: 62px;
+  height: 62px; }

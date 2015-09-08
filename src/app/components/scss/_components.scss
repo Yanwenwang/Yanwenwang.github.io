@@ -1,0 +1,9 @@
+.components {
+	.circle-color {
+		border: 1px solid $accent;
+		border-radius: 50%;
+		background-color: $accent;
+		width: 62px;
+		height: 62px;
+	}
+}
