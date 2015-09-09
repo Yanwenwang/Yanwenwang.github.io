@@ -4664,10 +4664,21 @@ button {
     margin-top: 64px;
     margin-bottom: 64px; } }
 
-/* line 2, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+/* line 3, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .circle-color {
-  border: 1px solid #D85339;
   border-radius: 50%;
-  background-color: #D85339;
   width: 62px;
-  height: 62px; }
+  height: 62px;
+  display: inline-block; }
+
+/* line 10, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+.components .circle-color.mod-accent {
+  background-color: #D85339; }
+
+/* line 14, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+.components .circle-color.mod-light {
+  background-color: #FFBD88; }
+
+/* line 18, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+.components .circle-color.mod-text {
+  background: #81888D; }
