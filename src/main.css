@@ -4682,3 +4682,7 @@ button {
 /* line 18, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .circle-color.mod-text {
   background: #81888D; }
+
+/* line 22, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+.components .circle-color.mod-dark {
+  background: #F4A460; }
