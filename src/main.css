@@ -4686,3 +4686,7 @@ button {
 /* line 22, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .circle-color.mod-dark {
   background: #F4A460; }
+
+/* line 26, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+.components hr {
+  margin-top: 32px; }
