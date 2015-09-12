@@ -4669,24 +4669,27 @@ button {
   border-radius: 50%;
   width: 62px;
   height: 62px;
-  display: inline-block; }
+  display: inline-block;
+  line-height: 62px;
+  text-align: center;
+  color: #fff; }
 
-/* line 10, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+/* line 13, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .circle-color.mod-accent {
   background-color: #D85339; }
 
-/* line 14, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+/* line 17, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .circle-color.mod-light {
   background-color: #FFBD88; }
 
-/* line 18, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+/* line 21, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .circle-color.mod-text {
   background: #81888D; }
 
-/* line 22, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+/* line 25, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .circle-color.mod-dark {
   background: #F4A460; }
 
-/* line 26, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+/* line 29, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components hr {
   margin-top: 32px; }
