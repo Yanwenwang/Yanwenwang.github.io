@@ -4665,7 +4665,7 @@ button {
     margin-bottom: 64px; } }
 
 /* line 3, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
-.components .color-container {
+.components .color-container, .components .button-container {
   text-align: center;
   padding: 88px 0; }
 
