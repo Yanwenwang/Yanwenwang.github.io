@@ -63,6 +63,7 @@
 				skills: [
 					{ name: 'Atom' },
 					{ name: 'GitHub' },
+					{ name: 'Slack' },
 				  	{ name: 'SourceTree' },
 				 	{ name: 'Sublime Text' },
 					{ name: 'Terminal'},
