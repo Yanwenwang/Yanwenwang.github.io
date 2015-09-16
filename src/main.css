@@ -4665,7 +4665,7 @@ button {
     margin-bottom: 64px; } }
 
 /* line 3, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
-.components .color-container, .components .button-container {
+.components .color-container, .components .button-container, .components .fonts {
   text-align: center;
   padding: 88px 0; }
 
@@ -4686,21 +4686,26 @@ button {
   margin-bottom: 32px; }
 
 /* line 24, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+.components .font-text {
+  padding: 22px 0;
+  font-size: 24px; }
+
+/* line 29, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .circle-color.mod-accent {
   background-color: #D85339; }
 
-/* line 28, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+/* line 33, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .circle-color.mod-light {
   background-color: #FFBD88; }
 
-/* line 32, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+/* line 37, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .circle-color.mod-text {
   background: #81888D; }
 
-/* line 36, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+/* line 41, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .circle-color.mod-dark {
   background: #F4A460; }
 
-/* line 40, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
+/* line 45, /Users/David/Desktop/git/resume/src/app/components/scss/_components.scss */
 .components .card-container {
   margin-top: 0; }
