@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.footer__container {
+    height: 115px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__license {
+    color: $gray-dark;
+    margin: 0;
+}
