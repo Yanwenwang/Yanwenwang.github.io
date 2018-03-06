@@ -1,11 +1,17 @@
 @import '../../styles/variables';
 
-.callout__container {
-    height: 550px;
+.callout__outer-container {
     background: $gray-light;
+}
 
+.callout__outer-container--light {
+    background: rgba(224,254,251,0.9);
+}
+
+.callout__inner-container {
+    height: 550px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -13,8 +19,4 @@
     border: 1px solid $tango;
     width: 500px;
     height: 450px;
-}
-
-.callout__container--light {
-    background: rgba(224,254,251,0.9);
 }

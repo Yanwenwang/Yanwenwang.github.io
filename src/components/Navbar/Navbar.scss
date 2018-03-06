@@ -5,7 +5,7 @@
     background: white;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .navbar__group {
@@ -25,7 +25,7 @@
 
 .navbar__item {
     color: $gray-dark;
-    margin-right: 35px;
+    margin-left: 35px;
     text-decoration: none;
     color: gray;
     transition: .2s ease-in;
