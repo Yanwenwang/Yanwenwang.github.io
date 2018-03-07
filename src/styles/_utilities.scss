@@ -1,0 +1,44 @@
+// transformation classes
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+// contextual colors
+.text-primary {
+    color: $gray-dark;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.text-tango {
+    color: $tango;
+}
+
+// typography
+.d-flex {
+    display: flex;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+// spacing
+.mt-32 {
+    margin-top: 32px;
+}
+
