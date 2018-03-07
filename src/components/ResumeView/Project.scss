@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.project__title--dark {
+    font-weight: bold;
+    color: $tango;
+}
+
+.project__time {
+    min-width: 250px;
+    color: $gray;
+}
