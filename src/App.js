@@ -3,13 +3,13 @@ import { Route } from 'react-router-dom';
 
 import CoreLayout from './layouts/CoreLayout';
 import Home from './components/HomeView/HomeView';
-import About from './components/AboutView/AboutView'; 
+import Resume from './components/ResumeView/ResumeView'; 
 
 const App = () => (
     <main>
         <CoreLayout>
             <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
+            <Route exact path="/resume" component={Resume} />
         </CoreLayout>
     </main>
 );
