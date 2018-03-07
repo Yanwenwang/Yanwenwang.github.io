@@ -8,7 +8,7 @@ export const Education = ({time, title, description}) => {
             <div className="education__time">{time}</div>
             <div>
                 <div className="education__title">{title}</div>
-                <div className="text-primary font-italic">{description}</div>
+                <p className="text-primary font-italic">{description}</p>
             </div>
         </div>
     );
