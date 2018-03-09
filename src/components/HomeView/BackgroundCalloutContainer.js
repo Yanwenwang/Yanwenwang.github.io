@@ -6,7 +6,8 @@ const mapStateToProps = (state) => {
     return {
         title: `Hi, I'm Yanwen.`,
         paragraphs: [
-            `I am a front end developer that enjoys coding in HTML, CSS, and JavaScript. I also love doing design work as well and will jump into photoshop to touch up images.`,
+            `Hi, my name is Yanwen, some people call me Yan for short.`,
+            `I am a passionate and experienced front-end developer. My current technology focus is React and Redux although I also have significant experience in AngularJS as well.`,
             `It's really nice to meet you!`
         ]
     };

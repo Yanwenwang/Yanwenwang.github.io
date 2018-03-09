@@ -4,10 +4,11 @@ import { Callout } from '../Shared';
 
 const mapStateToProps = (state) => {
     return {
-        title: `Programming.`,
+        title: `Why Front-end?`,
         paragraphs: [
-            'My first encounter with technology was when I was in elementary school and MSN Messenger first came out. I thought it was amazing that I could live chat with anyone around the world. I told myself that someday I wanted to work on something like that.',
-            'When I came to the US, I started learning English while working as a legal assistant, life insurance sales agent, and ophthalmic technician. However, on the side I was constantly learning programming because I wanted to follow my dream.'
+            `I love coding in HTML, CSS, and JavaScript.`,
+            `I also enjoy doing visual design and user experience work and am constantly thinking of ways to improve the product I am working on.`,
+            `I am a team-player and know that only when the best ideas are put forth can we create the best possible product.`
         ],
         calloutTheme: 'light',
         cardTheme: 'light'
