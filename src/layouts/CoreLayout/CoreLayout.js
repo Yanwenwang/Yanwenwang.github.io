@@ -8,8 +8,11 @@ import Footer from '../../components/Footer/Footer';
 export const CoreLayout = ({ children }) => {
     return (
         <React.Fragment>
-            <Navbar />
-            {children}
+            <div className="wrapper">
+                <Navbar />
+                {children}
+                <div className="push"></div>
+            </div>
             <Footer />
         </React.Fragment>
     );
