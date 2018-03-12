@@ -1,8 +1,12 @@
 @import '../../styles/variables';
 
+.navbar__outer-container {
+    border-top: 10px solid $tango;
+    background: rgba(255, 255, 255, .25);
+}
+
 .navbar__container {
     height: 117px;
-    background: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,22 +19,25 @@
 
 .navbar__logo {
     color: $gray-dark;
+    letter-spacing: 1px;
     text-decoration: none;
     transition: .2s ease-out;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $tango;
     }
 }
 
 .navbar__item {
     color: $gray-dark;
+    letter-spacing: 1px;
     margin-left: 35px;
     text-decoration: none;
-    color: gray;
     transition: .2s ease-in;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $tango;
     }
 }
