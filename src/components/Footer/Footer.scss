@@ -21,11 +21,28 @@
     margin-right: 45px;
 
     &:hover {
-        color: $tango;
         cursor: pointer;
+    }
+
+    transition: .2s ease-out;
+}
+
+.footer__icon--linkedin {
+    &:hover {
+        color: #0077b5; 
     }
 }
 
-.footer__icon--last {
-    margin-right: 0;   
+.footer__icon--github {
+    &:hover {
+        color: $gray-dark; 
+    }
+}
+
+.footer__icon--instagram {
+    margin-right: 0;  
+    
+    &:hover {
+        color: #cd486b; 
+    }
 }
