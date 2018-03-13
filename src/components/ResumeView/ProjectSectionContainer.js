@@ -14,7 +14,7 @@ const mapStateToProps = (state) => {
             technology: 
                 'Relevant Technologies: JavaScript, HTML, CSS, React, Redux, ES6, Bootstrap, SASS, Babel, Webpack, Git, Sublime Text,   Mocha, Chai, Sinon, fetch, Jenkins'
         }, {
-            time: 'Aug 2017 - Nov 2017',
+            time: 'Aug 2015 - Nov 2017',
             title: 'Blockchain Asset Trading Platform, ',
             companyName: 'Manifold Technology',
             projectDescrition: 
