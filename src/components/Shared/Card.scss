@@ -2,6 +2,16 @@
 
 .card {
     width: 500px;
+
+    /* Tablet */
+    @media only screen and (min-width : $screen-sm) and (max-width : $screen-md - 1px) {
+        width: 450px;
+    }
+
+    /* Mobile */
+    @media only screen and (max-width : $screen-sm - 1px) {
+        width: auto;
+    }
 }
 
 .card__title {
