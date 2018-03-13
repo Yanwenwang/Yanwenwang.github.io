@@ -4,7 +4,7 @@ import './Experience.scss';
 
 export const Experience = ({ time, title, location, position, paragraph }) => {
     return (
-        <div className="d-flex mt-32">
+        <div className="experience__container">
             <div className="experience__time">{time}</div>
             <div>
                 <div>

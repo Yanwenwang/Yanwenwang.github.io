@@ -5,7 +5,7 @@ import './Project.scss';
 export const Project = ({ time, title, companyName, projectDescrition, technology }) => {
 
     return (
-        <div className="d-flex mt-32">
+        <div className="project__container">
             <div className="project__time">{time}</div>
             <div>
                 <span className="project__title--dark">{title}</span>
