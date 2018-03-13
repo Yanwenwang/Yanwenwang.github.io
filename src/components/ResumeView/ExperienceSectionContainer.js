@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
             location: 'Sunnyvale, CA',
             position: 'Front-end Developer',
             paragraph: [
-                'As a front-end developer I was responsible for creating and maintaining over 10 different web applications using Angular   and more recently, React and Redux. These applications ranged from an asset trading platform, a security visualization platform, and a permissions management platform and spanned multiple industries such as finance, energy, and security. ',
+                'As a front-end developer I was responsible for creating and maintaining over 10 different web applications using Angular   and more recently, React and Redux. These applications ranged from an asset trading platform, a security visualization platform, and a permissions management platform and spanned multiple industries such as finance, energy, and security.',
 
                 'I collaborated closely with the CEO, CTO, product manager, visual designer, and other engineers to quickly iterate and incorporate user feedback in the various web applications I was supporting. I also provided creative input and insight to make our products amazing. The projects I created helped the company secure their first customer and were used as a demonstration of the power and capability we could offer.'
             ]
@@ -20,7 +20,7 @@ const mapStateToProps = (state) => {
             location: 'Los Altos, CA',
             position: 'Ophthalmic Technician',
             paragraph: [
-                'As a ophthalmic technician, I performed basic medical assistant tasks such as greeting patients, scheduling appointments, and coordinating surgery. I was also responsible for billing, collecting co-payments and entering claims. ',
+                'As a ophthalmic technician, I performed basic medical assistant tasks such as greeting patients, scheduling appointments, and coordinating surgery. I was also responsible for billing, collecting co-payments and entering claims.',
 
                 'I also performed various diagnostic tests such as visual field, optical coherence tomography, photo fundus, A-scan, and fluorescein angiography. I also helped patients with basic vision checks such as eye pressure, auto refraction, vision chart, and pachymetry.'
             ]
@@ -30,7 +30,7 @@ const mapStateToProps = (state) => {
             location: 'San Jose, CA',
             position: 'Insurance Sales Agent',
             paragraph: [
-                'As an insurance sales agent, I was responsible for prospecting clients which involved handing out flyers, making lots of cold calls (got lots of rejections), and setting up information booths. I made my own marketing materials which involved creating a radio advertisement and making my own flyers and business cards. ',
+                'As an insurance sales agent, I was responsible for prospecting clients which involved handing out flyers, making lots of cold calls (got lots of rejections), and setting up information booths. I made my own marketing materials which involved creating a radio advertisement and making my own flyers and business cards.',
 
                 'In addition, I also interviewed clients to obtain data about their financial resources and needs, as well as discuss any existing coverage. Afterwards, I customized insurance programs to suit each client to provide appropriate coverage. I closed over a dozen deals and was awarded a quarterly top salesperson award.'
             ]   
