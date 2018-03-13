@@ -1,15 +1,31 @@
 @import '../../styles/variables';
 
 .footer__container {
-    height: 115px;
-    //background: rgba(255, 255, 255, .25);
+    height: 151px;
+    background: rgba(255, 255, 255, .25);
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .footer__license {
     color: $gray;
     margin: 0;
+    margin-bottom: 15px;
+}
+
+.footer__icon {
+    color: $gray;
+    margin-right: 45px;
+
+    &:hover {
+        color: $tango;
+        cursor: pointer;
+    }
+}
+
+.footer__icon--last {
+    margin-right: 0;   
 }

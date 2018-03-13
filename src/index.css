@@ -19,11 +19,11 @@ html, body, main, #root {
 
     /* Equal to height of footer */
     /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: -115px;
+    margin-bottom: -151px;
 }
 footer,
 .push {
-    height: 115px;
+    height: 151px;
 }
 
 /* Sticky footer ends */
