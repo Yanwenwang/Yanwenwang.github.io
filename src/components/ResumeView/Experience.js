@@ -12,7 +12,7 @@ export const Experience = ({ time, title, location, position, paragraph }) => {
                     <span className="text-primary">{location}</span>
                 </div>
                 <p className="experience__title experience__title--italic">{position}</p>
-                <div>{paragraph}</div>
+                <p className="text-primary lh-15">{paragraph}</p>
             </div>
         </div>
     );

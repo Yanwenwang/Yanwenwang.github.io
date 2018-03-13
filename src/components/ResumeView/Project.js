@@ -10,8 +10,8 @@ export const Project = ({ time, title, companyName, projectDescrition, technolog
             <div>
                 <span className="project__title--dark">{title}</span>
                 <span className="text-primary">{companyName}</span>
-                <p className="text-primary">{projectDescrition}</p>
-                <p className="font-italic text-gray">{technology}</p>
+                <p className="text-primary lh-15">{projectDescrition}</p>
+                <p className="font-italic text-gray lh-15">{technology}</p>
             </div>
         </div>
     );
