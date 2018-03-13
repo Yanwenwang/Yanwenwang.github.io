@@ -1,6 +1,26 @@
 @import '../../styles/variables';
 
 .container {
-    width: $screen-lg;
-    margin: 0 auto;
+    /* Desktop */
+    @media only screen and (min-width : $screen-lg) {
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+    /* Laptop */
+    @media only screen and (min-width : $screen-md) and (max-width : $screen-lg - 1px) {
+        width: 970px;
+        margin: 0 auto;
+    }
+
+    /* Tablet */
+    @media only screen and (min-width : $screen-sm) and (max-width : $screen-md - 1px) {
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    /* Mobile */
+    @media only screen and (max-width : $screen-sm - 1px) {
+        margin: 0 15px;
+    }
 }
