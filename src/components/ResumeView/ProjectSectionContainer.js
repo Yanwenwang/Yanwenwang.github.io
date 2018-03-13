@@ -9,10 +9,10 @@ const mapStateToProps = (state) => {
             title: 'Merchant Portal for AR Mobile App, ',
             companyName: 'Manifold Technology',
             projectDescrition: 
-                'Created a merchant portal which allowed merchants to create items for sale in real-time for a limited duration   which would then show up on an AR mobile app. This involved integrating with AWS Cognito to allow for passwordless flows for signup and login as well as creating a complex UI with a map and information panels that were synchronized.',
+                'Created a merchant portal which allowed merchants to create items for sale in real-time for a limited duration which would then show up on an AR mobile app. This involved integrating with AWS Cognito to allow for passwordless flows for signup and login as well as creating a complex UI with a map and information panels that were synchronized.',
             
             technology: 
-                'Relevant Technologies: JavaScript, HTML, CSS, React, Redux, ES6, Bootstrap, SASS, Babel, Webpack, Git, Sublime Text,   Mocha, Chai, Sinon, fetch, Jenkins'
+                'Relevant Technologies: JavaScript, HTML, CSS, React, Redux, ES6, Bootstrap, SASS, Babel, Webpack, Git, Sublime Text, Mocha, Chai, Sinon, fetch, Jenkins'
         }, {
             time: 'Aug 2015 - Nov 2017',
             title: 'Blockchain Asset Trading Platform, ',
