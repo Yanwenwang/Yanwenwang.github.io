@@ -6,7 +6,7 @@ const mapStateToProps = (state) => {
     return {
         experiences: [{
             time: 'Aug 2015 - Nov 2017',
-            title: 'Manifold Technology',
+            title: 'Manifold Technology, ',
             location: 'Sunnyvale, CA',
             position: 'Front-end Developer',
             paragraph: [
