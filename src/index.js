@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import store, { history } from './store/createStore';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
 
@@ -18,5 +17,3 @@ render(
     </Provider>,
     target
 );
-
-registerServiceWorker();
